@@ -1,0 +1,10 @@
+rich/syntax.py:158: error: Argument 1 to "style_for_token" of "StyleMeta" has incompatible type "tuple[str, ...]"; expected "_TokenType"  [arg-type]
+rich/syntax.py:399: error: "Lexer" has no attribute "aliases"  [attr-defined]
+rich/syntax.py:400: error: "Lexer" has no attribute "aliases"  [attr-defined]
+rich/syntax.py:402: error: "Lexer" has no attribute "name"  [attr-defined]
+rich/syntax.py:492: error: "lexer" has type "Lexer" which does not implement __bool__ or __len__ so it could always be true in boolean context  [truthy-bool]
+rich/pretty.py:230: error: Unused "type: ignore" comment  [unused-ignore]
+rich/jupyter.py:91: error: Call to untyped function "display" in typed context  [no-untyped-call]
+rich/traceback.py:725: error: "Lexer" has no attribute "name"  [attr-defined]
+rich/live.py:235: error: Call to untyped function "display" in typed context  [no-untyped-call]
+Found 9 errors in 5 files (checked 78 source files)

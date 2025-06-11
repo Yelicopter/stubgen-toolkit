@@ -1,0 +1,7 @@
+from typing import NamedTuple
+
+class Region(NamedTuple):
+    x: int
+    y: int
+    width: int
+    height: int

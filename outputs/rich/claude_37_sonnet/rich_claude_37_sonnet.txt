@@ -1,0 +1,45 @@
+rich/box.pyi:45: error: Name "ConsoleOptions" is not defined  [name-defined]
+rich/_null_file.pyi:32: error: Argument 1 of "truncate" is incompatible with supertype "IO"; supertype defines the argument type as "Optional[int]"  [override]
+rich/_null_file.pyi:32: note: This violates the Liskov substitution principle
+rich/_null_file.pyi:32: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+rich/_fileno.pyi:3: error: Missing type parameters for generic type "IO"  [type-arg]
+rich/__init__.pyi:14: error: Missing type parameters for generic type "IO"  [type-arg]
+rich/__init__.pyi:17: error: Missing type parameters for generic type "Callable"  [type-arg]
+rich/color.pyi:6: error: Detected enum "rich.color.ColorSystem" in a type stub with zero members. There is a chance this is due to a recent change in the semantics of enum membership. If so, use `member = value` to mark an enum member, instead of `member: type`  [misc]
+rich/color.pyi:6: note: See https://typing.readthedocs.io/en/latest/spec/enums.html#defining-members
+rich/color.pyi:18: error: Detected enum "rich.color.ColorType" in a type stub with zero members. There is a chance this is due to a recent change in the semantics of enum membership. If so, use `member = value` to mark an enum member, instead of `member: type`  [misc]
+rich/color.pyi:18: note: See https://typing.readthedocs.io/en/latest/spec/enums.html#defining-members
+rich/color.pyi:39: error: Name "Any" is not defined  [name-defined]
+rich/color.pyi:39: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+rich/theme.pyi:28: error: Name "Callable" is not defined  [name-defined]
+rich/theme.pyi:28: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Callable")
+rich/segment.pyi:8: error: Module "rich.cells" has no attribute "_is_single_cell_widths"  [attr-defined]
+rich/segment.pyi:14: error: Detected enum "rich.segment.ControlType" in a type stub with zero members. There is a chance this is due to a recent change in the semantics of enum membership. If so, use `member = value` to mark an enum member, instead of `member: type`  [misc]
+rich/segment.pyi:14: note: See https://typing.readthedocs.io/en/latest/spec/enums.html#defining-members
+rich/pretty.pyi:54: error: Name "_attr_module" is not defined  [name-defined]
+rich/markup.pyi:12: error: Missing type parameters for generic type "Pattern"  [type-arg]
+rich/markup.pyi:13: error: Missing type parameters for generic type "Pattern"  [type-arg]
+rich/highlighter.pyi:30: error: Missing type parameters for generic type "set"  [type-arg]
+rich/control.pyi:15: error: Type in Final[...] can only be omitted if there is an initializer  [misc]
+rich/control.pyi:16: error: Type in Final[...] can only be omitted if there is an initializer  [misc]
+rich/control.pyi:18: error: Type in Final[...] can only be omitted if there is an initializer  [misc]
+rich/containers.pyi:63: error: An implementation for an overloaded function is not allowed in a stub file  [misc]
+rich/_win32_console.pyi:25: error: Cannot override class variable (previously declared on base class "Structure") with instance variable  [misc]
+rich/_win32_console.pyi:25: error: Missing type parameters for generic type "list"  [type-arg]
+rich/_win32_console.pyi:28: error: Cannot override class variable (previously declared on base class "Structure") with instance variable  [misc]
+rich/_win32_console.pyi:28: error: Missing type parameters for generic type "list"  [type-arg]
+rich/_win32_console.pyi:68: error: Missing type parameters for generic type "IO"  [type-arg]
+rich/_win32_console.pyi:72: error: Missing type parameters for generic type "IO"  [type-arg]
+rich/progress.pyi:118: error: Function is missing a return type annotation  [no-untyped-def]
+rich/progress.pyi:118: error: Argument 1 of "readinto" is incompatible with supertype "_RawIOBase"; supertype defines the argument type as "Buffer"  [override]
+rich/progress.pyi:118: note: This violates the Liskov substitution principle
+rich/progress.pyi:118: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+rich/progress.pyi:119: error: Argument 1 of "readline" is incompatible with supertype "_IOBase"; supertype defines the argument type as "Optional[int]"  [override]
+rich/progress.pyi:119: note: This violates the Liskov substitution principle
+rich/progress.pyi:119: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+rich/markdown.pyi:109: error: Cannot override class variable (previously declared on base class "MarkdownElement") with instance variable  [misc]
+rich/markdown.pyi:180: error: Cannot override class variable (previously declared on base class "MarkdownElement") with instance variable  [misc]
+rich/markdown.pyi:214: error: Missing type parameters for generic type "set"  [type-arg]
+rich/traceback.pyi:114: error: Name "SyntaxTheme" is not defined  [name-defined]
+Warning: unused section(s) in pyproject.toml: module = ['IPython.*', 'ipywidgets.*']
+Found 32 errors in 16 files (checked 78 source files)

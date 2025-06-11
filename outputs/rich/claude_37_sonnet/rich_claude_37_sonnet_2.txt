@@ -1,0 +1,10 @@
+rich/pretty.pyi:54: error: Name "Generic" is not defined  [name-defined]
+rich/pretty.pyi:54: error: Class cannot subclass value of type "Any"  [misc]
+rich/containers.pyi:63: error: An implementation for an overloaded function is not allowed in a stub file  [misc]
+rich/_win32_console.pyi:25: error: Cannot over  ride class variable (previously declared on base class "Structure") with instance variable  [misc]
+rich/_win32_console.pyi:28: error: Cannot override class variable (previously declared on base class "Structure") with instance variable  [misc]
+rich/progress.pyi:10: error: Module "typing" has no attribute "Buffer"  [attr-defined]
+rich/progress.pyi:10: note: Use `from typing_extensions import Buffer` instead
+rich/progress.pyi:10: note: See https://mypy.readthedocs.io/en/stable/runtime_troubles.html#using-new-additions-to-the-typing-module
+Warning: unused section(s) in pyproject.toml: module = ['IPython.*', 'ipywidgets.*']
+Found 6 errors in 4 files (checked 78 source files)

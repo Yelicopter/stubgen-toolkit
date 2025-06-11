@@ -1,0 +1,16 @@
+from typing import Callable, List
+
+def cached_cell_len(text: str) -> int:
+    ...
+
+def cell_len(text: str, _cell_len: Callable[[str], int] = cached_cell_len) -> int:
+    ...
+
+def get_character_cell_size(character: str) -> int:
+    ...
+
+def set_cell_size(text: str, total: int) -> str:
+    ...
+
+def chop_cells(text: str, width: int) -> List[str]:
+    ...
