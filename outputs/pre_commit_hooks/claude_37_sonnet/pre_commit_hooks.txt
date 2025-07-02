@@ -1,0 +1,97 @@
+pre_commit_hooks/trailing_whitespace_fixer.pyi:18: error: Incompatible types in assignment (expression has type "BufferedWriter", variable has type "BufferedReader")  [assignment]
+pre_commit_hooks/trailing_whitespace_fixer.pyi:45: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/trailing_whitespace_fixer.pyi:45: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/trailing_whitespace_fixer.pyi:45: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/tests_should_end_in_test.pyi:10: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/tests_should_end_in_test.pyi:10: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/tests_should_end_in_test.pyi:10: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/sort_simple_yaml.pyi:103: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/sort_simple_yaml.pyi:103: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/sort_simple_yaml.pyi:103: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/requirements_txt_fixer.pyi:145: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/requirements_txt_fixer.pyi:145: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/requirements_txt_fixer.pyi:145: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/removed.pyi:8: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/removed.pyi:8: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/removed.pyi:8: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/mixed_line_ending.pyi:66: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/mixed_line_ending.pyi:66: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/mixed_line_ending.pyi:66: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/fix_byte_order_marker.pyi:8: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/fix_byte_order_marker.pyi:8: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/fix_byte_order_marker.pyi:8: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/file_contents_sorter.pyi:51: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/file_contents_sorter.pyi:51: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/file_contents_sorter.pyi:51: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/end_of_file_fixer.pyi:52: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/end_of_file_fixer.pyi:52: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/end_of_file_fixer.pyi:52: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/detect_private_key.pyi:21: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/detect_private_key.pyi:21: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/detect_private_key.pyi:21: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/detect_aws_credentials.pyi:92: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/detect_aws_credentials.pyi:92: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/detect_aws_credentials.pyi:92: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/debug_statement_hook.pyi:74: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/debug_statement_hook.pyi:74: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/debug_statement_hook.pyi:74: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_vcs_permalinks.pyi:32: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_vcs_permalinks.pyi:32: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_vcs_permalinks.pyi:32: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_symlinks.pyi:9: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_symlinks.pyi:9: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_symlinks.pyi:9: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_builtin_literals.pyi:72: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_builtin_literals.pyi:72: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_builtin_literals.pyi:72: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_ast.pyi:12: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_ast.pyi:12: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_ast.pyi:12: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/string_fixer.pyi:77: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/string_fixer.pyi:77: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/string_fixer.pyi:77: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/pretty_format_json.pyi:58: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/pretty_format_json.pyi:58: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/pretty_format_json.pyi:58: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/no_commit_to_branch.pyi:27: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/no_commit_to_branch.pyi:27: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/no_commit_to_branch.pyi:27: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/forbid_new_submodules.pyi:11: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/forbid_new_submodules.pyi:11: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/forbid_new_submodules.pyi:11: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/destroyed_symlinks.pyi:70: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/destroyed_symlinks.pyi:70: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/destroyed_symlinks.pyi:70: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_merge_conflict.pyi:32: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_merge_conflict.pyi:32: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_merge_conflict.pyi:32: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_json.pyi:21: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_json.pyi:21: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_json.pyi:21: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_executables_have_shebangs.pyi:75: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_executables_have_shebangs.pyi:75: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_executables_have_shebangs.pyi:75: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_docstring_first.pyi:50: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_docstring_first.pyi:50: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_docstring_first.pyi:50: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_case_conflict.pyi:30: error: Invalid type alias: expression is not a valid type  [valid-type]
+pre_commit_hooks/check_case_conflict.pyi:58: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_case_conflict.pyi:58: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_case_conflict.pyi:58: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_added_large_files.pyi:58: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_added_large_files.pyi:58: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_added_large_files.pyi:58: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_shebang_scripts_are_executable.pyi:46: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_shebang_scripts_are_executable.pyi:46: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_shebang_scripts_are_executable.pyi:46: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_xml.pyi:9: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_xml.pyi:9: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_xml.pyi:9: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_toml.pyi:14: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_toml.pyi:14: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_toml.pyi:14: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_yaml.pyi:38: error: Incompatible default for argument "argv" (default has type "None", argument has type "Sequence[str]")  [assignment]
+pre_commit_hooks/check_yaml.pyi:38: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pre_commit_hooks/check_yaml.pyi:38: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pre_commit_hooks/check_yaml.pyi:62: error: Cannot call function of unknown type  [operator]
+Found 34 errors in 31 files (checked 33 source files)

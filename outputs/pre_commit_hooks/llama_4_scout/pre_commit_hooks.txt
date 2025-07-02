@@ -1,0 +1,6 @@
+pre_commit_hooks/debug_statement_hook.pyi:9: error: Incompatible types in assignment (expression has type "dict[<nothing>, <nothing>]", variable has type "set[str]")  [assignment]
+pre_commit_hooks/pretty_format_json.pyi:12: error: Name "Any" is not defined  [name-defined]
+pre_commit_hooks/pretty_format_json.pyi:12: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pre_commit_hooks/pretty_format_json.pyi:22: error: Name "Any" is not defined  [name-defined]
+pre_commit_hooks/pretty_format_json.pyi:22: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+Found 3 errors in 2 files (checked 33 source files)

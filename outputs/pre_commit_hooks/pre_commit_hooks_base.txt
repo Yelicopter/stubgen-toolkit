@@ -1,0 +1,4 @@
+pre_commit_hooks/check_executables_have_shebangs.py:38: error: "Generator" expects 3 type arguments, but 1 given  [type-arg]
+pre_commit_hooks/check_yaml.py:14: error: "Generator" expects 3 type arguments, but 1 given  [type-arg]
+pre_commit_hooks/check_yaml.py:64: error: Cannot call function of unknown type  [operator]
+Found 3 errors in 2 files (checked 33 source files)
