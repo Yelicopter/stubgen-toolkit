@@ -1,0 +1,6 @@
+youtube_transcript_api/_api.pyi:29: error: Name "list_transcripts" already defined on line 26  [no-redef]
+youtube_transcript_api/_cli.pyi:7: error: Module "youtube_transcript_api._api" does not explicitly export attribute "FetchedTranscript"  [attr-defined]
+youtube_transcript_api/_cli.pyi:7: error: Module "youtube_transcript_api._api" does not explicitly export attribute "TranscriptList"  [attr-defined]
+youtube_transcript_api/__init__.pyi:2: error: Module "youtube_transcript_api._transcripts" has no attribute "Transcript"; maybe "TranscriptList"?  [attr-defined]
+youtube_transcript_api/__init__.pyi:2: error: Module "youtube_transcript_api._transcripts" has no attribute "FetchedTranscriptSnippet"; maybe "FetchedTranscript"?  [attr-defined]
+Found 5 errors in 3 files (checked 9 source files)

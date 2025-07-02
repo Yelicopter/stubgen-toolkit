@@ -1,0 +1,9 @@
+youtube_transcript_api/_api.pyi:39: error: Function "youtube_transcript_api._api.YouTubeTranscriptApi.list" is not valid as a type  [valid-type]
+youtube_transcript_api/_api.pyi:39: note: Perhaps you need "Callable[...]" or a callback protocol?
+youtube_transcript_api/_api.pyi:44: error: Function "youtube_transcript_api._api.YouTubeTranscriptApi.list" is not valid as a type  [valid-type]
+youtube_transcript_api/_api.pyi:44: note: Perhaps you need "Callable[...]" or a callback protocol?
+youtube_transcript_api/_api.pyi:54: error: Function "youtube_transcript_api._api.YouTubeTranscriptApi.list" is not valid as a type  [valid-type]
+youtube_transcript_api/_api.pyi:54: note: Perhaps you need "Callable[...]" or a callback protocol?
+youtube_transcript_api/_cli.pyi:7: error: Module "youtube_transcript_api._api" does not explicitly export attribute "FetchedTranscript"  [attr-defined]
+youtube_transcript_api/_cli.pyi:7: error: Module "youtube_transcript_api._api" does not explicitly export attribute "TranscriptList"  [attr-defined]
+Found 5 errors in 2 files (checked 9 source files)

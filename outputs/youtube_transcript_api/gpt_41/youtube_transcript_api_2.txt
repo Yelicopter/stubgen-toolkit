@@ -1,0 +1,3 @@
+youtube_transcript_api/proxies.pyi:21: error: Class youtube_transcript_api.proxies.GenericProxyConfig has abstract attributes "prevent_keeping_connections_alive", "retries_when_blocked"  [misc]
+youtube_transcript_api/proxies.pyi:21: note: If it is meant to be abstract, add 'abc.ABCMeta' as an explicit metaclass
+Found 1 errors in 1 files (checked 9 source files)

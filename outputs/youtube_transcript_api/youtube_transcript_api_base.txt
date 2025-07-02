@@ -1,0 +1,15 @@
+youtube_transcript_api/proxies.py:86: error: Incompatible types (expression has type "str | None", TypedDict item "http" has type "str")  [typeddict-item]
+youtube_transcript_api/proxies.py:87: error: Incompatible types (expression has type "str | None", TypedDict item "https" has type "str")  [typeddict-item]
+youtube_transcript_api/proxies.py:156: error: Cannot override writeable attribute with read-only property  [override]
+youtube_transcript_api/proxies.py:160: error: Cannot override writeable attribute with read-only property  [override]
+youtube_transcript_api/test/test_proxies.py:1: error: Cannot find implementation or library stub for module named "pytest"  [import-not-found]
+youtube_transcript_api/_errors.py:188: error: Incompatible types in assignment (expression has type "ProxyConfig | None", variable has type "None")  [assignment]
+youtube_transcript_api/_errors.py:253: error: Name "TranscriptList" is not defined  [name-defined]
+youtube_transcript_api/_transcripts.py:224: error: Need type annotation for "manually_created_transcripts" (hint: "manually_created_transcripts: dict[<type>, <type>] = ...")  [var-annotated]
+youtube_transcript_api/_transcripts.py:225: error: Need type annotation for "generated_transcripts" (hint: "generated_transcripts: dict[<type>, <type>] = ...")  [var-annotated]
+youtube_transcript_api/_transcripts.py:383: error: Argument 1 to "_assert_playability" of "TranscriptListFetcher" has incompatible type "Any | None"; expected "dict[Any, Any]"  [arg-type]
+youtube_transcript_api/_api.py:38: error: Incompatible types in assignment (expression has type "RequestsProxyConfigDict", variable has type "MutableMapping[str, str]")
+  [assignment]
+youtube_transcript_api/_cli.py:50: error: Argument 1 to "append" of "list" has incompatible type "FetchedTranscript"; expected "TranscriptList"  [arg-type]
+youtube_transcript_api/_cli.py:68: error: Argument 1 to "format_transcripts" of "Formatter" has incompatible type "list[TranscriptList]"; expected "list[FetchedTranscript]"  [arg-type]
+Found 12 errors in 8 files (checked 15 source files)

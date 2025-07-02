@@ -1,0 +1,11 @@
+youtube_transcript_api/proxies.pyi:51: error: Cannot override writeable attribute with read-only property  [override]
+youtube_transcript_api/proxies.pyi:54: error: Cannot override writeable attribute with read-only property  [override]
+youtube_transcript_api/_settings.pyi:3: error: Name "Dict" is not defined  [name-defined]
+youtube_transcript_api/_settings.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+youtube_transcript_api/_transcripts.pyi:36: error: Detected enum "youtube_transcript_api._transcripts._PlayabilityStatus" in a type stub with zero members. There is a chance this is due to a recent change in the semantics of enum membership. If so, use `member = value` to mark an enum member, instead of `member: type`  [misc]
+youtube_transcript_api/_transcripts.pyi:36: note: See https://typing.readthedocs.io/en/latest/spec/enums.html#defining-members
+youtube_transcript_api/_transcripts.pyi:41: error: Detected enum "youtube_transcript_api._transcripts._PlayabilityFailedReason" in a type stub with zero members. There is a chance this is due to a recent change in the semantics of enum membership. If so, use `member = value` to mark an enum member, instead of `member: type`  [misc]
+youtube_transcript_api/_transcripts.pyi:41: note: See https://typing.readthedocs.io/en/latest/spec/enums.html#defining-members
+youtube_transcript_api/_cli.pyi:6: error: Module "youtube_transcript_api._api" does not explicitly export attribute "FetchedTranscript"  [attr-defined]
+youtube_transcript_api/_cli.pyi:6: error: Module "youtube_transcript_api._api" does not explicitly export attribute "TranscriptList"  [attr-defined]
+Found 7 errors in 4 files (checked 9 source files)
