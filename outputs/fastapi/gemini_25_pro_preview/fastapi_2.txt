@@ -1,0 +1,40 @@
+fastapi/concurrency.pyi:12: error: Argument 1 to "asynccontextmanager" has incompatible type "Callable[[AbstractContextManager[_T]], Coroutine[Any, Any, AsyncIterator[_T]]]"; expected "Callable[[AbstractContextManager[_T]], AsyncIterator[<nothing>]]"  [arg-type]
+fastapi/_compat.pyi:42: error: Module "pydantic.json_schema" does not explicitly export attribute "GetJsonSchemaHandler"  [attr-defined]
+fastapi/_compat.pyi:128: error: Incompatible import of "BaseConfig" (imported name has type "type[pydantic.deprecated.config.BaseConfig]", local name has type "type[fastapi._compat.BaseConfig]")  [assignment]
+fastapi/_compat.pyi:130: error: Name "Validator" already defined on line 55  [no-redef]
+fastapi/_compat.pyi:131: error: Name "ErrorWrapper" already defined on line 57  [no-redef]
+fastapi/_compat.pyi:134: error: Module "pydantic.fields" has no attribute "ModelField"  [attr-defined]
+fastapi/_compat.pyi:134: error: Name "ModelField" already defined on line 59  [no-redef]
+fastapi/_compat.pyi:135: error: Module "pydantic.fields" has no attribute "Undefined"  [attr-defined]
+fastapi/_compat.pyi:135: error: Name "Undefined" already defined on line 52  [no-redef]
+fastapi/_compat.pyi:136: error: Module "pydantic.fields" has no attribute "UndefinedType"  [attr-defined]
+fastapi/_compat.pyi:136: error: Name "UndefinedType" already defined on line 53  [no-redef]
+fastapi/_compat.pyi:143: error: Name "get_annotation_from_field_info" already defined on line 90  [no-redef]
+fastapi/_compat.pyi:144: error: Name "evaluate_forwardref" already defined on line 54  [no-redef]
+fastapi/_compat.pyi:145: error: Name "lenient_issubclass" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:147: error: Name "RequiredParam" already defined on line 51  [no-redef]
+fastapi/_compat.pyi:148: error: Name "GetJsonSchemaHandler" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:149: error: Name "JsonSchemaValue" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:150: error: Name "CoreSchema" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:161: error: Name "GenerateJsonSchema" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:163: error: Name "PydanticSchemaGenerationError" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:164: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:164: note: Original:
+fastapi/_compat.pyi:164: note:     def with_info_plain_validator_function(function: Callable[[Any, ValidationInfo], Any], *, field_name: str | None = ..., ref: str | No
+ne = ..., json_schema_input_schema: Mapping[str, Any] | None = ..., metadata: dict[str, Any] | None = ..., serialization: SimpleSerSchema | PlainSerializerFunctionSerSchema | WrapSerializerFunctionSerSchema | FormatSerSchema | ToStringSerSchema | ModelSerSchema | None = ...) -> PlainValidatorFunctionSchema
+fastapi/_compat.pyi:164: note: Redefinition:
+fastapi/_compat.pyi:164: note:     def with_info_plain_validator_function(function: Callable[..., Any], *, ref: str | None = ..., metadata: Any = ..., serialization: Any = ...) -> dict[str, Any]
+fastapi/_compat.pyi:180: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:180: note: Original:
+fastapi/_compat.pyi:180: note:     def get_schema_from_model_field(*, field: ModelField, schema_generator: Any, model_name_map: dict[type[BaseModel] | type[Enum], str], field_mapping: dict[tuple[ModelField, str], dict[str, Any]], separate_input_output_schemas: bool = ...) -> dict[str, Any]
+fastapi/_compat.pyi:180: note: Redefinition:
+fastapi/_compat.pyi:180: note:     def get_schema_from_model_field(*, field: ModelField, schema_generator: Any, model_name_map: dict[type[BaseModel] | type[Enum], str], field_mapping: Any, separate_input_output_schemas: bool = ...) -> dict[str, Any]
+fastapi/_compat.pyi:189: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:189: note: Original:
+fastapi/_compat.pyi:189: note:     def get_definitions(*, fields: list[ModelField], schema_generator: Any, model_name_map: dict[type[BaseModel] | type[Enum], str], separate_input_output_schemas: bool = ...) -> tuple[dict[tuple[ModelField, str], dict[str, Any]], dict[str, Any]]
+fastapi/_compat.pyi:189: note: Redefinition:
+fastapi/_compat.pyi:189: note:     def get_definitions(*, fields: list[ModelField], schema_generator: Any, model_name_map: dict[type[BaseModel] | type[Enum], str], separate_input_output_schemas: bool = ...) -> tuple[dict[str, Any], dict[str, Any]]
+fastapi/openapi/models.pyi:32: error: Incompatible types in assignment (expression has type "dict[str, Any]", base class "BaseModel" defined the type as "ConfigDict")  [assignment]
+fastapi/utils.pyi:45: error: Variable "fastapi._compat.UndefinedType" is not valid as a type  [valid-type]
+fastapi/utils.pyi:45: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+Found 25 errors in 4 files (checked 44 source files)

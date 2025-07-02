@@ -1,0 +1,34 @@
+fastapi/openapi/models.pyi:27: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+fastapi/_compat.pyi:125: error: Name "Validator" already defined on line 39  [no-redef]
+fastapi/_compat.pyi:126: error: Name "ErrorWrapper" already defined on line 44  [no-redef]
+fastapi/_compat.pyi:129: error: Module "pydantic.fields" has no attribute "ModelField"  [attr-defined]
+fastapi/_compat.pyi:129: error: Name "ModelField" already defined on line 47  [no-redef]
+fastapi/_compat.pyi:131: error: Name "get_annotation_from_field_info" already defined on line 83  [no-redef]
+fastapi/_compat.pyi:132: error: Name "evaluate_forwardref" already defined on line 38  [no-redef]
+fastapi/_compat.pyi:133: error: Name "lenient_issubclass" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:135: error: Name "RequiredParam" already defined on line 35  [no-redef]
+fastapi/_compat.pyi:136: error: Name "Undefined" already defined on line 36  [no-redef]
+fastapi/_compat.pyi:137: error: Name "UndefinedType" already defined on line 37  [no-redef]
+fastapi/_compat.pyi:139: error: Name "GetJsonSchemaHandler" already defined on line 40  [no-redef]
+fastapi/_compat.pyi:140: error: Name "JsonSchemaValue" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:141: error: Name "CoreSchema" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:147: error: Name "GenerateJsonSchema" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:150: error: Name "PydanticSchemaGenerationError" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:152: error: Name "BaseConfig" already defined on line 42  [no-redef]
+fastapi/_compat.pyi:154: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:154: note: Original:
+fastapi/_compat.pyi:154: note:     def with_info_plain_validator_function(function: Callable[[Any, ValidationInfo], Any], *, field_name: str | None = ..., ref: str | No
+ne = ..., json_schema_input_schema: Mapping[str, Any] | None = ..., metadata: dict[str, Any] | None = ..., serialization: SimpleSerSchema | PlainSerializerFunctionSerSchema | WrapSerializerFunctionSerSchema | FormatSerSchema | ToStringSerSchema | ModelSerSchema | None = ...) -> PlainValidatorFunctionSchema
+fastapi/_compat.pyi:154: note: Redefinition:
+fastapi/_compat.pyi:154: note:     def with_info_plain_validator_function(function: Callable[..., Any], *, ref: str | None = ..., metadata: Any = ..., serialization: Any = ...) -> Any
+fastapi/utils.pyi:18: error: Module "fastapi._compat" does not explicitly export attribute "PydanticSchemaGenerationError"  [attr-defined]
+fastapi/utils.pyi:18: error: Module "fastapi._compat" does not explicitly export attribute "lenient_issubclass"  [attr-defined]
+fastapi/utils.pyi:49: error: Variable "fastapi._compat.UndefinedType" is not valid as a type  [valid-type]
+fastapi/utils.pyi:49: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+fastapi/dependencies/utils.pyi:8: error: Module "fastapi._compat" does not explicitly export attribute "lenient_issubclass"  [attr-defined]
+fastapi/dependencies/utils.pyi:10: error: Module "fastapi.concurrency" does not explicitly export attribute "asynccontextmanager"  [attr-defined]
+fastapi/dependencies/utils.pyi:71: error: Missing type parameters for generic type "ImmutableMultiDict"  [type-arg]
+fastapi/openapi/utils.pyi:6: error: Module "fastapi._compat" does not explicitly export attribute "GenerateJsonSchema"  [attr-defined]
+fastapi/openapi/utils.pyi:6: error: Module "fastapi._compat" does not explicitly export attribute "JsonSchemaValue"  [attr-defined]
+fastapi/openapi/utils.pyi:6: error: Module "fastapi._compat" does not explicitly export attribute "lenient_issubclass"  [attr-defined]
+Found 27 errors in 5 files (checked 44 source files)

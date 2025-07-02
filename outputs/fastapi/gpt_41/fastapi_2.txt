@@ -1,0 +1,30 @@
+fastapi/concurrency.pyi:6: error: Argument 1 to "asynccontextmanager" has incompatible type "Callable[[AbstractContextManager[_T]], Coroutine[Any, Any, AsyncGenerator[_T, None]]]"; expected "Callable[[AbstractContextManager[_T]], AsyncIterator[<nothing>]]"  [arg-type]
+fastapi/security/http.pyi:37: error: Return type "Coroutine[Any, Any, HTTPBasicCredentials | None]" of "__call__" incompatible with return type "Coroutine[Any, Any, HTTPAuthorizationCredentials | None]" in supertype "HTTPBase"  [override]
+fastapi/_compat.pyi:33: error: Module "pydantic._internal._schema_generation_shared" does not explicitly export attribute "GetJsonSchemaHandler"  [attr-defined]
+fastapi/_compat.pyi:134: error: Incompatible import of "Url" (imported name has type "type[AnyUrl]", local name has type "type[Url]")  [assignment]
+fastapi/_compat.pyi:135: error: Incompatible import of "BaseConfig" (imported name has type "type[pydantic.deprecated.config.BaseConfig]", local name has type "type[fastapi._compat.BaseConfig]")  [assignment]
+fastapi/_compat.pyi:137: error: Name "Validator" already defined on line 52  [no-redef]
+fastapi/_compat.pyi:138: error: Name "ErrorWrapper" already defined on line 57  [no-redef]
+fastapi/_compat.pyi:141: error: Module "pydantic.fields" has no attribute "ModelField"  [attr-defined]
+fastapi/_compat.pyi:141: error: Name "ModelField" already defined on line 60  [no-redef]
+fastapi/_compat.pyi:142: error: Name "RequiredParam" already defined on line 48  [no-redef]
+fastapi/_compat.pyi:143: error: Module "pydantic.fields" has no attribute "Undefined"  [attr-defined]
+fastapi/_compat.pyi:143: error: Name "Undefined" already defined on line 49  [no-redef]
+fastapi/_compat.pyi:144: error: Module "pydantic.fields" has no attribute "UndefinedType"  [attr-defined]
+fastapi/_compat.pyi:144: error: Name "UndefinedType" already defined on line 50  [no-redef]
+fastapi/_compat.pyi:151: error: Name "get_annotation_from_field_info" already defined on line 95  [no-redef]
+fastapi/_compat.pyi:152: error: Name "evaluate_forwardref" already defined on line 51  [no-redef]
+fastapi/_compat.pyi:153: error: Name "lenient_issubclass" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:155: error: Name "GetJsonSchemaHandler" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:156: error: Name "JsonSchemaValue" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:157: error: Name "CoreSchema" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:162: error: Name "GenerateJsonSchema" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:165: error: Name "PydanticSchemaGenerationError" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:168: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:168: note: Original:
+fastapi/_compat.pyi:168: note:     def with_info_plain_validator_function(function: Callable[[Any, ValidationInfo], Any], *, field_name: str | None = ..., ref: str | No
+ne = ..., json_schema_input_schema: Mapping[str, Any] | None = ..., metadata: dict[str, Any] | None = ..., serialization: SimpleSerSchema | PlainSerializerFunctionSerSchema | WrapSerializerFunctionSerSchema | FormatSerSchema | ToStringSerSchema | ModelSerSchema | None = ...) -> PlainValidatorFunctionSchema
+fastapi/_compat.pyi:168: note: Redefinition:
+fastapi/_compat.pyi:168: note:     def with_info_plain_validator_function(function: Any, *, ref: Any = ..., metadata: Any = ..., serialization: Any = ...) -> Any
+fastapi/applications.pyi:41: error: Incompatible types in assignment (expression has type "APIRouter", base class "Starlette" defined the type as "Router")  [assignment]
+Found 24 errors in 4 files (checked 44 source files)

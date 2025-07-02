@@ -1,0 +1,255 @@
+fastapi/concurrency.pyi:19: error: Argument 1 to "asynccontextmanager" has incompatible type "Callable[[AbstractContextManager[Any]], Coroutine[Any, Any, AsyncGenerator[_T, None]]]"; expected "Callable[[AbstractContextManager[Any]], AsyncIterator[<nothing>]]"  [arg-type]
+fastapi/responses.pyi:16: error: Incompatible types in assignment (expression has type "None", variable has type Module)  [assignment]
+fastapi/responses.pyi:21: error: Incompatible types in assignment (expression has type "None", variable has type Module)  [assignment]
+fastapi/background.pyi:4: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/exceptions.pyi:6: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/encoders.pyi:25: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/encoders.pyi:36: error: Incompatible default for argument "custom_encoder" (default has type "None", argument has type "dict[Any, Callable[[Any], Any]]")
+  [assignment]
+fastapi/encoders.pyi:36: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/encoders.pyi:36: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/_compat.pyi:37: error: Module "pydantic._internal._schema_generation_shared" does not explicitly export attribute "GetJsonSchemaHandler"  [attr-defined]
+fastapi/_compat.pyi:77: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:77: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/_compat.pyi:83: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:83: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/_compat.pyi:84: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:84: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/_compat.pyi:129: error: Incompatible import of "BaseConfig" (imported name has type "type[pydantic.deprecated.config.BaseConfig]", local name has type "type[fastapi._compat.BaseConfig]")  [assignment]
+fastapi/_compat.pyi:131: error: Name "Validator" already defined on line 56  [no-redef]
+fastapi/_compat.pyi:132: error: Name "ErrorWrapper" already defined on line 58  [no-redef]
+fastapi/_compat.pyi:134: error: Module "pydantic.fields" has no attribute "SHAPE_FROZENSET"  [attr-defined]
+fastapi/_compat.pyi:134: error: Module "pydantic.fields" has no attribute "SHAPE_LIST"  [attr-defined]
+fastapi/_compat.pyi:134: error: Module "pydantic.fields" has no attribute "SHAPE_SEQUENCE"  [attr-defined]
+fastapi/_compat.pyi:134: error: Module "pydantic.fields" has no attribute "SHAPE_SET"  [attr-defined]
+fastapi/_compat.pyi:134: error: Module "pydantic.fields" has no attribute "SHAPE_SINGLETON"  [attr-defined]
+fastapi/_compat.pyi:134: error: Module "pydantic.fields" has no attribute "SHAPE_TUPLE"  [attr-defined]
+fastapi/_compat.pyi:134: error: Module "pydantic.fields" has no attribute "SHAPE_TUPLE_ELLIPSIS"  [attr-defined]
+fastapi/_compat.pyi:144: error: Module "pydantic.fields" has no attribute "ModelField"  [attr-defined]
+fastapi/_compat.pyi:144: error: Name "ModelField" already defined on line 60  [no-redef]
+fastapi/_compat.pyi:145: error: Module "pydantic.fields" has no attribute "Undefined"  [attr-defined]
+fastapi/_compat.pyi:145: error: Name "Undefined" already defined on line 53  [no-redef]
+fastapi/_compat.pyi:146: error: Module "pydantic.fields" has no attribute "UndefinedType"  [attr-defined]
+fastapi/_compat.pyi:146: error: Name "UndefinedType" already defined on line 54  [no-redef]
+fastapi/_compat.pyi:153: error: Name "get_annotation_from_field_info" already defined on line 91  [no-redef]
+fastapi/_compat.pyi:154: error: Name "evaluate_forwardref" already defined on line 55  [no-redef]
+fastapi/_compat.pyi:155: error: Name "lenient_issubclass" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:157: error: Name "RequiredParam" already defined on line 52  [no-redef]
+fastapi/_compat.pyi:158: error: Name "GetJsonSchemaHandler" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:159: error: Name "JsonSchemaValue" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:160: error: Name "CoreSchema" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:164: error: Name "GenerateJsonSchema" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:166: error: Name "PydanticSchemaGenerationError" already defined (possibly by an import)  [no-redef]
+fastapi/_compat.pyi:167: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:167: note: Original:
+fastapi/_compat.pyi:167: note:     def with_info_plain_validator_function(function: Callable[[Any, ValidationInfo], Any], *, field_name: str | None = ..., ref: s
+tr | None = ..., json_schema_input_schema: Mapping[str, Any] | None = ..., metadata: dict[str, Any] | None = ..., serialization: SimpleSerSchema | PlainSerializerFunctionSerSchema | WrapSerializerFunctionSerSchema | FormatSerSchema | ToStringSerSchema | ModelSerSchema | None = ...) -> PlainValidatorFunctionSchema
+fastapi/_compat.pyi:167: note: Redefinition:
+fastapi/_compat.pyi:167: note:     def with_info_plain_validator_function(function: Callable[..., Any], *, ref: Any = ..., metadata: Any = ..., serialization: Any = ...) -> dict[str, Any]
+fastapi/_compat.pyi:170: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:170: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/_compat.pyi:182: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:182: note: Original:
+fastapi/_compat.pyi:182: note:     def _get_model_config(model: type[BaseModel]) -> dict[str, Any]
+fastapi/_compat.pyi:182: note: Redefinition:
+fastapi/_compat.pyi:182: note:     def _get_model_config(model: type[BaseModel]) -> type[BaseConfig]
+fastapi/_compat.pyi:183: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:183: note: Original:
+fastapi/_compat.pyi:183: note:     def get_schema_from_model_field(*, field: ModelField, schema_generator: GenerateJsonSchema, model_name_map: dict[type[BaseModel] | type[Enum], str], field_mapping: dict[tuple[ModelField, str], dict[str, Any]], separate_input_output_schemas: bool = ...) -> dict[str, Any]
+fastapi/_compat.pyi:183: note: Redefinition:
+fastapi/_compat.pyi:183: note:     def get_schema_from_model_field(*, field: ModelField, schema_generator: Any, model_name_map: dict[type[BaseModel] | type[Enum], str], field_mapping: Any, separate_input_output_schemas: bool = ...) -> dict[str, Any]
+fastapi/_compat.pyi:192: error: All conditional function variants must have identical signatures  [misc]
+fastapi/_compat.pyi:192: note: Original:
+fastapi/_compat.pyi:192: note:     def get_definitions(*, fields: list[ModelField], schema_generator: GenerateJsonSchema, model_name_map: dict[type[BaseModel] | type[Enum], str], separate_input_output_schemas: bool = ...) -> tuple[dict[tuple[ModelField, str], dict[str, Any]], dict[str, Any]]
+fastapi/_compat.pyi:192: note: Redefinition:
+fastapi/_compat.pyi:192: note:     def get_definitions(*, fields: list[ModelField], schema_generator: Any, model_name_map: dict[type[BaseModel] | type[Enum], str], separate_input_output_schemas: bool = ...) -> tuple[dict[str, Any], dict[str, Any]]
+fastapi/_compat.pyi:214: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:214: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/_compat.pyi:215: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:215: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/_compat.pyi:217: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:217: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/_compat.pyi:218: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:218: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/_compat.pyi:220: error: Name "Optional" is not defined  [name-defined]
+fastapi/_compat.pyi:220: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+fastapi/datastructures.pyi:28: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/openapi/docs.pyi:6: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/params.pyi:7: error: Name "Undefined" is not defined  [name-defined]
+fastapi/params.pyi:9: error: Name "Enum" is not defined  [name-defined]
+fastapi/params.pyi:9: error: Class cannot subclass "Enum" (has type "Any")  [misc]
+fastapi/params.pyi:20: error: Name "Undefined" is not defined  [name-defined]
+fastapi/params.pyi:22: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/params.pyi:69: error: Name "Undefined" is not defined  [name-defined]
+fastapi/params.pyi:71: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/params.pyi:114: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/security/http.pyi:13: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/dependencies/models.pyi:9: error: Incompatible types in assignment (expression has type "None", variable has type "list[str]")  [assignment]
+fastapi/dependencies/models.pyi:20: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+fastapi/dependencies/models.pyi:21: error: Incompatible types in assignment (expression has type "None", variable has type "Callable[..., Any]")  [assignment]
+fastapi/dependencies/models.pyi:22: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+fastapi/dependencies/models.pyi:23: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+fastapi/dependencies/models.pyi:24: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+fastapi/dependencies/models.pyi:25: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+fastapi/dependencies/models.pyi:26: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+fastapi/dependencies/models.pyi:27: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+fastapi/dependencies/models.pyi:28: error: Incompatible types in assignment (expression has type "None", variable has type "list[Any]")  [assignment]
+fastapi/dependencies/models.pyi:30: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+fastapi/param_functions.pyi:6: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/param_functions.pyi:13: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/param_functions.pyi:13: error: Incompatible default for argument "default_factory" (default has type "PydanticUndefinedType", argument has type "Callable[..., Any] | None")  [assignment]
+fastapi/param_functions.pyi:15: error: Incompatible default for argument "alias_priority" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:29: error: Incompatible default for argument "strict" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:31: error: Incompatible default for argument "allow_inf_nan" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:32: error: Incompatible default for argument "max_digits" (default has type "PydanticUndefinedType", argument has type "int | None")
+ [assignment]
+fastapi/param_functions.pyi:33: error: Incompatible default for argument "decimal_places" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:47: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/param_functions.pyi:47: error: Incompatible default for argument "default_factory" (default has type "PydanticUndefinedType", argument has type "Callable[..., Any] | None")  [assignment]
+fastapi/param_functions.pyi:49: error: Incompatible default for argument "alias_priority" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:63: error: Incompatible default for argument "strict" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:65: error: Incompatible default for argument "allow_inf_nan" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:66: error: Incompatible default for argument "max_digits" (default has type "PydanticUndefinedType", argument has type "int | None")
+ [assignment]
+fastapi/param_functions.pyi:67: error: Incompatible default for argument "decimal_places" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:81: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/param_functions.pyi:81: error: Incompatible default for argument "default_factory" (default has type "PydanticUndefinedType", argument has type "Callable[..., Any] | None")  [assignment]
+fastapi/param_functions.pyi:83: error: Incompatible default for argument "alias_priority" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:98: error: Incompatible default for argument "strict" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:100: error: Incompatible default for argument "allow_inf_nan" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:101: error: Incompatible default for argument "max_digits" (default has type "PydanticUndefinedType", argument has type "int | None")
+  [assignment]
+fastapi/param_functions.pyi:102: error: Incompatible default for argument "decimal_places" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:116: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/param_functions.pyi:116: error: Incompatible default for argument "default_factory" (default has type "PydanticUndefinedType", argument has type "Callable[..., Any] | None")  [assignment]
+fastapi/param_functions.pyi:118: error: Incompatible default for argument "alias_priority" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:132: error: Incompatible default for argument "strict" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:134: error: Incompatible default for argument "allow_inf_nan" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:135: error: Incompatible default for argument "max_digits" (default has type "PydanticUndefinedType", argument has type "int | None")
+  [assignment]
+fastapi/param_functions.pyi:136: error: Incompatible default for argument "decimal_places" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:150: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/param_functions.pyi:150: error: Incompatible default for argument "default_factory" (default has type "PydanticUndefinedType", argument has type "Callable[..., Any] | None")  [assignment]
+fastapi/param_functions.pyi:154: error: Incompatible default for argument "alias_priority" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:168: error: Incompatible default for argument "strict" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:170: error: Incompatible default for argument "allow_inf_nan" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:171: error: Incompatible default for argument "max_digits" (default has type "PydanticUndefinedType", argument has type "int | None")
+  [assignment]
+fastapi/param_functions.pyi:172: error: Incompatible default for argument "decimal_places" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:186: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/param_functions.pyi:186: error: Incompatible default for argument "default_factory" (default has type "PydanticUndefinedType", argument has type "Callable[..., Any] | None")  [assignment]
+fastapi/param_functions.pyi:189: error: Incompatible default for argument "alias_priority" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:203: error: Incompatible default for argument "strict" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:205: error: Incompatible default for argument "allow_inf_nan" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:206: error: Incompatible default for argument "max_digits" (default has type "PydanticUndefinedType", argument has type "int | None")
+  [assignment]
+fastapi/param_functions.pyi:207: error: Incompatible default for argument "decimal_places" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:221: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/param_functions.pyi:221: error: Incompatible default for argument "default_factory" (default has type "PydanticUndefinedType", argument has type "Callable[..., Any] | None")  [assignment]
+fastapi/param_functions.pyi:224: error: Incompatible default for argument "alias_priority" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:238: error: Incompatible default for argument "strict" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:240: error: Incompatible default for argument "allow_inf_nan" (default has type "PydanticUndefinedType", argument has type "bool | None")  [assignment]
+fastapi/param_functions.pyi:241: error: Incompatible default for argument "max_digits" (default has type "PydanticUndefinedType", argument has type "int | None")
+  [assignment]
+fastapi/param_functions.pyi:242: error: Incompatible default for argument "decimal_places" (default has type "PydanticUndefinedType", argument has type "int | None")  [assignment]
+fastapi/param_functions.pyi:254: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/param_functions.pyi:261: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/utils.pyi:28: error: Module "fastapi.datastructures" has no attribute "DefaultPlaceholder"  [attr-defined]
+fastapi/utils.pyi:28: error: Module "fastapi.datastructures" has no attribute "DefaultType"  [attr-defined]
+fastapi/utils.pyi:47: error: Name "List" is not defined  [name-defined]
+fastapi/utils.pyi:47: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+fastapi/utils.pyi:47: error: Name "Callable" is not defined  [name-defined]
+fastapi/utils.pyi:47: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Callable")
+fastapi/dependencies/utils.pyi:49: error: Module "fastapi.concurrency" does not explicitly export attribute "asynccontextmanager"  [attr-defined]
+fastapi/dependencies/utils.pyi:80: error: Incompatible default for argument "security_scopes" (default has type "None", argument has type "list[str]")  [assignment]
+fastapi/dependencies/utils.pyi:80: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:80: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/dependencies/utils.pyi:96: error: Incompatible default for argument "name" (default has type "None", argument has type "str")  [assignment]
+fastapi/dependencies/utils.pyi:96: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:96: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/dependencies/utils.pyi:97: error: Incompatible default for argument "security_scopes" (default has type "None", argument has type "list[str]")  [assignment]
+fastapi/dependencies/utils.pyi:97: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:97: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/dependencies/utils.pyi:105: error: Incompatible default for argument "visited" (default has type "None", argument has type "list[tuple[Callable[..., Any] | None, tuple[str, ...]]]")  [assignment]
+fastapi/dependencies/utils.pyi:105: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:105: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/dependencies/utils.pyi:125: error: Incompatible default for argument "name" (default has type "None", argument has type "str")  [assignment]
+fastapi/dependencies/utils.pyi:125: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:125: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/dependencies/utils.pyi:126: error: Incompatible default for argument "security_scopes" (default has type "None", argument has type "list[str]")  [assignment]
+fastapi/dependencies/utils.pyi:126: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:126: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/dependencies/utils.pyi:185: error: Incompatible default for argument "background_tasks" (default has type "None", argument has type "BackgroundTasks")  [assignment]
+fastapi/dependencies/utils.pyi:185: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:185: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/dependencies/utils.pyi:186: error: Incompatible default for argument "response" (default has type "None", argument has type "Response")  [assignment]
+fastapi/dependencies/utils.pyi:186: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:186: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/dependencies/utils.pyi:188: error: Incompatible default for argument "dependency_cache" (default has type "None", argument has type "dict[tuple[Callable[..., Any], tuple[str]], Any]")  [assignment]
+fastapi/dependencies/utils.pyi:188: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/dependencies/utils.pyi:188: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/routing.pyi:33: error: Module "fastapi.datastructures" has no attribute "Default"  [attr-defined]
+fastapi/routing.pyi:33: error: Module "fastapi.datastructures" has no attribute "DefaultPlaceholder"  [attr-defined]
+fastapi/routing.pyi:35: error: Module "fastapi.dependencies.utils" has no attribute "_should_embed_body_fields"  [attr-defined]
+fastapi/routing.pyi:76: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/openapi/utils.pyi:16: error: Module "fastapi.datastructures" has no attribute "DefaultPlaceholder"  [attr-defined]
+fastapi/openapi/utils.pyi:18: error: Module "fastapi.dependencies.utils" has no attribute "_get_flat_fields_from_params"  [attr-defined]
+fastapi/openapi/utils.pyi:18: error: Module "fastapi.dependencies.utils" has no attribute "get_flat_params"  [attr-defined]
+fastapi/openapi/utils.pyi:60: error: Incompatible default for argument "summary" (default has type "None", argument has type "str")  [assignment]
+fastapi/openapi/utils.pyi:60: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/openapi/utils.pyi:60: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/openapi/utils.pyi:61: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+fastapi/openapi/utils.pyi:61: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/openapi/utils.pyi:61: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/openapi/utils.pyi:63: error: Incompatible default for argument "webhooks" (default has type "None", argument has type "list[APIRoute]")  [assignment]
+fastapi/openapi/utils.pyi:63: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/openapi/utils.pyi:63: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/openapi/utils.pyi:64: error: Incompatible default for argument "tags" (default has type "None", argument has type "list[dict[str, Any]]")  [assignment]
+fastapi/openapi/utils.pyi:64: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/openapi/utils.pyi:64: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/openapi/utils.pyi:65: error: Incompatible default for argument "servers" (default has type "None", argument has type "list[dict[str, Any]]")  [assignment]
+fastapi/openapi/utils.pyi:65: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/openapi/utils.pyi:65: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/openapi/utils.pyi:66: error: Incompatible default for argument "terms_of_service" (default has type "None", argument has type "str")  [assignment]
+fastapi/openapi/utils.pyi:66: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/openapi/utils.pyi:66: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/openapi/utils.pyi:67: error: Incompatible default for argument "contact" (default has type "None", argument has type "dict[str, Any]")  [assignment]
+fastapi/openapi/utils.pyi:67: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/openapi/utils.pyi:67: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/openapi/utils.pyi:68: error: Incompatible default for argument "license_info" (default has type "None", argument has type "dict[str, Any]")  [assignment]
+fastapi/openapi/utils.pyi:68: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+fastapi/openapi/utils.pyi:68: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+fastapi/applications.pyi:17: error: Module "fastapi.datastructures" has no attribute "Default"  [attr-defined]
+fastapi/applications.pyi:17: error: Module "fastapi.datastructures" has no attribute "DefaultPlaceholder"  [attr-defined]
+fastapi/applications.pyi:43: error: Module "typing_extensions" has no attribute "Doc"  [attr-defined]
+fastapi/applications.pyi:68: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:69: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:70: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:71: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:79: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:102: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:155: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:161: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:174: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:188: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:216: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:219: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:245: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:248: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:274: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:277: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:303: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:306: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:332: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:335: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:361: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:364: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:390: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:393: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:419: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:422: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:427: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:441: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:447: error: Missing type parameters for generic type "Callable"  [type-arg]
+fastapi/applications.pyi:453: error: Missing type parameters for generic type "Callable"  [type-arg]
+Found 182 errors in 17 files (checked 44 source files)
