@@ -1,0 +1,2 @@
+src/flake8/checker.pyi:61: error: Name "processor.FileProcessor" is not defined  [name-defined]
+Found 1 error in 1 file (checked 33 source files)

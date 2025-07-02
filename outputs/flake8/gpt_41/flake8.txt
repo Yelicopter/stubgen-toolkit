@@ -1,0 +1,10 @@
+src/flake8/style_guide.pyi:61: error: Name "Callable" is not defined  [name-defined]
+src/flake8/style_guide.pyi:61: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Callable")
+src/flake8/plugins/reporter.pyi:10: error: Name "Any" is not defined  [name-defined]
+src/flake8/plugins/reporter.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/formatting/default.pyi:22: error: Return type "None" of "show_source" incompatible with return type "str" in supertype "BaseFormatter"  [override]
+src/flake8/formatting/default.pyi:23: error: Return type "str | None" of "format" incompatible with return type "str" in supertype "SimpleFormatter"  [override]
+src/flake8/formatting/default.pyi:23: error: Return type "str | None" of "format" incompatible with return type "str" in supertype "BaseFormatter"  [override]
+src/flake8/formatting/default.pyi:26: error: Return type "None" of "format" incompatible with return type "str" in supertype "BaseFormatter"  [override]
+src/flake8/formatting/default.pyi:27: error: Return type "None" of "show_source" incompatible with return type "str" in supertype "BaseFormatter"  [override]
+Found 7 errors in 3 files (checked 33 source files)

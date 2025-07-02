@@ -1,0 +1,27 @@
+src/flake8/options/manager.pyi:47: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:48: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:49: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:50: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:51: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:52: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:53: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:54: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:55: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:56: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:57: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/options/manager.pyi:58: error: "Enum" has no attribute "NO"  [attr-defined]
+src/flake8/plugins/pyflakes.pyi:26: error: Missing type parameters for generic type "Type"  [type-arg]
+src/flake8/formatting/default.pyi:12: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:12: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/default.pyi:27: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:27: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/default.pyi:28: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:28: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/default.pyi:31: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:31: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/default.pyi:32: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:32: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/checker.pyi:88: error: Name "processor.FileProcessor" is not defined  [name-defined]
+src/flake8/api/legacy.pyi:38: error: Missing type parameters for generic type "list"  [type-arg]
+src/flake8/api/legacy.pyi:39: error: Missing type parameters for generic type "list"  [type-arg]
+Found 21 errors in 5 files (checked 33 source files)

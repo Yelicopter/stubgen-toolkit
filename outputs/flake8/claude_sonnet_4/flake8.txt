@@ -1,0 +1,49 @@
+src/flake8/plugins/pycodestyle.pyi:9: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/pycodestyle.pyi:9: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/pycodestyle.pyi:15: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/pycodestyle.pyi:15: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/pycodestyle.pyi:25: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/pycodestyle.pyi:25: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/main/cli.pyi:4: error: Name "Optional" is not defined  [name-defined]
+src/flake8/main/cli.pyi:4: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/__init__.pyi:3: error: Unexpected "..."  [misc]
+src/flake8/violation.pyi:7: error: Unexpected "..."  [misc]
+src/flake8/discover_files.pyi:5: error: Unexpected "..."  [misc]
+src/flake8/statistics.pyi:10: error: Name "Optional" is not defined  [name-defined]
+src/flake8/statistics.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/statistics.pyi:19: error: Name "Optional" is not defined  [name-defined]
+src/flake8/statistics.pyi:19: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/finder.pyi:10: error: Unexpected "..."  [misc]
+src/flake8/plugins/finder.pyi:53: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/finder.pyi:53: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/finder.pyi:60: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/finder.pyi:60: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/finder.pyi:61: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/finder.pyi:61: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/processor.pyi:10: error: Unexpected "..."  [misc]
+src/flake8/options/manager.pyi:9: error: Unexpected "..."  [misc]
+src/flake8/formatting/base.pyi:17: error: Name "Any" is not defined  [name-defined]
+src/flake8/formatting/base.pyi:17: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:14: error: Unexpected "..."  [misc]
+src/flake8/plugins/reporter.pyi:6: error: Unexpected "..."  [misc]
+src/flake8/plugins/pyflakes.pyi:9: error: Unexpected "..."  [misc]
+src/flake8/options/config.pyi:7: error: Unexpected "..."  [misc]
+src/flake8/options/config.pyi:11: error: Name "Optional" is not defined  [name-defined]
+src/flake8/options/config.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/options/config.pyi:14: error: Name "Optional" is not defined  [name-defined]
+src/flake8/options/config.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/options/aggregator.pyi:7: error: Unexpected "..."  [misc]
+src/flake8/formatting/default.pyi:8: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:8: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/default.pyi:20: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:20: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/default.pyi:21: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:21: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/default.pyi:24: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:24: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/default.pyi:25: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/default.pyi:25: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/checker.pyi:11: error: Unexpected "..."  [misc]
+src/flake8/main/application.pyi:11: error: Unexpected "..."  [misc]
+src/flake8/api/legacy.pyi:6: error: Unexpected "..."  [misc]
+Found 31 errors in 19 files (checked 33 source files)

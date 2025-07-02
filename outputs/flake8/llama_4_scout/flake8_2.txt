@@ -1,0 +1,25 @@
+src/flake8/utils.pyi:46: error: Name "Any" is not defined  [name-defined]
+src/flake8/utils.pyi:46: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/utils.pyi:50: error: Name "Any" is not defined  [name-defined]
+src/flake8/utils.pyi:50: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/violation.pyi:17: error: Missing type parameters for generic type "Match"  [type-arg]
+src/flake8/plugins/finder.pyi:118: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/processor.pyi:85: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/processor.pyi:93: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/processor.pyi:97: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/options/manager.pyi:33: error: Incompatible default for argument "short_option_name" (default has type "_ARG", argument has type "str")  [assignment]
+src/flake8/options/manager.pyi:34: error: Incompatible default for argument "long_option_name" (default has type "_ARG", argument has type "str")  [assignment]
+src/flake8/options/manager.pyi:35: error: Incompatible default for argument "action" (default has type "_ARG", argument has type "str")  [assignment]
+src/flake8/options/manager.pyi:37: error: Incompatible default for argument "type" (default has type "_ARG", argument has type "Callable[[Any], Any]")  [assignment]
+src/flake8/options/manager.pyi:38: error: Incompatible default for argument "dest" (default has type "_ARG", argument has type "str")  [assignment]
+src/flake8/options/manager.pyi:44: error: Incompatible default for argument "required" (default has type "_ARG", argument has type "bool")  [assignment]
+src/flake8/options/manager.pyi:52: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/plugins/pyflakes.pyi:80: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/pyflakes.pyi:80: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/options/config.pyi:36: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/plugins/reporter.pyi:14: error: Name "Any" is not defined  [name-defined]
+src/flake8/plugins/reporter.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/formatting/default.pyi:57: error: Return type "None" of "format" incompatible with return type "str" in supertype "BaseFormatter"  [override]
+src/flake8/checker.pyi:148: error: Variable "multiprocessing.Pool" is not valid as a type  [valid-type]
+src/flake8/checker.pyi:148: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+Found 19 errors in 10 files (checked 33 source files)

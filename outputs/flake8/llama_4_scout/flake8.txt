@@ -1,0 +1,114 @@
+src/flake8/plugins/pycodestyle.pyi:56: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/plugins/pycodestyle.pyi:69: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/utils.pyi:26: error: Missing type parameters for generic type "Pattern"  [type-arg]
+src/flake8/utils.pyi:47: error: Name "Any" is not defined  [name-defined]
+src/flake8/utils.pyi:47: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/utils.pyi:51: error: Name "Any" is not defined  [name-defined]
+src/flake8/utils.pyi:51: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/violation.pyi:17: error: Name "Optional" is not defined  [name-defined]
+src/flake8/violation.pyi:17: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/discover_files.pyi:18: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/discover_files.pyi:28: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/plugins/finder.pyi:53: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/plugins/finder.pyi:73: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/finder.pyi:73: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/finder.pyi:82: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/finder.pyi:82: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/finder.pyi:83: error: Name "Optional" is not defined  [name-defined]
+src/flake8/plugins/finder.pyi:83: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/finder.pyi:92: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/plugins/finder.pyi:96: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/plugins/finder.pyi:102: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/plugins/finder.pyi:120: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/statistics.pyi:20: error: Name "Optional" is not defined  [name-defined]
+src/flake8/statistics.pyi:20: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/statistics.pyi:21: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/statistics.pyi:33: error: Name "Optional" is not defined  [name-defined]
+src/flake8/statistics.pyi:33: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/processor.pyi:35: error: Name "Optional" is not defined  [name-defined]
+src/flake8/processor.pyi:35: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/processor.pyi:51: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/processor.pyi:85: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/processor.pyi:88: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/processor.pyi:93: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/processor.pyi:97: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/processor.pyi:100: error: Name "Optional" is not defined  [name-defined]
+src/flake8/processor.pyi:100: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/options/manager.pyi:34: error: Incompatible default for argument "short_option_name" (default has type "_ARG", argument has type "str")  [assignment]
+src/flake8/options/manager.pyi:35: error: Incompatible default for argument "long_option_name" (default has type "_ARG", argument has type "str")  [assignment]
+src/flake8/options/manager.pyi:36: error: Incompatible default for argument "action" (default has type "_ARG", argument has type "str")  [assignment]
+src/flake8/options/manager.pyi:38: error: Incompatible default for argument "type" (default has type "_ARG", argument has type "Callable[[Any], Any]")  [assignment]
+src/flake8/options/manager.pyi:39: error: Incompatible default for argument "dest" (default has type "_ARG", argument has type "str")  [assignment]
+src/flake8/options/manager.pyi:45: error: Incompatible default for argument "required" (default has type "_ARG", argument has type "bool")  [assignment]
+src/flake8/options/manager.pyi:53: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/options/manager.pyi:91: error: Name "Optional" is not defined  [name-defined]
+src/flake8/options/manager.pyi:91: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/options/manager.pyi:92: error: Name "Optional" is not defined  [name-defined]
+src/flake8/options/manager.pyi:92: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/pyflakes.pyi:80: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/options/config.pyi:19: error: Name "Optional" is not defined  [name-defined]
+src/flake8/options/config.pyi:19: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/options/config.pyi:24: error: Name "Optional" is not defined  [name-defined]
+src/flake8/options/config.pyi:24: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/options/config.pyi:25: error: Name "Sequence" is not defined  [name-defined]
+src/flake8/options/config.pyi:36: error: Missing type parameters for generic type "dict"  [type-arg]
+src/flake8/formatting/base.pyi:14: error: Name "Any" is not defined  [name-defined]
+src/flake8/formatting/base.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/formatting/base.pyi:38: error: Name "Any" is not defined  [name-defined]
+src/flake8/formatting/base.pyi:38: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/formatting/base.pyi:41: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/base.pyi:41: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/formatting/base.pyi:47: error: Name "Optional" is not defined  [name-defined]
+src/flake8/formatting/base.pyi:47: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/style_guide.pyi:38: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:38: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:39: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:39: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:40: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:40: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:46: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:46: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:47: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:47: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:48: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:48: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:49: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:49: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:50: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:50: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:55: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:55: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:74: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:74: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:76: error: Name "Optional" is not defined  [name-defined]
+src/flake8/style_guide.pyi:76: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/style_guide.pyi:81: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:81: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:82: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/style_guide.pyi:85: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:85: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:89: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:89: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:99: error: Name "Optional" is not defined  [name-defined]
+src/flake8/style_guide.pyi:99: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/style_guide.pyi:107: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:107: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:110: error: Name "Optional" is not defined  [name-defined]
+src/flake8/style_guide.pyi:110: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/style_guide.pyi:111: error: Name "Optional" is not defined  [name-defined]
+src/flake8/style_guide.pyi:111: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/style_guide.pyi:120: error: Name "Optional" is not defined  [name-defined]
+src/flake8/style_guide.pyi:120: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/style_guide.pyi:121: error: Name "Optional" is not defined  [name-defined]
+src/flake8/style_guide.pyi:121: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/style_guide.pyi:126: error: Name "Any" is not defined  [name-defined]
+src/flake8/style_guide.pyi:126: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/style_guide.pyi:142: error: Name "Optional" is not defined  [name-defined]
+src/flake8/style_guide.pyi:142: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+src/flake8/plugins/reporter.pyi:14: error: Name "Any" is not defined  [name-defined]
+src/flake8/plugins/reporter.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+src/flake8/formatting/default.pyi:57: error: Return type "None" of "format" incompatible with return type "str" in supertype "BaseFormatter"  [override]
+src/flake8/checker.pyi:42: error: Missing type parameters for generic type "Generator"  [type-arg]
+src/flake8/checker.pyi:150: error: Variable "multiprocessing.Pool" is not valid as a type  [valid-type]
+src/flake8/checker.pyi:150: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+Found 71 errors in 15 files (checked 33 source files)
