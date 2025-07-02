@@ -1,0 +1,36 @@
+private_gpt/server/ingest/ingest_watcher.pyi:16: error: Variable "watchdog.observers.Observer" is not valid as a type  [valid-type]
+private_gpt/server/ingest/ingest_watcher.pyi:16: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+private_gpt/settings/settings_loader.pyi:16: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/settings/settings_loader.pyi:17: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/settings/settings_loader.pyi:18: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/settings/settings.pyi:139: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/settings/settings.pyi:200: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/components/vector_store/batched_chroma.pyi:15: error: Class cannot subclass "ChromaVectorStore" (has type "Any")  [misc]
+private_gpt/components/vector_store/batched_chroma.pyi:24: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/components/vector_store/batched_chroma.pyi:25: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/components/llm/custom/sagemaker.pyi:48: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/components/llm/custom/sagemaker.pyi:49: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/components/llm/custom/sagemaker.pyi:62: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/components/llm/custom/sagemaker.pyi:63: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/components/llm/custom/sagemaker.pyi:67: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/components/ingest/ingest_helper.pyi:15: error: Name "Any" is not defined  [name-defined]
+private_gpt/components/ingest/ingest_helper.pyi:15: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+private_gpt/components/ingest/ingest_helper.pyi:18: error: Name "Any" is not defined  [name-defined]
+private_gpt/components/ingest/ingest_helper.pyi:18: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+private_gpt/components/ingest/ingest_component.pyi:44: error: Class private_gpt.components.ingest.ingest_component.BaseIngestComponentWithIndex has abstract attributes "bulk_ingest", "ingest"  [misc]
+private_gpt/components/ingest/ingest_component.pyi:44: note: If it is meant to be abstract, add 'abc.ABCMeta' as an explicit metaclass
+private_gpt/components/ingest/ingest_component.pyi:110: error: Variable "multiprocessing.Semaphore" is not valid as a type  [valid-type]
+private_gpt/components/ingest/ingest_component.pyi:110: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+private_gpt/components/ingest/ingest_component.pyi:111: error: Missing type parameters for generic type "Queue"  [type-arg]
+private_gpt/components/ingest/ingest_component.pyi:112: error: Missing type parameters for generic type "Queue"  [type-arg]
+private_gpt/server/ingest/ingest_service.pyi:34: error: Name "Any" is not defined  [name-defined]
+private_gpt/server/ingest/ingest_service.pyi:34: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+private_gpt/server/ingest/ingest_service.pyi:39: error: Name "Any" is not defined  [name-defined]
+private_gpt/server/ingest/ingest_service.pyi:39: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+private_gpt/server/chat/chat_router.pyi:25: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+private_gpt/server/chat/chat_router.pyi:25: error: Incompatible types in assignment (expression has type "dict[Any, Any]", base class "BaseModel" defined the type as "ConfigDict")  [assignment]
+private_gpt/server/chat/chat_router.pyi:25: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/server/completions/completions_router.pyi:23: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+private_gpt/server/completions/completions_router.pyi:23: error: Incompatible types in assignment (expression has type "dict[Any, Any]", base class "BaseModel" defined the type as "ConfigDict")  [assignment]
+private_gpt/server/completions/completions_router.pyi:23: error: Missing type parameters for generic type "dict"  [type-arg]
+Found 28 errors in 10 files (checked 65 source files)

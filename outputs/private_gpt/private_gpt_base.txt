@@ -1,0 +1,43 @@
+private_gpt/server/ingest/ingest_watcher.py:24: error: Argument 1 to "Path" has incompatible type "bytes | str"; expected "str | PathLike[str]"  [arg-type]
+private_gpt/server/ingest/ingest_watcher.py:28: error: Argument 1 to "Path" has incompatible type "bytes | str"; expected "str | PathLike[str]"  [arg-type]
+private_gpt/settings/settings.py:127: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:188: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:247: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:260: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:292: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:296: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:308: error: Incompatible types in assignment (expression has type "None", variable has type "int")  [assignment]
+private_gpt/settings/settings.py:364: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:368: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:371: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+private_gpt/settings/settings.py:403: error: Incompatible types in assignment (expression has type "None", variable has type "float")  [assignment]
+private_gpt/server/health/health_router.py:14: error: Untyped decorator makes function "health" untyped  [misc]
+private_gpt/components/ingest/ingest_helper.py:99: error: Property "text" defined in "Document" is read-only  [misc]
+private_gpt/server/ingest/ingest_router.py:31: error: Untyped decorator makes function "ingest" untyped  [misc]
+private_gpt/server/ingest/ingest_router.py:37: error: Returning Any from function declared to return "IngestResponse"  [no-any-return]
+private_gpt/server/ingest/ingest_router.py:40: error: Untyped decorator makes function "ingest_file" untyped  [misc]
+private_gpt/server/ingest/ingest_router.py:64: error: Untyped decorator makes function "ingest_text" untyped  [misc]
+private_gpt/server/ingest/ingest_router.py:84: error: Untyped decorator makes function "list_ingested" untyped  [misc]
+private_gpt/server/ingest/ingest_router.py:96: error: Untyped decorator makes function "delete_ingested" untyped  [misc]
+private_gpt/server/embeddings/embeddings_router.py:25: error: Untyped decorator makes function "embeddings_generation" untyped  [misc]
+private_gpt/server/chunks/chunks_router.py:26: error: Untyped decorator makes function "chunks_retrieval" untyped  [misc]
+private_gpt/server/recipes/summarize/summarize_router.py:28: error: Untyped decorator makes function "summarize" untyped  [misc]
+private_gpt/server/chat/chat_router.py:52: error: Untyped decorator makes function "chat_completion" untyped  [misc]
+private_gpt/server/completions/completions_router.py:39: error: Untyped decorator makes function "prompt_completion" untyped  [misc]
+private_gpt/server/completions/completions_router.py:92: error: Returning Any from function declared to return "OpenAICompletion | StreamingResponse"  [no-any-return]
+private_gpt/launcher.py:30: error: Missing named argument "responses" for "FastAPI"  [call-arg]
+private_gpt/launcher.py:48: error: Unexpected keyword argument "allow_credentials" for "add_middleware" of "Starlette"  [call-arg]
+private_gpt/launcher.py:48: error: Unexpected keyword argument "allow_origins" for "add_middleware" of "Starlette"  [call-arg]
+private_gpt/launcher.py:48: error: Unexpected keyword argument "allow_origin_regex" for "add_middleware" of "Starlette"  [call-arg]
+private_gpt/launcher.py:48: error: Unexpected keyword argument "allow_methods" for "add_middleware" of "Starlette"  [call-arg]
+private_gpt/launcher.py:48: error: Unexpected keyword argument "allow_headers" for "add_middleware" of "Starlette"  [call-arg]
+private_gpt/launcher.py:49: error: Argument 1 to "add_middleware" of "Starlette" has incompatible type "type[CORSMiddleware]"; expected "_MiddlewareFactory[[MutableMapping[str, Any], Callable[[], Awaitable[MutableMapping[str, Any]]], Callable[[MutableMapping[str, Any]], Awaitable[None]]]]"  [arg-type]
+private_gpt/launcher.py:49: note: Following member(s) of "CORSMiddleware" have conflicts:
+private_gpt/launcher.py:49: note:     Expected:
+private_gpt/launcher.py:49: note:         def __call__(self, Callable[[MutableMapping[str, Any], Callable[[], Awaitable[MutableMapping[str, Any]]], Callable[[MutableMap
+ping[str, Any]], Awaitable[None]]], Awaitable[None]], /, scope: MutableMapping[str, Any], receive: Callable[[], Awaitable[MutableMapping[str, Any]]], send: Callable[[Mu
+tableMapping[str, Any]], Awaitable[None]]) -> Callable[[MutableMapping[str, Any], Callable[[], Awaitable[MutableMapping[str, Any]]], Callable[[MutableMapping[str, Any]], Awaitable[None]]], Awaitable[None]]
+private_gpt/launcher.py:49: note:     Got:
+private_gpt/launcher.py:49: note:         def CORSMiddleware(self, app: Callable[[MutableMapping[str, Any], Callable[[], Awaitable[MutableMapping[str, Any]]], Callable[
+[MutableMapping[str, Any]], Awaitable[None]]], Awaitable[None]], allow_origins: Sequence[str] = ..., allow_methods: Sequence[str] = ..., allow_headers: Sequence[str] = ..., allow_credentials: bool = ..., allow_origin_regex: str | None = ..., expose_headers: Sequence[str] = ..., max_age: int = ...) -> CORSMiddleware
+Found 34 errors in 11 files (checked 65 source files)

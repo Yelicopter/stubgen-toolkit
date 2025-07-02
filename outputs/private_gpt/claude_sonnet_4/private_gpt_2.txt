@@ -1,0 +1,4 @@
+private_gpt/components/vector_store/batched_chroma.pyi:14: error: Class cannot subclass "ChromaVectorStore" (has type "Any")  [misc]
+private_gpt/components/ingest/ingest_component.pyi:44: error: Class private_gpt.components.ingest.ingest_component.BaseIngestComponentWithIndex has abstract attributes "bulk_ingest", "ingest"  [misc]
+private_gpt/components/ingest/ingest_component.pyi:44: note: If it is meant to be abstract, add 'abc.ABCMeta' as an explicit metaclass
+Found 2 errors in 2 files (checked 65 source files)

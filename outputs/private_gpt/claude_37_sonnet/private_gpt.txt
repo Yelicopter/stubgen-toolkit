@@ -1,0 +1,11 @@
+private_gpt/server/chunks/chunks_router.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+private_gpt/ui/ui.pyi:9: error: Cannot find implementation or library stub for module named "gradio"  [import]
+private_gpt/ui/ui.pyi:11: error: Cannot find implementation or library stub for module named "gradio.themes.utils.colors"  [import]
+private_gpt/server/chat/chat_router.pyi:26: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+private_gpt/server/chat/chat_router.pyi:26: error: Incompatible types in assignment (expression has type "dict[Any, Any]", base class "BaseModel" defined the type as "ConfigDict")  [assignment]
+private_gpt/server/chat/chat_router.pyi:26: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/server/completions/completions_router.pyi:24: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+private_gpt/server/completions/completions_router.pyi:24: error: Incompatible types in assignment (expression has type "dict[Any, Any]", base class "BaseModel" defined the type as "ConfigDict")  [assignment]
+private_gpt/server/completions/completions_router.pyi:24: error: Missing type parameters for generic type "dict"  [type-arg]
+private_gpt/main.pyi:4: error: Name "FastAPI" is not defined  [name-defined]
+Found 25 errors in 14 files (checked 65 source files)

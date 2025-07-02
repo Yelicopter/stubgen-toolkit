@@ -1,0 +1,20 @@
+private_gpt/utils/retry.pyi:10: error: Name "Tuple" is not defined  [name-defined]
+private_gpt/utils/retry.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+private_gpt/utils/retry.pyi:17: error: Name "Tuple" is not defined  [name-defined]
+private_gpt/utils/retry.pyi:17: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+private_gpt/utils/retry.pyi:19: error: Missing type parameters for generic type "Callable"  [type-arg]
+private_gpt/settings/yaml.pyi:8: error: Missing type parameters for generic type "Pattern"  [type-arg]
+private_gpt/settings/yaml.pyi:11: error: Incompatible default for argument "environ" (default has type "_Environ[str]", argument has type "dict[str, str]")  [assignment]
+private_gpt/utils/ollama.pyi:13: error: Name "Tuple" is not defined  [name-defined]
+private_gpt/utils/ollama.pyi:13: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+private_gpt/components/vector_store/batched_chroma.pyi:12: error: Class cannot subclass "ChromaVectorStore" (has type "Any")  [misc]
+private_gpt/components/ingest/ingest_component.pyi:46: error: Class private_gpt.components.ingest.ingest_component.BaseIngestComponentWithIndex has abstract attributes "bulk_ingest", "ingest"  [misc]
+private_gpt/components/ingest/ingest_component.pyi:46: note: If it is meant to be abstract, add 'abc.ABCMeta' as an explicit metaclass
+private_gpt/components/ingest/ingest_component.pyi:56: error: Missing type parameters for generic type "BaseIndex"  [type-arg]
+private_gpt/server/recipes/summarize/summarize_service.pyi:41: error: Name "Dict" is not defined  [name-defined]
+private_gpt/server/recipes/summarize/summarize_service.pyi:41: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+private_gpt/server/chunks/chunks_router.pyi:14: error: Name "Optional" is not defined  [name-defined]
+private_gpt/server/chunks/chunks_router.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+private_gpt/server/chat/chat_router.pyi:26: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+private_gpt/server/completions/completions_router.pyi:24: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+Found 13 errors in 9 files (checked 65 source files)

@@ -1,0 +1,8 @@
+private_gpt/components/vector_store/batched_chroma.pyi:19: error: Class cannot subclass "ChromaVectorStore" (has type "Any")  [misc]
+private_gpt/components/llm/custom/sagemaker.pyi:43: error: Incompatible types in assignment (expression has type "Callable[[Sequence[ChatMessage]], str]", base class "LLM" defined the type as "MessagesToPromptType | None")  [assignment]
+private_gpt/components/llm/custom/sagemaker.pyi:46: error: Incompatible types in assignment (expression has type "Callable[[str], str]", base class "LLM" defined the type as "CompletionToPromptType | None")  [assignment]
+private_gpt/components/ingest/ingest_component.pyi:33: error: Class private_gpt.components.ingest.ingest_component.BaseIngestComponentWithIndex has abstract attributes "bulk_ingest", "ingest"  [misc]
+private_gpt/components/ingest/ingest_component.pyi:33: note: If it is meant to be abstract, add 'abc.ABCMeta' as an explicit metaclass
+private_gpt/components/ingest/ingest_component.pyi:34: error: Type argument "BaseNode" of "BaseIndex" must be a subtype of "IndexStruct"  [type-var]
+private_gpt/components/ingest/ingest_component.pyi:43: error: Type argument "BaseNode" of "BaseIndex" must be a subtype of "IndexStruct"  [type-var]
+Found 6 errors in 3 files (checked 65 source files)
