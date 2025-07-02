@@ -1,0 +1,7 @@
+pandasai/dataframe/virtual_dataframe.pyi:14: error: Return type "DataFrame" of "head" incompatible with return type "VirtualDataFrame" in supertype "NDFrame"  [override]
+pandasai/data_loader/view_loader.pyi:21: error: Signature of "query_builder" incompatible with supertype "SQLDatasetLoader"  [override]
+pandasai/data_loader/view_loader.pyi:21: note:      Superclass:
+pandasai/data_loader/view_loader.pyi:21: note:          SqlQueryBuilder
+pandasai/data_loader/view_loader.pyi:21: note:      Subclass:
+pandasai/data_loader/view_loader.pyi:21: note:          ViewQueryBuilder
+Found 2 errors in 2 files (checked 72 source files)

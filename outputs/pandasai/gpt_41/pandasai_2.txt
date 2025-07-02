@@ -1,0 +1,17 @@
+pandasai/core/user_query.pyi:12: error: Signature of "__dict__" incompatible with supertype "object"  [override]
+pandasai/core/user_query.pyi:12: note:      Superclass:
+pandasai/core/user_query.pyi:12: note:          dict[str, Any]
+pandasai/core/user_query.pyi:12: note:      Subclass:
+pandasai/core/user_query.pyi:12: note:          def __dict__(self) -> dict[str, Any]
+pandasai/data_loader/sql_loader.pyi:4: error: Class pandasai.data_loader.sql_loader.SQLDatasetLoader has abstract attributes "execute_query", "query_builder"  [misc]
+pandasai/data_loader/sql_loader.pyi:4: note: If it is meant to be abstract, add 'abc.ABCMeta' as an explicit metaclass
+pandasai/data_loader/local_loader.pyi:4: error: Class pandasai.data_loader.local_loader.LocalDatasetLoader has abstract attributes "execute_query", "query_builder"  [misc]
+pandasai/data_loader/local_loader.pyi:4: note: If it is meant to be abstract, add 'abc.ABCMeta' as an explicit metaclass
+pandasai/data_loader/view_loader.pyi:4: error: Class pandasai.data_loader.view_loader.ViewDatasetLoader has abstract attributes "execute_query", "query_builder"  [misc]
+pandasai/data_loader/view_loader.pyi:4: note: If it is meant to be abstract, add 'abc.ABCMeta' as an explicit metaclass
+pandasai/llm/__init__.pyi:1: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/core/response/__init__.pyi:3: error: Module "pandasai.core.response.dataframe" has no attribute "DataFrameResponse"; maybe "DataframeResponse"?  [attr-defined]
+pandasai/__init__.pyi:25: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/__init__.pyi:31: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/__init__.pyi:31: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+Found 9 errors in 7 files (checked 72 source files)

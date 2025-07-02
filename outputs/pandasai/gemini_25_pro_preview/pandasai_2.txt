@@ -1,0 +1,45 @@
+pandasai/dataframe/virtual_dataframe.pyi:18: error: Return type "DataFrame" of "head" incompatible with return type "VirtualDataFrame" in supertype "NDFrame"  [override]
+pandasai/agent/state.py:15: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/agent/state.py:19: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/agent/state.py:19: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+pandasai/agent/state.py:37: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+pandasai/agent/state.py:38: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+pandasai/agent/state.py:53: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+pandasai/agent/state.py:53: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/state.py:53: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/state.py:60: error: Argument 1 to "Memory" has incompatible type "Optional[int]"; expected "int"  [arg-type]
+pandasai/agent/state.py:128: error: Incompatible types in assignment (expression has type "Optional[Config]", variable has type "Union[Config, dict[Any, Any]]")  [assignment]
+pandasai/agent/base.py:24: error: Module "pandasai.sandbox" does not explicitly export attribute "Sandbox"  [attr-defined]
+pandasai/agent/base.py:47: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+pandasai/agent/base.py:47: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/base.py:47: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/base.py:48: error: Incompatible default for argument "sandbox" (default has type "None", argument has type "Sandbox")  [assignment]
+pandasai/agent/base.py:48: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/base.py:48: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/base.py:69: error: Item "SQLDatasetLoader" of "Union[Series[Any], SQLDatasetLoader]" has no attribute "source"  [union-attr]
+pandasai/agent/base.py:101: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:105: error: Incompatible types in assignment (expression has type "GeneratePythonCodeWithSQLPrompt", variable has type "str")  [assignment]
+pandasai/agent/base.py:110: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:152: error: "Series[Any]" not callable  [operator]
+pandasai/agent/base.py:165: error: Argument 1 to "_regenerate_code_after_error" of "Agent" has incompatible type "Optional[str]"; expected "str"  [arg-type]
+pandasai/agent/base.py:171: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:175: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:191: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:193: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:229: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:253: error: Incompatible types in assignment (expression has type "UserQuery", variable has type "str")  [assignment]
+pandasai/agent/base.py:254: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:255: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:269: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:279: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:286: error: Incompatible types in assignment (expression has type "CorrectExecuteSQLQueryUsageErrorPrompt", variable has type "CorrectOutputTypeErrorPrompt")  [assignment]
+pandasai/agent/base.py:293: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:295: error: Incompatible return value type (got "ErrorResponse", expected "str")  [return-value]
+pandasai/llm/__init__.pyi:1: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:16: error: Incompatible types in assignment (expression has type "ViewQueryBuilder", base class "SQLDatasetLoader" defined the type as "SqlQueryBuilder")  [assignment]
+pandasai/data_loader/view_loader.pyi:19: error: Signature of "query_builder" incompatible with supertype "SQLDatasetLoader"  [override]
+pandasai/data_loader/view_loader.pyi:19: note:      Superclass:
+pandasai/data_loader/view_loader.pyi:19: note:          SqlQueryBuilder
+pandasai/data_loader/view_loader.pyi:19: note:      Subclass:
+pandasai/data_loader/view_loader.pyi:19: note:          ViewQueryBuilder
+Found 34 errors in 5 files (checked 72 source files)

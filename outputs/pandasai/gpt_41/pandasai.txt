@@ -1,0 +1,34 @@
+pandasai/data_loader/view_loader.pyi:3: error: Name "SQLDatasetLoader" is not defined  [name-defined]
+pandasai/data_loader/sql_loader.pyi:3: error: Name "DatasetLoader" is not defined  [name-defined]
+pandasai/data_loader/local_loader.pyi:3: error: Name "DatasetLoader" is not defined  [name-defined]
+pandasai/core/user_query.pyi:6: error: Signature of "__dict__" incompatible with supertype "object"  [override]
+pandasai/core/user_query.pyi:6: note:      Superclass:
+pandasai/core/user_query.pyi:6: note:          dict[str, Any]
+pandasai/core/user_query.pyi:6: note:      Subclass:
+pandasai/core/user_query.pyi:6: note:          def __dict__(self) -> str
+pandasai/core/response/string.pyi:3: error: Name "BaseResponse" is not defined  [name-defined]
+pandasai/core/response/number.pyi:3: error: Name "BaseResponse" is not defined  [name-defined]
+pandasai/core/response/dataframe.pyi:3: error: Name "BaseResponse" is not defined  [name-defined]
+pandasai/core/response/chart.pyi:3: error: Name "BaseResponse" is not defined  [name-defined]
+pandasai/query_builders/local_query_builder.pyi:6: error: Name "Any" is not defined  [name-defined]
+pandasai/query_builders/local_query_builder.pyi:6: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/core/response/error.pyi:7: error: Name "Any" is not defined  [name-defined]
+pandasai/core/response/error.pyi:7: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/core/response/error.pyi:8: error: Name "Any" is not defined  [name-defined]
+pandasai/core/response/error.pyi:8: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/llm/__init__.pyi:1: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/dataframe/virtual_dataframe.pyi:10: error: Signature of "head" incompatible with supertype "DataFrame"  [override]
+pandasai/dataframe/virtual_dataframe.pyi:10: note:      Superclass:
+pandasai/dataframe/virtual_dataframe.pyi:10: note:          def head(self, n: int = ...) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:10: note:      Subclass:
+pandasai/dataframe/virtual_dataframe.pyi:10: note:          def head(self) -> Any
+pandasai/dataframe/virtual_dataframe.pyi:10: error: Signature of "head" incompatible with supertype "NDFrame"  [override]
+pandasai/dataframe/virtual_dataframe.pyi:10: note:      Superclass:
+pandasai/dataframe/virtual_dataframe.pyi:10: note:          def head(self, n: int = ...) -> VirtualDataFrame
+pandasai/dataframe/virtual_dataframe.pyi:10: note:      Subclass:
+pandasai/dataframe/virtual_dataframe.pyi:10: note:          def head(self) -> Any
+pandasai/__init__.pyi:22: error: Module "pandasai.query_builders" does not explicitly export attribute "SqlQueryBuilder"  [attr-defined]
+pandasai/__init__.pyi:25: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/__init__.pyi:31: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/__init__.pyi:31: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+Found 18 errors in 13 files (checked 72 source files)

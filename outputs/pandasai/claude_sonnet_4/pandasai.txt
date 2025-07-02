@@ -1,0 +1,260 @@
+pandasai/constants.pyi:7: error: Name "Dict" is not defined  [name-defined]
+pandasai/constants.pyi:7: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+pandasai/constants.pyi:8: error: Name "List" is not defined  [name-defined]
+pandasai/constants.pyi:8: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/constants.pyi:9: error: Name "List" is not defined  [name-defined]
+pandasai/constants.pyi:9: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/constants.pyi:10: error: Name "List" is not defined  [name-defined]
+pandasai/constants.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/constants.pyi:11: error: Name "List" is not defined  [name-defined]
+pandasai/constants.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/constants.pyi:12: error: Name "List" is not defined  [name-defined]
+pandasai/constants.pyi:12: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/sandbox/sandbox.pyi:7: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/sandbox/sandbox.pyi:7: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/sandbox/sandbox.pyi:8: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/sandbox/sandbox.pyi:8: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/sandbox/sandbox.pyi:9: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/sandbox/sandbox.pyi:9: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/sandbox/sandbox.pyi:10: error: Name "List" is not defined  [name-defined]
+pandasai/sandbox/sandbox.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/helpers/path.pyi:4: error: Name "Optional" is not defined  [name-defined]
+pandasai/helpers/path.pyi:4: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/helpers/memory.pyi:9: error: Name "Optional" is not defined  [name-defined]
+pandasai/helpers/memory.pyi:9: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/helpers/memory.pyi:15: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/memory.pyi:15: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/helpers/memory.pyi:16: error: Name "Optional" is not defined  [name-defined]
+pandasai/helpers/memory.pyi:16: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/helpers/memory.pyi:17: error: Name "Optional" is not defined  [name-defined]
+pandasai/helpers/memory.pyi:17: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/helpers/memory.pyi:20: error: Name "List" is not defined  [name-defined]
+pandasai/helpers/memory.pyi:20: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/helpers/memory.pyi:21: error: Name "List" is not defined  [name-defined]
+pandasai/helpers/memory.pyi:21: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/user_query.pyi:5: error: Signature of "__dict__" incompatible with supertype "object"  [override]
+pandasai/core/user_query.pyi:5: note:      Superclass:
+pandasai/core/user_query.pyi:5: note:          dict[str, Any]
+pandasai/core/user_query.pyi:5: note:      Subclass:
+pandasai/core/user_query.pyi:5: note:          def __dict__(self) -> str
+pandasai/exceptions.pyi:32: error: Name "Optional" is not defined  [name-defined]
+pandasai/exceptions.pyi:32: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/vectorstores/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/vectorstores/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/sandbox/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/sandbox/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/query_builders/paginator.pyi:25: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/query_builders/paginator.pyi:25: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/query_builders/paginator.pyi:32: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/query_builders/paginator.pyi:32: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/data_loader/semantic_layer_schema.pyi:4: error: Library stubs not installed for "yaml"  [import-untyped]
+pandasai/data_loader/semantic_layer_schema.pyi:27: error: Argument 1 of "__eq__" is incompatible with supertype "object"; supertype defines the argument type as "object"  [override]
+pandasai/data_loader/semantic_layer_schema.pyi:27: note: This violates the Liskov substitution principle
+pandasai/data_loader/semantic_layer_schema.pyi:27: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+pandasai/data_loader/semantic_layer_schema.pyi:27: note: It is recommended for "__eq__" to work with arbitrary objects, for example:
+pandasai/data_loader/semantic_layer_schema.pyi:27: note:     def __eq__(self, other: object) -> bool:
+pandasai/data_loader/semantic_layer_schema.pyi:27: note:         if not isinstance(other, SQLConnectionConfig):
+pandasai/data_loader/semantic_layer_schema.pyi:27: note:             return NotImplemented
+pandasai/data_loader/semantic_layer_schema.pyi:27: note:         return <logic to compare two SQLConnectionConfig instances>
+pandasai/helpers/__init__.pyi:5: error: Name "List" is not defined  [name-defined]
+pandasai/helpers/__init__.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/helpers/session.pyi:9: error: Module "pandasai.helpers" does not explicitly export attribute "load_dotenv"  [attr-defined]
+pandasai/helpers/session.pyi:24: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/session.pyi:24: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/helpers/session.pyi:25: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/session.pyi:25: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/helpers/session.pyi:26: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/session.pyi:26: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/helpers/session.pyi:27: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/session.pyi:27: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/helpers/session.pyi:28: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/session.pyi:28: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/helpers/session.pyi:35: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/session.pyi:35: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/helpers/session.pyi:39: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/session.pyi:39: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/core/prompts/base.pyi:23: error: Name "List" is not defined  [name-defined]
+pandasai/core/prompts/base.pyi:23: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/helpers/json_encoder.pyi:6: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/json_encoder.pyi:6: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/helpers/json_encoder.pyi:9: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/helpers/json_encoder.pyi:9: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/data_loader/duck_db_connection_manager.pyi:8: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/data_loader/duck_db_connection_manager.pyi:8: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/data_loader/duck_db_connection_manager.pyi:10: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/data_loader/duck_db_connection_manager.pyi:10: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/core/response/base.pyi:9: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/base.pyi:9: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/base.pyi:10: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/base.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/base.pyi:11: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/base.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/string.pyi:5: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/string.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/number.pyi:5: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/number.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/error.pyi:7: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/error.pyi:7: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/error.pyi:8: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/error.pyi:8: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/dataframe.pyi:6: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/dataframe.pyi:6: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/parser.pyi:12: error: Name "Any" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:12: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/core/response/parser.pyi:12: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:12: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/parser.pyi:13: error: Name "Any" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:13: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/core/response/parser.pyi:13: error: Name "Optional" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:13: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/core/response/parser.pyi:14: error: Name "Any" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/core/response/__init__.pyi:9: error: Name "List" is not defined  [name-defined]
+pandasai/core/response/__init__.pyi:9: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/prompts/__init__.pyi:23: error: Name "List" is not defined  [name-defined]
+pandasai/core/prompts/__init__.pyi:23: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/config.pyi:15: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+pandasai/llm/bamboo_llm/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/llm/bamboo_llm/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/agent/state.pyi:13: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/agent/state.pyi:17: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/agent/state.pyi:17: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+pandasai/agent/state.pyi:23: error: Incompatible types in assignment (expression has type "dict[Never, Never]", variable has type "Optional[Config]")  [assignment]
+pandasai/core/code_generation/code_validation.pyi:7: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_generation/code_validation.pyi:7: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/code_generation/code_cleaning.pyi:6: error: Skipping analyzing "astor": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+pandasai/core/code_generation/code_cleaning.pyi:6: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+pandasai/core/code_generation/code_cleaning.pyi:17: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_generation/code_cleaning.pyi:17: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/code_generation/code_cleaning.pyi:21: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_generation/code_cleaning.pyi:21: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/smart_datalake/__init__.pyi:5: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/smart_datalake/__init__.pyi:17: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:17: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:21: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:21: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:27: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:27: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:30: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:30: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:33: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:33: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:51: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:51: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:54: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:54: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:69: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:69: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:72: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:72: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:75: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:75: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:78: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:78: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_datalake/__init__.pyi:84: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_datalake/__init__.pyi:84: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:7: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/smart_dataframe/__init__.pyi:16: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:16: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:27: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:27: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:28: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:28: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:37: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:37: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:43: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:43: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:46: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:46: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:48: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:48: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:57: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:57: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:93: error: Argument 1 of "__eq__" is incompatible with supertype "object"; supertype defines the argument type as "object"  [override]
+pandasai/smart_dataframe/__init__.pyi:93: note: This violates the Liskov substitution principle
+pandasai/smart_dataframe/__init__.pyi:93: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+pandasai/smart_dataframe/__init__.pyi:93: note: It is recommended for "__eq__" to work with arbitrary objects, for example:
+pandasai/smart_dataframe/__init__.pyi:93: note:     def __eq__(self, other: object) -> bool:
+pandasai/smart_dataframe/__init__.pyi:93: note:         if not isinstance(other, SmartDataframe):
+pandasai/smart_dataframe/__init__.pyi:93: note:             return NotImplemented
+pandasai/smart_dataframe/__init__.pyi:93: note:         return <logic to compare two SmartDataframe instances>
+pandasai/smart_dataframe/__init__.pyi:94: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:94: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:95: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:95: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.pyi:96: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.pyi:96: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/query_builders/local_query_builder.pyi:2: error: Module "pandasai" does not explicitly export attribute "ConfigManager"  [attr-defined]
+pandasai/query_builders/__init__.pyi:5: error: Name "List" is not defined  [name-defined]
+pandasai/query_builders/__init__.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/dataframe/virtual_dataframe.pyi:11: error: Name "List" is not defined  [name-defined]
+pandasai/dataframe/virtual_dataframe.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/dataframe/virtual_dataframe.pyi:14: error: Signature of "head" incompatible with supertype "DataFrame"  [override]
+pandasai/dataframe/virtual_dataframe.pyi:14: note:      Superclass:
+pandasai/dataframe/virtual_dataframe.pyi:14: note:          def head(self, n: int = ...) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:14: note:      Subclass:
+pandasai/dataframe/virtual_dataframe.pyi:14: note:          def head(self) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:14: error: Signature of "head" incompatible with supertype "NDFrame"  [override]
+pandasai/dataframe/virtual_dataframe.pyi:14: note:      Superclass:
+pandasai/dataframe/virtual_dataframe.pyi:14: note:          def head(self, n: int = ...) -> VirtualDataFrame
+pandasai/dataframe/virtual_dataframe.pyi:14: note:      Subclass:
+pandasai/dataframe/virtual_dataframe.pyi:14: note:          def head(self) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:20: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/dataframe/virtual_dataframe.pyi:20: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/dataframe/base.pyi:10: error: Module "pandasai" does not explicitly export attribute "get_validated_dataset_path"  [attr-defined]
+pandasai/dataframe/base.pyi:13: error: Module "pandasai.core.response" does not explicitly export attribute "BaseResponse"  [attr-defined]
+pandasai/dataframe/base.pyi:28: error: Name "List" is not defined  [name-defined]
+pandasai/dataframe/base.pyi:28: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/dataframe/__init__.pyi:4: error: Name "List" is not defined  [name-defined]
+pandasai/dataframe/__init__.pyi:4: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/data_loader/loader.pyi:4: error: Library stubs not installed for "yaml"  [import-untyped]
+pandasai/data_loader/loader.pyi:4: note: Hint: "python3 -m pip install types-PyYAML"
+pandasai/data_loader/loader.pyi:4: note: (or run "mypy --install-types" to install all missing stub packages)
+pandasai/data_loader/loader.pyi:11: error: Module "pandasai" does not explicitly export attribute "ConfigManager"  [attr-defined]
+pandasai/data_loader/loader.pyi:24: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/data_loader/loader.pyi:24: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/agent/base.pyi:22: error: Module "pandasai.sandbox" does not explicitly export attribute "Sandbox"  [attr-defined]
+pandasai/agent/base.pyi:41: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/agent/base.pyi:41: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/agent/base.pyi:42: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/agent/base.pyi:42: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/agent/base.pyi:44: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/agent/base.pyi:44: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/agent/base.pyi:47: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/agent/base.pyi:47: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/agent/base.pyi:57: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/agent/base.pyi:57: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/agent/base.pyi:59: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/agent/base.pyi:59: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/agent/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/agent/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/__init__.pyi:22: error: Module "pandasai.query_builders" does not explicitly export attribute "SqlQueryBuilder"  [attr-defined]
+pandasai/__init__.pyi:24: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/__init__.pyi:28: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/__init__.pyi:28: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+pandasai/__init__.pyi:49: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/__init__.pyi:49: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/__init__.pyi:50: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/__init__.pyi:50: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/data_loader/sql_loader.pyi:7: error: Module "pandasai.query_builders" does not explicitly export attribute "SqlQueryBuilder"  [attr-defined]
+pandasai/data_loader/sql_loader.pyi:23: error: Function "builtins.callable" is not valid as a type  [valid-type]
+pandasai/data_loader/sql_loader.pyi:23: note: Perhaps you meant "typing.Callable" instead of "callable"?
+pandasai/llm/__init__.pyi:1: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/llm/__init__.pyi:4: error: Name "List" is not defined  [name-defined]
+pandasai/llm/__init__.pyi:4: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/data_loader/local_loader.pyi:7: error: Module "pandasai.query_builders" does not explicitly export attribute "LocalQueryBuilder"  [attr-defined]
+pandasai/core/code_generation/__init__.pyi:5: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_generation/__init__.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/code_execution/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_execution/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/cli/main.pyi:4: error: Module "pandasai" does not explicitly export attribute "DatasetLoader"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:5: error: Module "pandasai.query_builders" does not explicitly export attribute "ViewQueryBuilder"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:6: error: Module "pandasai" does not explicitly export attribute "LOCAL_SOURCE_TYPES"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:21: error: Signature of "query_builder" incompatible with supertype "SQLDatasetLoader"  [override]
+pandasai/data_loader/view_loader.pyi:21: note:      Superclass:
+pandasai/data_loader/view_loader.pyi:21: note:          SqlQueryBuilder
+pandasai/data_loader/view_loader.pyi:21: note:      Subclass:
+pandasai/data_loader/view_loader.pyi:21: note:          ViewQueryBuilder
+pandasai/data_loader/view_loader.pyi:24: error: Name "Dict" is not defined  [name-defined]
+pandasai/data_loader/view_loader.pyi:24: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+Found 129 errors in 46 files (checked 72 source files)

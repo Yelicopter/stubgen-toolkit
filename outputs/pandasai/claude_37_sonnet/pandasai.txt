@@ -1,0 +1,151 @@
+pandasai/helpers/memory.pyi:22: error: Incompatible default for argument "limit" (default has type "None", argument has type "int")  [assignment]
+pandasai/helpers/memory.pyi:22: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/helpers/memory.pyi:22: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/helpers/memory.pyi:24: error: Incompatible default for argument "limit" (default has type "None", argument has type "int")  [assignment]
+pandasai/helpers/memory.pyi:24: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/helpers/memory.pyi:24: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/user_query.pyi:12: error: Signature of "__dict__" incompatible with supertype "object"  [override]
+pandasai/core/user_query.pyi:12: note:      Superclass:
+pandasai/core/user_query.pyi:12: note:          dict[str, Any]
+pandasai/core/user_query.pyi:12: note:      Subclass:
+pandasai/core/user_query.pyi:12: note:          def __dict__(self) -> str
+pandasai/exceptions.pyi:51: error: Name "Optional" is not defined  [name-defined]
+pandasai/exceptions.pyi:51: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/vectorstores/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/vectorstores/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/sandbox/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/sandbox/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/data_loader/semantic_layer_schema.pyi:5: error: Library stubs not installed for "yaml"  [import-untyped]
+pandasai/helpers/__init__.pyi:5: error: Name "List" is not defined  [name-defined]
+pandasai/helpers/__init__.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/helpers/session.pyi:11: error: Module "pandasai.helpers" does not explicitly export attribute "load_dotenv"  [attr-defined]
+pandasai/core/prompts/base.pyi:32: error: Name "List" is not defined  [name-defined]
+pandasai/core/prompts/base.pyi:32: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/response/base.pyi:15: error: Incompatible default for argument "type" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.pyi:15: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.pyi:15: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/base.pyi:16: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.pyi:16: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.pyi:16: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/base.pyi:17: error: Incompatible default for argument "error" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.pyi:17: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.pyi:17: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/string.pyi:6: error: Incompatible default for argument "value" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/string.pyi:6: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/string.pyi:6: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/string.pyi:6: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/number.pyi:6: error: Incompatible default for argument "value" (default has type "None", argument has type "Union[int, float]")  [assignment]
+pandasai/core/response/number.pyi:6: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/number.pyi:6: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/number.pyi:6: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/error.pyi:9: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/error.pyi:9: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/error.pyi:9: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/error.pyi:10: error: Incompatible default for argument "error" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/error.pyi:10: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/error.pyi:10: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/dataframe.pyi:8: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/dataframe.pyi:8: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/dataframe.pyi:8: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/parser.pyi:16: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/parser.pyi:16: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/parser.pyi:16: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/parser.pyi:18: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/parser.pyi:18: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/parser.pyi:18: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/__init__.pyi:9: error: Name "List" is not defined  [name-defined]
+pandasai/core/response/__init__.pyi:9: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/helpers/dataframe_serializer.pyi:15: error: Name "pd" is not defined  [name-defined]
+pandasai/config.pyi:17: error: Cannot override class variable (previously declared on base class "BaseModel") with instance variable  [misc]
+pandasai/config.pyi:23: error: Missing named argument "model_config" for "Config"  [call-arg]
+pandasai/llm/bamboo_llm/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/llm/bamboo_llm/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/smart_datalake/__init__.pyi:7: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/smart_datalake/__init__.pyi:18: error: Name "Dict" is not defined  [name-defined]
+pandasai/smart_datalake/__init__.pyi:18: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+pandasai/smart_datalake/__init__.pyi:61: error: Name "Dict" is not defined  [name-defined]
+pandasai/smart_datalake/__init__.pyi:61: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+pandasai/smart_dataframe/__init__.pyi:9: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/smart_dataframe/__init__.pyi:26: error: Incompatible default for argument "name" (default has type "None", argument has type "str")  [assignment]
+pandasai/smart_dataframe/__init__.pyi:26: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/smart_dataframe/__init__.pyi:26: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/smart_dataframe/__init__.pyi:27: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+pandasai/smart_dataframe/__init__.pyi:27: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/smart_dataframe/__init__.pyi:27: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/smart_dataframe/__init__.pyi:28: error: Incompatible default for argument "custom_head" (default has type "None", argument has type "DataFrame")  [assignment]
+pandasai/smart_dataframe/__init__.pyi:28: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/smart_dataframe/__init__.pyi:28: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/query_builders/local_query_builder.pyi:4: error: Module "pandasai" does not explicitly export attribute "ConfigManager"  [attr-defined]
+pandasai/query_builders/__init__.pyi:5: error: Name "List" is not defined  [name-defined]
+pandasai/query_builders/__init__.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/dataframe/virtual_dataframe.pyi:14: error: Name "List" is not defined  [name-defined]
+pandasai/dataframe/virtual_dataframe.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/dataframe/virtual_dataframe.pyi:20: error: Signature of "head" incompatible with supertype "DataFrame"  [override]
+pandasai/dataframe/virtual_dataframe.pyi:20: note:      Superclass:
+pandasai/dataframe/virtual_dataframe.pyi:20: note:          def head(self, n: int = ...) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:20: note:      Subclass:
+pandasai/dataframe/virtual_dataframe.pyi:20: note:          def head(self) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:20: error: Signature of "head" incompatible with supertype "NDFrame"  [override]
+pandasai/dataframe/virtual_dataframe.pyi:20: note:      Superclass:
+pandasai/dataframe/virtual_dataframe.pyi:20: note:          def head(self, n: int = ...) -> VirtualDataFrame
+pandasai/dataframe/virtual_dataframe.pyi:20: note:      Subclass:
+pandasai/dataframe/virtual_dataframe.pyi:20: note:          def head(self) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:26: error: Name "Any" is not defined  [name-defined]
+pandasai/dataframe/virtual_dataframe.pyi:26: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/dataframe/base.pyi:13: error: Module "pandasai" does not explicitly export attribute "get_validated_dataset_path"  [attr-defined]
+pandasai/dataframe/base.pyi:16: error: Module "pandasai.core.response" does not explicitly export attribute "BaseResponse"  [attr-defined]
+pandasai/dataframe/__init__.pyi:4: error: Name "List" is not defined  [name-defined]
+pandasai/dataframe/__init__.pyi:4: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/data_loader/loader.pyi:5: error: Library stubs not installed for "yaml"  [import-untyped]
+pandasai/data_loader/loader.pyi:5: note: Hint: "python3 -m pip install types-PyYAML"
+pandasai/data_loader/loader.pyi:5: note: (or run "mypy --install-types" to install all missing stub packages)
+pandasai/data_loader/loader.pyi:14: error: Module "pandasai" does not explicitly export attribute "ConfigManager"  [attr-defined]
+pandasai/data_loader/loader.pyi:45: error: Name "VirtualDataFrame" is not defined  [name-defined]
+pandasai/core/code_generation/code_cleaning.pyi:8: error: Skipping analyzing "astor": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+pandasai/core/code_generation/code_cleaning.pyi:8: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+pandasai/core/code_generation/code_cleaning.pyi:30: error: Name "Any" is not defined  [name-defined]
+pandasai/core/code_generation/code_cleaning.pyi:30: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/agent/state.pyi:12: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/agent/state.pyi:15: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/agent/state.pyi:15: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+pandasai/agent/state.pyi:38: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+pandasai/agent/state.pyi:38: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/state.pyi:38: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/base.pyi:13: error: Module "pandasai.sandbox" does not explicitly export attribute "Sandbox"  [attr-defined]
+pandasai/agent/base.pyi:29: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+pandasai/agent/base.pyi:29: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/base.pyi:29: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/base.pyi:30: error: Incompatible default for argument "sandbox" (default has type "None", argument has type "Sandbox")  [assignment]
+pandasai/agent/base.pyi:30: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/base.pyi:30: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/agent/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/__init__.pyi:23: error: Module "pandasai.query_builders" does not explicitly export attribute "SqlQueryBuilder"  [attr-defined]
+pandasai/__init__.pyi:26: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/__init__.pyi:30: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/__init__.pyi:30: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+pandasai/__init__.pyi:53: error: Name "Any" is not defined  [name-defined]
+pandasai/__init__.pyi:53: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/__init__.pyi:55: error: Name "Any" is not defined  [name-defined]
+pandasai/__init__.pyi:55: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/data_loader/sql_loader.pyi:9: error: Module "pandasai.query_builders" does not explicitly export attribute "SqlQueryBuilder"  [attr-defined]
+pandasai/llm/__init__.pyi:1: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/llm/__init__.pyi:4: error: Name "List" is not defined  [name-defined]
+pandasai/llm/__init__.pyi:4: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/data_loader/local_loader.pyi:9: error: Module "pandasai.query_builders" does not explicitly export attribute "LocalQueryBuilder"  [attr-defined]
+pandasai/core/prompts/__init__.pyi:27: error: Name "List" is not defined  [name-defined]
+pandasai/core/prompts/__init__.pyi:27: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/code_generation/__init__.pyi:5: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_generation/__init__.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/code_execution/__init__.pyi:3: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_execution/__init__.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/cli/main.pyi:5: error: Module "pandasai" does not explicitly export attribute "DatasetLoader"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:7: error: Module "pandasai.query_builders" does not explicitly export attribute "ViewQueryBuilder"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:9: error: Module "pandasai" does not explicitly export attribute "LOCAL_SOURCE_TYPES"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:24: error: Incompatible types in assignment (expression has type "ViewQueryBuilder", base class "SQLDatasetLoader" defined the type as "SqlQueryBuilder")  [assignment]
+pandasai/data_loader/view_loader.pyi:29: error: Signature of "query_builder" incompatible with supertype "SQLDatasetLoader"  [override]
+pandasai/data_loader/view_loader.pyi:29: note:      Superclass:
+pandasai/data_loader/view_loader.pyi:29: note:          SqlQueryBuilder
+pandasai/data_loader/view_loader.pyi:29: note:      Subclass:
+pandasai/data_loader/view_loader.pyi:29: note:          ViewQueryBuilder
+Found 74 errors in 40 files (checked 72 source files)

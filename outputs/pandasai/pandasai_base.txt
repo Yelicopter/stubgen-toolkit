@@ -1,0 +1,237 @@
+pandasai/vectorstores/vectorstore.py:51: error: Missing return statement  [empty-body]
+pandasai/vectorstores/vectorstore.py:51: note: If the method is meant to be abstract, use @abc.abstractmethod
+pandasai/vectorstores/vectorstore.py:71: error: Missing return statement  [empty-body]
+pandasai/vectorstores/vectorstore.py:71: note: If the method is meant to be abstract, use @abc.abstractmethod
+pandasai/vectorstores/vectorstore.py:144: error: Missing return statement  [empty-body]
+pandasai/vectorstores/vectorstore.py:144: note: If the method is meant to be abstract, use @abc.abstractmethod
+pandasai/vectorstores/vectorstore.py:150: error: Missing return statement  [empty-body]
+pandasai/vectorstores/vectorstore.py:150: note: If the method is meant to be abstract, use @abc.abstractmethod
+pandasai/sandbox/sandbox.py:6: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+pandasai/sandbox/sandbox.py:87: error: Incompatible return value type (got "CodeType", expected "str")  [return-value]
+pandasai/helpers/memory.py:17: error: Incompatible types in assignment (expression has type "Optional[str]", variable has type "str")  [assignment]
+pandasai/helpers/memory.py:36: error: Value of type "Union[str, int]" is not indexable  [index]
+pandasai/helpers/memory.py:36: error: Incompatible return value type (got "Union[str, int]", expected "str")  [return-value]
+pandasai/helpers/memory.py:39: error: Incompatible default for argument "limit" (default has type "None", argument has type "int")  [assignment]
+pandasai/helpers/memory.py:39: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/helpers/memory.py:39: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/helpers/memory.py:51: error: Incompatible default for argument "limit" (default has type "None", argument has type "int")  [assignment]
+pandasai/helpers/memory.py:51: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/helpers/memory.py:51: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/code_execution/environment.py:9: error: Need type annotation for "INSTALL_MAPPING" (hint: "INSTALL_MAPPING: dict[<type>, <type>] = ...")  [var-annotated]
+pandasai/query_builders/sql_parser.py:66: error: Incompatible types in assignment (expression has type "Expression", variable has type "str")  [assignment]
+pandasai/query_builders/sql_parser.py:68: error: "str" has no attribute "sql"  [attr-defined]
+pandasai/query_builders/sql_parser.py:84: error: Item "None" of "Optional[Expression]" has no attribute "find_all"  [union-attr]
+pandasai/query_builders/sql_parser.py:89: error: Item "None" of "Optional[Expression]" has no attribute "find_all"  [union-attr]
+pandasai/query_builders/paginator.py:105: error: Need type annotation for "params" (hint: "params: list[<type>] = ...")  [var-annotated]
+pandasai/query_builders/paginator.py:145: error: Argument 1 to "append" of "list" has incompatible type "datetime"; expected "str"  [arg-type]
+pandasai/query_builders/paginator.py:201: error: List item 0 has incompatible type "int"; expected "str"  [list-item]
+pandasai/query_builders/paginator.py:201: error: List item 1 has incompatible type "int"; expected "str"  [list-item]
+pandasai/helpers/folder.py:11: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+pandasai/helpers/folder.py:27: error: Argument "mode" to "makedirs" has incompatible type "str"; expected "int"  [arg-type]
+pandasai/data_loader/semantic_layer_schema.py:5: error: Library stubs not installed for "yaml"  [import-untyped]
+pandasai/data_loader/semantic_layer_schema.py:407: error: Item "None" of "Optional[Source]" has no attribute "type"  [union-attr]
+pandasai/data_loader/semantic_layer_schema.py:407: error: Item "None" of "Optional[Source]" has no attribute "path"  [union-attr]
+pandasai/query_builders/sql_transformation_manager.py:62: error: Argument 1 to "_validate_numeric" of "SQLTransformationManager" has incompatible type "Union[int, float, None]"; expected "Union[int, float]"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:150: error: Argument 1 to "_quote_str" of "SQLTransformationManager" has incompatible type "Optional[Any]"; expected "str"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:155: error: Argument 1 to "_quote_str" of "SQLTransformationManager" has incompatible type "Optional[str]"; expected "str"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:169: error: Argument 1 to "_validate_numeric" of "SQLTransformationManager" has incompatible type "Union[int, float, None]"; expected "Union[int, float]"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:170: error: Argument 1 to "_validate_numeric" of "SQLTransformationManager" has incompatible type "Union[int, float, None]"; expected "Union[int, float]"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:177: error: Argument 1 to "len" has incompatible type "Union[int, list[Union[int, float]]]"; expected "Sized"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:185: error: Argument 1 to "enumerate" has incompatible type "Union[int, list[Union[int, float]]]"; expected "Iterable[Union[int, float]]"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:205: error: Argument 1 to "_quote_str" of "SQLTransformationManager" has incompatible type "Optional[str]"; expected "str"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:245: error: Argument 1 to "_quote_str" of "SQLTransformationManager" has incompatible type "Optional[str]"; expected "str"  [arg-type]
+pandasai/query_builders/sql_transformation_manager.py:265: error: Item "None" of "Optional[str]" has no attribute "lower"  [union-attr]
+pandasai/helpers/logger.py:63: error: Argument 1 to "append" of "list" has incompatible type "StreamHandler[Union[TextIO, Any]]"; expected "FileHandler"  [arg-type]
+pandasai/helpers/logger.py:86: error: Argument 1 to "append" of "list" has incompatible type "dict[str, Any]"; expected "Log"  [arg-type]
+pandasai/helpers/logger.py:106: error: Incompatible return value type (got "Optional[Any]", expected "str")  [return-value]
+pandasai/helpers/logger.py:117: error: Incompatible return value type (got "list[Log]", expected "list[str]")  [return-value]
+pandasai/query_builders/sql_query_builder.py:8: error: Item "None" of "Optional[Source]" has no attribute "table"  [union-attr]
+pandasai/query_builders/sql_query_builder.py:8: error: Item "None" of "Union[str, Any, None]" has no attribute "lower"  [union-attr]
+pandasai/core/response/base.py:15: error: Incompatible default for argument "type" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.py:15: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.py:15: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/base.py:16: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.py:16: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.py:16: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/base.py:17: error: Incompatible default for argument "error" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.py:17: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.py:17: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/string.py:11: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/string.py:11: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/string.py:11: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/number.py:11: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/number.py:11: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/number.py:11: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/error.py:12: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/error.py:12: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/error.py:12: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/error.py:13: error: Incompatible default for argument "error" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/error.py:13: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/error.py:13: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/dataframe.py:9: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/dataframe.py:9: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/dataframe.py:9: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/chart.py:38: error: Incompatible types in assignment (expression has type "bytes", variable has type "BytesIO")  [assignment]
+pandasai/core/response/chart.py:39: error: Argument 1 to "b64encode" has incompatible type "BytesIO"; expected "Buffer"  [arg-type]
+pandasai/core/response/parser.py:16: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/parser.py:16: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/parser.py:16: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/parser.py:20: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/parser.py:20: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/parser.py:20: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/llm/base.py:147: error: Incompatible default for argument "context" (default has type "None", argument has type "AgentState")  [assignment]
+pandasai/llm/base.py:147: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/llm/base.py:147: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/helpers/dataframe_serializer.py:34: error: Argument 1 to "_truncate_dataframe" of "DataframeSerializer" has incompatible type "pandas.core.frame.DataFrame"; expected "pandasai.dataframe.base.DataFrame"  [arg-type]
+pandasai/agent/state.py:37: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+pandasai/agent/state.py:38: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+pandasai/agent/state.py:53: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+pandasai/agent/state.py:53: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/state.py:53: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/state.py:60: error: Argument 1 to "Memory" has incompatible type "Optional[int]"; expected "int"  [arg-type]
+pandasai/agent/state.py:128: error: Incompatible types in assignment (expression has type "Optional[Config]", variable has type "Union[Config, dict[Any, Any]]")  [assignment]
+pandasai/core/code_generation/code_cleaning.py:7: error: Skipping analyzing "astor": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+pandasai/core/code_generation/code_cleaning.py:7: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+pandasai/core/code_generation/code_cleaning.py:118: error: "AST" has no attribute "value"  [attr-defined]
+pandasai/core/code_generation/code_cleaning.py:150: error: Incompatible types in assignment (expression has type "AST", variable has type "stmt")  [assignment]
+pandasai/core/code_generation/code_cleaning.py:154: error: Missing positional argument "type_ignores" in call to "Module"  [call-arg]
+pandasai/core/code_generation/base.py:31: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/core/code_generation/base.py:36: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/core/code_generation/base.py:44: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/core/code_generation/base.py:45: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/core/code_generation/base.py:51: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/core/code_generation/base.py:54: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/core/code_generation/base.py:57: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/smart_datalake/__init__.py:31: error: Argument 1 to "Agent" has incompatible type "list[pandas.core.frame.DataFrame]"; expected "Union[pandasai.dataframe.base.DataFrame, VirtualDataFrame, list[Union[pandasai.dataframe.base.DataFrame, VirtualDataFrame]]]"  [arg-type]
+pandasai/smart_datalake/__init__.py:80: error: "Agent" has no attribute "last_prompt_id"; maybe "last_prompt_used"?  [attr-defined]
+pandasai/smart_datalake/__init__.py:82: error: "Agent" has no attribute "last_prompt_id"; maybe "last_prompt_used"?  [attr-defined]
+pandasai/smart_datalake/__init__.py:106: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/smart_datalake/__init__.py:107: error: "Agent" has no attribute "logger"  [attr-defined]
+pandasai/smart_datalake/__init__.py:115: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/smart_datalake/__init__.py:116: error: "Agent" has no attribute "logger"  [attr-defined]
+pandasai/smart_datalake/__init__.py:124: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/smart_datalake/__init__.py:132: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/smart_datalake/__init__.py:140: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/smart_dataframe/__init__.py:19: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+pandasai/smart_dataframe/__init__.py:20: error: Function "builtins.any" is not valid as a type  [valid-type]
+pandasai/smart_dataframe/__init__.py:20: note: Perhaps you meant "typing.Any" instead of "any"?
+pandasai/smart_dataframe/__init__.py:25: error: Incompatible default for argument "name" (default has type "None", argument has type "str")  [assignment]
+pandasai/smart_dataframe/__init__.py:25: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/smart_dataframe/__init__.py:25: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/smart_dataframe/__init__.py:26: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+pandasai/smart_dataframe/__init__.py:26: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/smart_dataframe/__init__.py:26: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/smart_dataframe/__init__.py:27: error: Incompatible default for argument "custom_head" (default has type "None", argument has type "DataFrame")  [assignment]
+pandasai/smart_dataframe/__init__.py:27: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/smart_dataframe/__init__.py:27: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/smart_dataframe/__init__.py:28: error: Incompatible default for argument "config" (default has type "None", argument has type "Config")  [assignment]
+pandasai/smart_dataframe/__init__.py:28: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/smart_dataframe/__init__.py:28: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/smart_dataframe/__init__.py:107: error: "Agent" has no attribute "last_prompt_id"; maybe "last_prompt_used"?  [attr-defined]
+pandasai/smart_dataframe/__init__.py:126: error: "Agent" has no attribute "logger"  [attr-defined]
+pandasai/smart_dataframe/__init__.py:138: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/smart_dataframe/__init__.py:146: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/smart_dataframe/__init__.py:154: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/smart_dataframe/__init__.py:162: error: "Agent" has no attribute "context"  [attr-defined]
+pandasai/query_builders/view_query_builder.py:37: error: Item "None" of "Optional[list[str]]" has no attribute "__iter__" (not iterable)  [union-attr]
+pandasai/query_builders/view_query_builder.py:44: error: Item "None" of "Optional[list[Column]]" has no attribute "__iter__" (not iterable)  [union-attr]
+pandasai/query_builders/view_query_builder.py:50: error: Argument 1 to "enumerate" has incompatible type "Optional[list[Column]]"; expected "Iterable[Column]"  [arg-type]
+pandasai/query_builders/view_query_builder.py:63: error: Argument 3 to "apply_column_transformations" of "SQLTransformationManager" has incompatible type "Optional[list[Transformation]]"; expected "list[Transformation]"  [arg-type]
+pandasai/query_builders/view_query_builder.py:106: error: Value of type "Optional[list[Column]]" is not indexable  [index]
+pandasai/query_builders/view_query_builder.py:112: error: List comprehension has incompatible type List[str]; expected List[Column]  [misc]
+pandasai/query_builders/view_query_builder.py:113: error: Item "None" of "Optional[list[Column]]" has no attribute "__iter__" (not iterable)  [union-attr]
+pandasai/query_builders/view_query_builder.py:116: error: Argument 1 to "select" has incompatible type "*list[Column]"; expected "Union[str, Expression]"  [arg-type]
+pandasai/query_builders/view_query_builder.py:119: error: Need type annotation for "join_conditions" (hint: "join_conditions: dict[<type>, <type>] = ...")  [var-annotated]
+pandasai/query_builders/view_query_builder.py:120: error: Item "None" of "Optional[list[Relation]]" has no attribute "__iter__" (not iterable)  [union-attr]
+pandasai/query_builders/view_query_builder.py:139: error: Incompatible types in assignment (expression has type "str", variable has type "Subquery")  [assignment]
+pandasai/query_builders/local_query_builder.py:17: error: Item "None" of "Optional[Source]" has no attribute "path"  [union-attr]
+pandasai/query_builders/local_query_builder.py:17: error: Argument 2 to "join" has incompatible type "Union[str, Any, None]"; expected "str"  [arg-type]
+pandasai/query_builders/local_query_builder.py:20: error: Item "None" of "Optional[Source]" has no attribute "type"  [union-attr]
+pandasai/dataframe/virtual_dataframe.py:27: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+pandasai/dataframe/virtual_dataframe.py:44: error: Item "None" of "Optional[SQLDatasetLoader]" has no attribute "get_row_count"  [union-attr]
+pandasai/dataframe/virtual_dataframe.py:51: error: Item "None" of "Optional[SQLDatasetLoader]" has no attribute "execute_query"  [union-attr]
+pandasai/dataframe/base.py:64: error: Unexpected keyword argument "data" for "__init__" of "object"  [call-arg]
+pandasai/dataframe/base.py:64: error: Unexpected keyword argument "index" for "__init__" of "object"  [call-arg]
+pandasai/dataframe/base.py:64: error: Unexpected keyword argument "columns" for "__init__" of "object"  [call-arg]
+pandasai/dataframe/base.py:64: error: Unexpected keyword argument "dtype" for "__init__" of "object"  [call-arg]
+pandasai/dataframe/base.py:64: error: Unexpected keyword argument "copy" for "__init__" of "object"  [call-arg]
+pandasai/dataframe/base.py:116: error: Argument "sandbox" to "Agent" has incompatible type "Optional[Sandbox]"; expected "Sandbox"  [arg-type]
+pandasai/dataframe/base.py:268: error: Missing named argument "description" for "Column"  [call-arg]
+pandasai/dataframe/base.py:268: error: Missing named argument "expression" for "Column"  [call-arg]
+pandasai/dataframe/base.py:268: error: Missing named argument "alias" for "Column"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "view" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "description" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "relations" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "order_by" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "limit" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "transformations" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "destination" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "update_frequency" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:276: error: Missing named argument "group_by" for "SemanticLayerSchema"  [call-arg]
+pandasai/dataframe/base.py:278: error: Missing named argument "connection" for "Source"  [call-arg]
+pandasai/dataframe/base.py:278: error: Missing named argument "table" for "Source"  [call-arg]
+pandasai/data_loader/loader.py:5: error: Library stubs not installed for "yaml"  [import-untyped]
+pandasai/data_loader/loader.py:5: note: Hint: "python3 -m pip install types-PyYAML"
+pandasai/data_loader/loader.py:5: note: (or run "mypy --install-types" to install all missing stub packages)
+pandasai/data_loader/loader.py:53: error: Incompatible types in assignment (expression has type "ViewDatasetLoader", variable has type "LocalDatasetLoader")  [assignment]
+pandasai/data_loader/loader.py:57: error: Incompatible types in assignment (expression has type "SQLDatasetLoader", variable has type "LocalDatasetLoader")  [assignment]
+pandasai/agent/base.py:47: error: Incompatible default for argument "description" (default has type "None", argument has type "str")  [assignment]
+pandasai/agent/base.py:47: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/base.py:47: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/base.py:48: error: Incompatible default for argument "sandbox" (default has type "None", argument has type "Sandbox")  [assignment]
+pandasai/agent/base.py:48: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/agent/base.py:48: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/agent/base.py:69: error: Item "SQLDatasetLoader" of "Union[Series[Any], SQLDatasetLoader, None]" has no attribute "source"  [union-attr]
+pandasai/agent/base.py:69: error: Item "None" of "Union[Series[Any], SQLDatasetLoader, None]" has no attribute "source"  [union-attr]
+pandasai/agent/base.py:101: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:105: error: Incompatible types in assignment (expression has type "BasePrompt", variable has type "str")  [assignment]
+pandasai/agent/base.py:110: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:152: error: "Series[Any]" not callable  [operator]
+pandasai/agent/base.py:165: error: Argument 1 to "_regenerate_code_after_error" of "Agent" has incompatible type "Optional[str]"; expected "str"  [arg-type]
+pandasai/agent/base.py:171: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:175: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:191: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:193: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:229: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:253: error: Incompatible types in assignment (expression has type "UserQuery", variable has type "str")  [assignment]
+pandasai/agent/base.py:254: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:255: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:269: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:279: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:293: error: Item "None" of "Optional[Logger]" has no attribute "log"  [union-attr]
+pandasai/agent/base.py:295: error: Incompatible return value type (got "ErrorResponse", expected "str")  [return-value]
+pandasai/__init__.py:180: error: Name "schema" already defined on line 166  [no-redef]
+pandasai/__init__.py:180: error: Missing named argument "source" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:180: error: Missing named argument "description" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:180: error: Missing named argument "order_by" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:180: error: Missing named argument "limit" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:180: error: Missing named argument "destination" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:180: error: Missing named argument "update_frequency" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:188: error: Item "None" of "Optional[dict[Any, Any]]" has no attribute "get"  [union-attr]
+pandasai/__init__.py:189: error: Name "schema" already defined on line 166  [no-redef]
+pandasai/__init__.py:189: error: Missing named argument "view" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:189: error: Missing named argument "description" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:189: error: Missing named argument "relations" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:189: error: Missing named argument "order_by" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:189: error: Missing named argument "limit" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:189: error: Missing named argument "destination" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:189: error: Missing named argument "update_frequency" for "SemanticLayerSchema"  [call-arg]
+pandasai/__init__.py:191: error: Argument after ** must be a mapping, not "Optional[dict[Any, Any]]"  [arg-type]
+pandasai/__init__.py:232: error: Argument "sandbox" to "Agent" has incompatible type "Optional[Sandbox]"; expected "Sandbox"  [arg-type]
+pandasai/data_loader/sql_loader.py:40: error: Item "None" of "Optional[Source]" has no attribute "type"  [union-attr]
+pandasai/data_loader/sql_loader.py:41: error: Item "None" of "Optional[Source]" has no attribute "connection"  [union-attr]
+pandasai/data_loader/sql_loader.py:85: error: Incompatible return value type (got "Union[Union[str, bytes, date, datetime, timedelta, <7 more items>], complex]", expected "int")  [return-value]
+pandasai/data_loader/view_loader.py:32: error: Incompatible types in assignment (expression has type "Optional[Source]", variable has type "Source")  [assignment]
+pandasai/data_loader/view_loader.py:35: error: Incompatible types in assignment (expression has type "ViewQueryBuilder", base class "SQLDatasetLoader" defined the type as "SqlQueryBuilder")  [assignment]
+pandasai/data_loader/view_loader.py:40: error: Signature of "query_builder" incompatible with supertype "SQLDatasetLoader"  [override]
+pandasai/data_loader/view_loader.py:40: note:      Superclass:
+pandasai/data_loader/view_loader.py:40: note:          SqlQueryBuilder
+pandasai/data_loader/view_loader.py:40: note:      Subclass:
+pandasai/data_loader/view_loader.py:40: note:          ViewQueryBuilder
+pandasai/data_loader/view_loader.py:46: error: Item "None" of "Optional[list[Relation]]" has no attribute "__iter__" (not iterable)  [union-attr]
+pandasai/data_loader/view_loader.py:48: error: Value of type "Optional[list[Column]]" is not indexable  [index]
+pandasai/data_loader/view_loader.py:65: error: List comprehension has incompatible type List[Optional[Source]]; expected List[Source]  [misc]
+pandasai/llm/fake.py:26: error: Incompatible default for argument "context" (default has type "None", argument has type "AgentState")  [assignment]
+pandasai/llm/fake.py:26: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/llm/fake.py:26: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+Found 180 errors in 35 files (checked 72 source files)

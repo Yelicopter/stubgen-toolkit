@@ -1,0 +1,43 @@
+pandasai/core/user_query.pyi:6: error: Signature of "__dict__" incompatible with supertype "object"  [override]
+pandasai/core/user_query.pyi:6: note:      Superclass:
+pandasai/core/user_query.pyi:6: note:          dict[str, Any]
+pandasai/core/user_query.pyi:6: note:      Subclass:
+pandasai/core/user_query.pyi:6: note:          def __dict__(self) -> str
+pandasai/data_loader/semantic_layer_schema.pyi:103: error: The erased type of self "type[pandasai.data_loader.semantic_layer_schema.SemanticLayerSchema]" is not a supertype of its class "pandasai.data_loader.semantic_layer_schema.SemanticLayerSchema"  [misc]
+pandasai/dataframe/base.pyi:8: error: Module "pandasai.core.response" does not explicitly export attribute "BaseResponse"  [attr-defined]
+pandasai/dataframe/virtual_dataframe.pyi:16: error: Name "Optional" is not defined  [name-defined]
+pandasai/dataframe/virtual_dataframe.pyi:16: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Optional")
+pandasai/dataframe/virtual_dataframe.pyi:18: error: Signature of "head" incompatible with supertype "DataFrame"  [override]
+pandasai/dataframe/virtual_dataframe.pyi:18: note:      Superclass:
+pandasai/dataframe/virtual_dataframe.pyi:18: note:          def head(self, n: int = ...) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:18: note:      Subclass:
+pandasai/dataframe/virtual_dataframe.pyi:18: note:          def head(self) -> DataFrame
+pandasai/dataframe/virtual_dataframe.pyi:18: error: Signature of "head" incompatible with supertype "NDFrame"  [override]
+pandasai/dataframe/virtual_dataframe.pyi:18: note:      Superclass:
+pandasai/dataframe/virtual_dataframe.pyi:18: note:          def head(self, n: int = ...) -> VirtualDataFrame
+pandasai/dataframe/virtual_dataframe.pyi:18: note:      Subclass:
+pandasai/dataframe/virtual_dataframe.pyi:18: note:          def head(self) -> DataFrame
+pandasai/agent/state.pyi:12: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/agent/state.pyi:12: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+pandasai/agent/base.pyi:12: error: Module "pandasai.sandbox" does not explicitly export attribute "Sandbox"  [attr-defined]
+pandasai/data_loader/sql_loader.pyi:6: error: Module "pandasai.query_builders" does not explicitly export attribute "SqlQueryBuilder"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:6: error: Module "pandasai.query_builders" does not explicitly export attribute "ViewQueryBuilder"  [attr-defined]
+pandasai/data_loader/view_loader.pyi:16: error: Incompatible types in assignment (expression has type "ViewQueryBuilder", base class "SQLDatasetLoader" defined the type as "SqlQueryBuilder")  [assignment]
+pandasai/data_loader/view_loader.pyi:19: error: Signature of "query_builder" incompatible with supertype "SQLDatasetLoader"  [override]
+pandasai/data_loader/view_loader.pyi:19: note:      Superclass:
+pandasai/data_loader/view_loader.pyi:19: note:          SqlQueryBuilder
+pandasai/data_loader/view_loader.pyi:19: note:      Subclass:
+pandasai/data_loader/view_loader.pyi:19: note:          ViewQueryBuilder
+pandasai/data_loader/local_loader.pyi:6: error: Module "pandasai.query_builders" does not explicitly export attribute "LocalQueryBuilder"  [attr-defined]
+pandasai/core/code_generation/base.pyi:6: error: Name "Any" is not defined  [name-defined]
+pandasai/core/code_generation/base.pyi:6: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/core/code_generation/base.pyi:7: error: Name "Any" is not defined  [name-defined]
+pandasai/core/code_generation/base.pyi:7: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/smart_datalake/__init__.pyi:6: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/smart_dataframe/__init__.pyi:7: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/llm/__init__.pyi:1: error: Module "pandasai.llm.bamboo_llm" does not explicitly export attribute "BambooLLM"  [attr-defined]
+pandasai/__init__.pyi:7: error: Module "pandasai.agent" does not explicitly export attribute "Agent"  [attr-defined]
+pandasai/__init__.pyi:9: error: Module "pandasai.dataframe" does not explicitly export attribute "DataFrame"  [attr-defined]
+pandasai/__init__.pyi:9: error: Module "pandasai.dataframe" does not explicitly export attribute "VirtualDataFrame"  [attr-defined]
+pandasai/__init__.pyi:10: error: Module "pandasai.sandbox" does not explicitly export attribute "Sandbox"  [attr-defined]
+Found 23 errors in 14 files (checked 72 source files)

@@ -1,0 +1,106 @@
+pandasai/data_loader/duck_db_connection_manager.pyi:4: error: Library stubs not installed for "pandas"  [import]
+pandasai/core/response/base.pyi:8: error: Incompatible default for argument "type" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.pyi:8: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.pyi:8: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/base.pyi:9: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.pyi:9: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.pyi:9: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/base.pyi:10: error: Incompatible default for argument "error" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/base.pyi:10: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/base.pyi:10: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/string.pyi:6: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/string.pyi:6: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/string.pyi:6: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/number.pyi:6: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/number.pyi:6: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/number.pyi:6: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/error.pyi:7: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/error.pyi:7: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/error.pyi:7: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/error.pyi:8: error: Incompatible default for argument "error" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/error.pyi:8: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/error.pyi:8: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/dataframe.pyi:3: error: Library stubs not installed for "pandas"  [import]
+pandasai/core/response/dataframe.pyi:8: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/dataframe.pyi:8: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/dataframe.pyi:8: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/helpers/json_encoder.pyi:5: error: Library stubs not installed for "pandas"  [import]
+pandasai/core/response/chart.pyi:13: error: Module "PIL.Image" is not valid as a type  [valid-type]
+pandasai/core/response/chart.pyi:13: note: Perhaps you meant to use a protocol matching the module structure?
+pandasai/core/response/parser.pyi:4: error: Library stubs not installed for "pandas"  [import]
+pandasai/core/response/parser.pyi:15: error: Name "Dict" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:15: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+pandasai/core/response/parser.pyi:15: error: Name "Any" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:15: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/core/response/parser.pyi:15: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/parser.pyi:15: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/parser.pyi:15: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/parser.pyi:18: error: Name "Dict" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:18: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+pandasai/core/response/parser.pyi:18: error: Name "Any" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:18: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/core/response/parser.pyi:18: error: Incompatible default for argument "last_code_executed" (default has type "None", argument has type "str")  [assignment]
+pandasai/core/response/parser.pyi:18: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+pandasai/core/response/parser.pyi:18: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+pandasai/core/response/parser.pyi:21: error: Name "Dict" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:21: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+pandasai/core/response/parser.pyi:21: error: Name "Any" is not defined  [name-defined]
+pandasai/core/response/parser.pyi:21: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+pandasai/data_loader/semantic_layer_schema.pyi:5: error: Library stubs not installed for "yaml"  [import]
+pandasai/data_loader/semantic_layer_schema.pyi:28: error: Argument 1 of "__eq__" is incompatible with supertype "object"; supertype defines the argument type as "object"  [override]
+pandasai/data_loader/semantic_layer_schema.pyi:28: note: This violates the Liskov substitution principle
+pandasai/data_loader/semantic_layer_schema.pyi:28: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+pandasai/data_loader/semantic_layer_schema.pyi:28: note: It is recommended for "__eq__" to work with arbitrary objects, for example:
+pandasai/data_loader/semantic_layer_schema.pyi:28: note:     def __eq__(self, other: object) -> bool:
+pandasai/data_loader/semantic_layer_schema.pyi:28: note:         if not isinstance(other, SQLConnectionConfig):
+pandasai/data_loader/semantic_layer_schema.pyi:28: note:             return NotImplemented
+pandasai/data_loader/semantic_layer_schema.pyi:28: note:         return <logic to compare two SQLConnectionConfig instances>
+pandasai/helpers/session.pyi:57: error: Method must have at least one argument. Did you forget the "self" argument?  [misc]
+pandasai/query_builders/view_query_builder.pyi:53: error: Name "_get_sub_query_from_loader" already defined on line 47  [no-redef]
+pandasai/query_builders/view_query_builder.pyi:56: error: Name "build_query" already defined on line 41  [no-redef]
+pandasai/query_builders/view_query_builder.pyi:59: error: Name "get_head_query" already defined on line 44  [no-redef]
+pandasai/query_builders/local_query_builder.pyi:3: error: Module "pandasai" does not explicitly export attribute "ConfigManager"  [attr-defined]
+pandasai/dataframe/virtual_dataframe.pyi:5: error: Library stubs not installed for "pandas"  [import]
+pandasai/dataframe/base.pyi:7: error: Library stubs not installed for "pandas"  [import]
+pandasai/dataframe/base.pyi:8: error: Library stubs not installed for "pandas._typing"  [import]
+pandasai/dataframe/base.pyi:11: error: Module "pandasai" does not explicitly export attribute "get_validated_dataset_path"  [attr-defined]
+pandasai/data_loader/loader.pyi:4: error: Library stubs not installed for "yaml"  [import]
+pandasai/data_loader/loader.pyi:4: note: Hint: "python3 -m pip install types-PyYAML"
+pandasai/data_loader/loader.pyi:7: error: Module "pandasai.query_builders" has no attribute "BaseQueryBuilder"; maybe "ViewQueryBuilder", "LocalQueryBuilder", or "SqlQueryBuilder"?  [attr-defined]
+pandasai/agent/base.pyi:5: error: Library stubs not installed for "pandas"  [import]
+pandasai/agent/base.pyi:5: note: Hint: "python3 -m pip install pandas-stubs"
+pandasai/agent/base.pyi:5: note: (or run "mypy --install-types" to install all missing stub packages)
+pandasai/agent/base.pyi:9: error: Module "pandasai.data_loader" has no attribute "DatasetLoader"  [attr-defined]
+pandasai/agent/base.pyi:13: error: Skipping analyzing "pandasai.vectorstore": module is installed, but missing library stubs or py.typed marker  [import]
+pandasai/agent/base.pyi:13: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+pandasai/__init__.pyi:23: error: Module "pandasai.data_loader" has no attribute "DatasetLoader"  [attr-defined]
+pandasai/data_loader/sql_loader.pyi:4: error: Library stubs not installed for "pandas"  [import]
+pandasai/smart_datalake/__init__.pyi:5: error: Library stubs not installed for "pandas"  [import]
+pandasai/smart_datalake/__init__.pyi:14: error: Name "Config" is not defined  [name-defined]
+pandasai/smart_datalake/__init__.pyi:40: error: Name "Logger" is not defined  [name-defined]
+pandasai/smart_datalake/__init__.pyi:44: error: Name "Logger" is not defined  [name-defined]
+pandasai/smart_datalake/__init__.pyi:48: error: Name "Config" is not defined  [name-defined]
+pandasai/smart_datalake/__init__.pyi:112: error: Name "Memory" is not defined  [name-defined]
+pandasai/smart_dataframe/__init__.pyi:7: error: Library stubs not installed for "pandas"  [import]
+pandasai/smart_dataframe/__init__.pyi:24: error: Name "Config" is not defined  [name-defined]
+pandasai/smart_dataframe/__init__.pyi:64: error: Name "Logger" is not defined  [name-defined]
+pandasai/smart_dataframe/__init__.pyi:68: error: Name "Logger" is not defined  [name-defined]
+pandasai/data_loader/view_loader.pyi:4: error: Library stubs not installed for "pandas"  [import]
+pandasai/data_loader/local_loader.pyi:5: error: Library stubs not installed for "pandas"  [import]
+pandasai/cli/main.pyi:7: error: Module "pandasai" does not explicitly export attribute "ConfigManager"  [attr-defined]
+pandasai/cli/main.pyi:7: error: Module "pandasai" does not explicitly export attribute "DatasetLoader"  [attr-defined]
+pandasai/cli/main.pyi:21: error: "Callable[[], None]" has no attribute "group"  [attr-defined]
+pandasai/cli/main.pyi:29: error: "Callable[[], None]" has no attribute "command"  [attr-defined]
+pandasai/cli/main.pyi:34: error: "Callable[[], None]" has no attribute "command"  [attr-defined]
+pandasai/cli/main.pyi:39: error: "Callable[[], None]" has no attribute "command"  [attr-defined]
+pandasai/llm/bamboo_llm/base.pyi:19: error: Argument 2 of "call" is incompatible with supertype "LLM"; supertype defines the argument type as "AgentState | None"  [override]
+pandasai/llm/bamboo_llm/base.pyi:19: note: This violates the Liskov substitution principle
+pandasai/llm/bamboo_llm/base.pyi:19: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+pandasai/core/code_generation/code_cleaning.pyi:7: error: Skipping analyzing "astor": module is installed, but missing library stubs or py.typed marker  [import]
+pandasai/core/code_generation/code_cleaning.pyi:24: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_generation/code_cleaning.pyi:24: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+pandasai/core/code_generation/code_cleaning.pyi:25: error: Name "Dict" is not defined  [name-defined]
+pandasai/core/code_generation/code_cleaning.pyi:25: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+pandasai/core/code_generation/code_cleaning.pyi:35: error: Name "List" is not defined  [name-defined]
+pandasai/core/code_generation/code_cleaning.pyi:35: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+Found 62 errors in 26 files (checked 72 source files)
