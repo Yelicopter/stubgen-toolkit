@@ -1,0 +1,25 @@
+ghunt/version.pyi:1: error: Module "typing" has no attribute "str"  [attr-defined]
+ghunt/cli.pyi:1: error: Cannot find implementation or library stub for module named "rich_argparse"  [import]
+ghunt/objects/encoders.pyi:5: error: Name "Any" is not defined  [name-defined]
+ghunt/objects/encoders.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/objects/base.pyi:7: error: Cannot find implementation or library stub for module named "autoslot"  [import]
+ghunt/lib/httpx.pyi:6: error: Signature of "_merge_cookies" incompatible with supertype "BaseClient"  [override]
+ghunt/lib/httpx.pyi:6: note:      Superclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None = ...) -> Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None
+ghunt/lib/httpx.pyi:6: note:      Subclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: Any) -> Any
+ghunt/helpers/utils.pyi:9: error: Cannot find implementation or library stub for module named "jsonpickle"  [import]
+ghunt/helpers/utils.pyi:13: error: Cannot find implementation or library stub for module named "imagehash"  [import]
+ghunt/helpers/gmaps.pyi:4: error: Cannot find implementation or library stub for module named "geopy"  [import]
+ghunt/helpers/gmaps.pyi:5: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/helpers/gmaps.pyi:8: error: Cannot find implementation or library stub for module named "alive_progress"  [import]
+ghunt/parsers/people.pyi:7: error: Cannot find implementation or library stub for module named "imagehash"  [import]
+ghunt/modules/geolocate.pyi:6: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/modules/drive.pyi:10: error: Cannot find implementation or library stub for module named "inflection"  [import]
+ghunt/modules/drive.pyi:11: error: Cannot find implementation or library stub for module named "humanize"  [import]
+ghunt/helpers/playgames.pyi:8: error: Cannot find implementation or library stub for module named "alive_progress"  [import]
+ghunt/helpers/ia.pyi:7: error: Name "Any" is not defined  [name-defined]
+ghunt/helpers/ia.pyi:7: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/helpers/calendar.pyi:3: error: Cannot find implementation or library stub for module named "beautifultable"  [import]
+ghunt/helpers/calendar.pyi:3: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+Found 17 errors in 13 files (checked 64 source files)

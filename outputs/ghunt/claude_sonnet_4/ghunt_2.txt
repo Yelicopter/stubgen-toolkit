@@ -1,0 +1,6 @@
+ghunt/lib/httpx.pyi:6: error: Signature of "_merge_cookies" incompatible with supertype "BaseClient"  [override]
+ghunt/lib/httpx.pyi:6: note:      Superclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None = ...) -> Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None
+ghunt/lib/httpx.pyi:6: note:      Subclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: dict[str, str]) -> dict[str, str]
+Found 1 error in 1 file (checked 64 source files)

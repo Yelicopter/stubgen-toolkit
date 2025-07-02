@@ -1,0 +1,44 @@
+ghunt/cli.pyi:1: error: Cannot find implementation or library stub for module named "rich_argparse"  [import]
+ghunt/objects/base.pyi:7: error: Cannot find implementation or library stub for module named "autoslot"  [import]
+ghunt/lib/httpx.pyi:6: error: Signature of "_merge_cookies" incompatible with supertype "BaseClient"  [override]
+ghunt/lib/httpx.pyi:6: note:      Superclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None = ...) -> Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None
+ghunt/lib/httpx.pyi:6: note:      Subclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: dict[str, str]) -> dict[str, str]
+ghunt/helpers/utils.pyi:9: error: Cannot find implementation or library stub for module named "jsonpickle"  [import]
+ghunt/helpers/utils.pyi:13: error: Cannot find implementation or library stub for module named "imagehash"  [import]
+ghunt/helpers/gmaps.pyi:4: error: Cannot find implementation or library stub for module named "geopy"  [import]
+ghunt/helpers/gmaps.pyi:5: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/helpers/gmaps.pyi:8: error: Cannot find implementation or library stub for module named "alive_progress"  [import]
+ghunt/parsers/people.pyi:7: error: Cannot find implementation or library stub for module named "imagehash"  [import]
+ghunt/apis/accounts.pyi:16: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/vision.pyi:14: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/vision.pyi:15: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/playgateway.pyi:20: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/playgames.pyi:18: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/peoplepa.pyi:15: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/geolocation.pyi:14: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/geolocation.pyi:15: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/drive.pyi:19: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/clientauthconfig.pyi:14: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/clientauthconfig.pyi:15: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/apis/calendar.pyi:16: error: Incompatible types in assignment (expression has type "str | None", base class "GAPI" defined the type as "str")  [assignment]
+ghunt/modules/geolocate.pyi:6: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/modules/geolocate.pyi:11: error: Incompatible default for argument "json_file" (default has type "None", argument has type "Path")  [assignment]
+ghunt/modules/geolocate.pyi:11: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/modules/geolocate.pyi:11: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+ghunt/modules/drive.pyi:10: error: Cannot find implementation or library stub for module named "inflection"  [import]
+ghunt/modules/drive.pyi:11: error: Cannot find implementation or library stub for module named "humanize"  [import]
+ghunt/modules/drive.pyi:18: error: Incompatible default for argument "json_file" (default has type "type[Path]", argument has type "Path")  [assignment]
+ghunt/helpers/playgames.pyi:8: error: Cannot find implementation or library stub for module named "alive_progress"  [import]
+ghunt/helpers/ia.pyi:8: error: Name "Any" is not defined  [name-defined]
+ghunt/helpers/ia.pyi:8: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/helpers/calendar.pyi:3: error: Cannot find implementation or library stub for module named "beautifultable"  [import]
+ghunt/helpers/calendar.pyi:3: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+ghunt/modules/gaia.pyi:12: error: Incompatible default for argument "json_file" (default has type "None", argument has type "Path")  [assignment]
+ghunt/modules/gaia.pyi:12: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/modules/gaia.pyi:12: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+ghunt/modules/email.pyi:12: error: Incompatible default for argument "json_file" (default has type "None", argument has type "Path")  [assignment]
+ghunt/modules/email.pyi:12: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/modules/email.pyi:12: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+Found 31 errors in 22 files (checked 64 source files)

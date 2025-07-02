@@ -1,0 +1,8 @@
+ghunt/lib/httpx.pyi:5: error: Signature of "_merge_cookies" incompatible with supertype "BaseClient"  [override]
+ghunt/lib/httpx.pyi:5: note:      Superclass:
+ghunt/lib/httpx.pyi:5: note:          def _merge_cookies(self, cookies: Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None = ...) -> Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None
+ghunt/lib/httpx.pyi:5: note:      Subclass:
+ghunt/lib/httpx.pyi:5: note:          def _merge_cookies(self, cookies: Any) -> Any
+ghunt/lib/httpx.pyi:5: error: Name "Any" is not defined  [name-defined]
+ghunt/lib/httpx.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+Found 2 errors in 1 file (checked 64 source files)

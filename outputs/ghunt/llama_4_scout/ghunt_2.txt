@@ -1,0 +1,82 @@
+ghunt/parsers/geolocate.pyi:6: error: Name "Position" is not defined  [name-defined]
+ghunt/parsers/clientauthconfig.pyi:20: error: Attribute "home_page_url" already defined on line 12  [no-redef]
+ghunt/parsers/clientauthconfig.pyi:21: error: Attribute "terms_of_service_urls" already defined on line 13  [no-redef]
+ghunt/parsers/clientauthconfig.pyi:22: error: Attribute "privacy_policy_urls" already defined on line 14  [no-redef]
+ghunt/cli.pyi:1: error: Cannot find implementation or library stub for module named "rich_argparse"  [import]
+ghunt/parsers/people.pyi:34: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+ghunt/parsers/people.pyi:64: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:12: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:13: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:14: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:15: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:16: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:17: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:21: error: Name "DriveUserPermission" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:25: error: Name "DriveUser" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:26: error: Name "DriveUser" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:27: error: Name "DriveCapabilities" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:44: error: Name "DrivePermission" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:46: error: Name "DriveVideoMediaMetadata" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:48: error: Name "DriveLabelInfo" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:53: error: Name "DrivePermissionsSummary" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:58: error: Name "DriveImageMediaMetadata" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:60: error: Name "DriveLinkShareMetadata" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:64: error: Name "DriveOpenWithLinks" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:71: error: Name "DriveSource" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:72: error: Name "DriveSource" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:75: error: Name "DriveFolderProperties" is not defined  [name-defined]
+ghunt/parsers/calendar.pyi:33: error: Incompatible types in assignment (expression has type "None", variable has type "bool")  [assignment]
+ghunt/parsers/calendar.pyi:40: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/calendar.pyi:59: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/calendar.pyi:60: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/calendar.pyi:73: error: Incompatible types in assignment (expression has type "None", variable has type "bool")  [assignment]
+ghunt/parsers/calendar.pyi:83: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/objects/base.pyi:8: error: Cannot find implementation or library stub for module named "autoslot"  [import]
+ghunt/helpers/drive.pyi:1: error: Module "ghunt.parsers.drive" has no attribute "DriveComment"  [attr-defined]
+ghunt/helpers/drive.pyi:1: error: Module "ghunt.parsers.drive" has no attribute "DriveCommentList"  [attr-defined]
+ghunt/helpers/drive.pyi:1: error: Module "ghunt.parsers.drive" has no attribute "DriveCommentReply"  [attr-defined]
+ghunt/lib/httpx.pyi:7: error: Signature of "_merge_cookies" incompatible with supertype "BaseClient"  [override]
+ghunt/lib/httpx.pyi:7: note:      Superclass:
+ghunt/lib/httpx.pyi:7: note:          def _merge_cookies(self, cookies: Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None = ...) -> Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None
+ghunt/lib/httpx.pyi:7: note:      Subclass:
+ghunt/lib/httpx.pyi:7: note:          def _merge_cookies(self, cookies: dict[str, str]) -> dict[str, str]
+ghunt/helpers/utils.pyi:9: error: Cannot find implementation or library stub for module named "jsonpickle"  [import]
+ghunt/helpers/utils.pyi:14: error: Cannot find implementation or library stub for module named "imagehash"  [import]
+ghunt/helpers/utils.pyi:33: error: Name "Dict" is not defined  [name-defined]
+ghunt/helpers/utils.pyi:33: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/utils.pyi:36: error: Name "Dict" is not defined  [name-defined]
+ghunt/helpers/utils.pyi:36: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/utils.pyi:54: error: Name "Dict" is not defined  [name-defined]
+ghunt/helpers/utils.pyi:54: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/utils.pyi:66: error: Name "Dict" is not defined  [name-defined]
+ghunt/helpers/utils.pyi:66: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/gmaps.pyi:4: error: Cannot find implementation or library stub for module named "geopy"  [import]
+ghunt/helpers/gmaps.pyi:5: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/helpers/gmaps.pyi:9: error: Cannot find implementation or library stub for module named "alive_progress"  [import]
+ghunt/objects/apis.pyi:28: error: Incompatible default for argument "params" (default has type "None", argument has type "dict[str, Any]")  [assignment]
+ghunt/objects/apis.pyi:28: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/objects/apis.pyi:28: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+ghunt/objects/apis.pyi:28: error: Incompatible default for argument "data_type" (default has type "None", argument has type "str")  [assignment]
+ghunt/modules/login.pyi:10: error: Name "Any" is not defined  [name-defined]
+ghunt/modules/login.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/drive.pyi:5: error: Module "ghunt.parsers.drive" has no attribute "DriveCommentList"  [attr-defined]
+ghunt/apis/drive.pyi:5: error: Module "ghunt.parsers.drive" has no attribute "DriveChildList"  [attr-defined]
+ghunt/modules/geolocate.pyi:7: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/modules/geolocate.pyi:11: error: Incompatible default for argument "json_file" (default has type "None", argument has type "Path")  [assignment]
+ghunt/modules/geolocate.pyi:11: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/modules/geolocate.pyi:11: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+ghunt/modules/drive.pyi:11: error: Cannot find implementation or library stub for module named "inflection"  [import]
+ghunt/modules/drive.pyi:12: error: Cannot find implementation or library stub for module named "humanize"  [import]
+ghunt/modules/drive.pyi:18: error: Incompatible default for argument "json_file" (default has type "None", argument has type "Path")  [assignment]
+ghunt/modules/drive.pyi:18: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/modules/drive.pyi:18: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+ghunt/helpers/playgames.pyi:9: error: Cannot find implementation or library stub for module named "alive_progress"  [import]
+ghunt/helpers/calendar.pyi:3: error: Cannot find implementation or library stub for module named "beautifultable"  [import]
+ghunt/helpers/calendar.pyi:3: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+ghunt/modules/gaia.pyi:14: error: Incompatible default for argument "json_file" (default has type "None", argument has type "Path")  [assignment]
+ghunt/modules/gaia.pyi:14: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/modules/gaia.pyi:14: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+ghunt/modules/email.pyi:14: error: Incompatible default for argument "json_file" (default has type "None", argument has type "Path")  [assignment]
+ghunt/modules/email.pyi:14: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/modules/email.pyi:14: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+Found 61 errors in 20 files (checked 64 source files)

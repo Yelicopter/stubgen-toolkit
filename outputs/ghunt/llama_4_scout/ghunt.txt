@@ -1,0 +1,146 @@
+ghunt/knowledge/sig.pyi:1: error: Name "Dict" is not defined  [name-defined]
+ghunt/knowledge/sig.pyi:1: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/knowledge/services.pyi:1: error: Name "Dict" is not defined  [name-defined]
+ghunt/knowledge/services.pyi:1: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/knowledge/people.pyi:1: error: Name "Dict" is not defined  [name-defined]
+ghunt/knowledge/people.pyi:1: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/knowledge/maps.pyi:1: error: Name "Dict" is not defined  [name-defined]
+ghunt/knowledge/maps.pyi:1: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/knowledge/keys.pyi:1: error: Name "Dict" is not defined  [name-defined]
+ghunt/knowledge/keys.pyi:1: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/knowledge/drive.pyi:5: error: Name "Dict" is not defined  [name-defined]
+ghunt/knowledge/drive.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/cli.pyi:1: error: Cannot find implementation or library stub for module named "rich_argparse"  [import]
+ghunt/objects/base.pyi:8: error: Cannot find implementation or library stub for module named "autoslot"  [import]
+ghunt/objects/base.pyi:21: error: Incompatible default for argument "creds_path" (default has type "str", argument has type "Path")  [assignment]
+ghunt/lib/httpx.pyi:6: error: Signature of "_merge_cookies" incompatible with supertype "BaseClient"  [override]
+ghunt/lib/httpx.pyi:6: note:      Superclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None = ...) -> Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None
+ghunt/lib/httpx.pyi:6: note:      Subclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: Any) -> Any
+ghunt/lib/httpx.pyi:6: error: Name "Dict" is not defined  [name-defined]
+ghunt/lib/httpx.pyi:6: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/gmail.pyi:3: error: Name "Any" is not defined  [name-defined]
+ghunt/helpers/gmail.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/helpers/utils.pyi:9: error: Cannot find implementation or library stub for module named "jsonpickle"  [import]
+ghunt/helpers/utils.pyi:14: error: Cannot find implementation or library stub for module named "imagehash"  [import]
+ghunt/helpers/utils.pyi:33: error: Name "Dict" is not defined  [name-defined]
+ghunt/helpers/utils.pyi:33: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/utils.pyi:36: error: Name "Dict" is not defined  [name-defined]
+ghunt/helpers/utils.pyi:36: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/utils.pyi:54: error: Name "Dict" is not defined  [name-defined]
+ghunt/helpers/utils.pyi:54: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/utils.pyi:66: error: Name "Dict" is not defined  [name-defined]
+ghunt/helpers/utils.pyi:66: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Dict")
+ghunt/helpers/gmaps.pyi:4: error: Cannot find implementation or library stub for module named "geopy"  [import]
+ghunt/helpers/gmaps.pyi:5: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/helpers/gmaps.pyi:9: error: Cannot find implementation or library stub for module named "alive_progress"  [import]
+ghunt/objects/apis.pyi:28: error: Incompatible default for argument "params" (default has type "None", argument has type "dict[str, Any]")  [assignment]
+ghunt/objects/apis.pyi:28: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+ghunt/objects/apis.pyi:28: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+ghunt/objects/apis.pyi:28: error: Incompatible default for argument "data_type" (default has type "None", argument has type "str")  [assignment]
+ghunt/modules/login.pyi:10: error: Name "Any" is not defined  [name-defined]
+ghunt/modules/login.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/parsers/vision.pyi:3: error: Module "ghunt.objects.apis" has no attribute "Parser"  [attr-defined]
+ghunt/parsers/vision.pyi:7: error: Incompatible types in assignment (expression has type "None", variable has type "float")  [assignment]
+ghunt/parsers/vision.pyi:8: error: Incompatible types in assignment (expression has type "None", variable has type "float")  [assignment]
+ghunt/parsers/vision.pyi:9: error: Incompatible types in assignment (expression has type "None", variable has type "float")  [assignment]
+ghunt/parsers/vision.pyi:24: error: Incompatible types in assignment (expression has type "None", variable has type "float")  [assignment]
+ghunt/parsers/vision.pyi:25: error: Incompatible types in assignment (expression has type "None", variable has type "float")  [assignment]
+ghunt/parsers/playgateway.pyi:3: error: Module "ghunt.protos.playgatewaypa.search_player_results_pb2" has no attribute "PlayerSearchResultsProto"  [attr-defined]
+ghunt/parsers/playgateway.pyi:4: error: Module "ghunt.protos.playgatewaypa.get_player_response_pb2" has no attribute "GetPlayerResponseProto"  [attr-defined]
+ghunt/parsers/playgateway.pyi:5: error: Module "ghunt.objects.apis" has no attribute "Parser"  [attr-defined]
+ghunt/parsers/playgames.pyi:4: error: Module "ghunt.objects.apis" has no attribute "Parser"  [attr-defined]
+ghunt/parsers/playgames.pyi:28: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/playgames.pyi:36: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/playgames.pyi:72: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/playgames.pyi:100: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/playgames.pyi:143: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/playgames.pyi:191: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/people.pyi:6: error: Module "ghunt.objects.apis" has no attribute "Parser"  [attr-defined]
+ghunt/parsers/people.pyi:38: error: Incompatible types in assignment (expression has type "None", variable has type "str")  [assignment]
+ghunt/parsers/people.pyi:68: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/geolocate.pyi:3: error: Module "ghunt.objects.apis" has no attribute "Parser"  [attr-defined]
+ghunt/parsers/drive.pyi:5: error: Module "ghunt.objects.apis" has no attribute "Parser"  [attr-defined]
+ghunt/parsers/drive.pyi:15: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:16: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:17: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:18: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:19: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:20: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/drive.pyi:24: error: Name "DriveUserPermission" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:28: error: Name "DriveUser" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:29: error: Name "DriveUser" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:30: error: Name "DriveCapabilities" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:47: error: Name "DrivePermission" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:49: error: Name "DriveVideoMediaMetadata" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:51: error: Name "DriveLabelInfo" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:56: error: Name "DrivePermissionsSummary" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:61: error: Name "DriveImageMediaMetadata" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:63: error: Name "DriveLinkShareMetadata" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:67: error: Name "DriveOpenWithLinks" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:74: error: Name "DriveSource" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:75: error: Name "DriveSource" is not defined  [name-defined]
+ghunt/parsers/drive.pyi:78: error: Name "DriveFolderProperties" is not defined  [name-defined]
+ghunt/parsers/clientauthconfig.pyi:3: error: Module "ghunt.objects.apis" has no attribute "Parser"  [attr-defined]
+ghunt/parsers/calendar.pyi:5: error: Module "ghunt.objects.apis" has no attribute "Parser"  [attr-defined]
+ghunt/parsers/calendar.pyi:36: error: Incompatible types in assignment (expression has type "None", variable has type "bool")  [assignment]
+ghunt/parsers/calendar.pyi:43: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/calendar.pyi:62: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/calendar.pyi:63: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/parsers/calendar.pyi:76: error: Incompatible types in assignment (expression has type "None", variable has type "bool")  [assignment]
+ghunt/parsers/calendar.pyi:86: error: Incompatible types in assignment (expression has type "None", variable has type "datetime")  [assignment]
+ghunt/apis/playgateway.pyi:9: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/playgateway.pyi:9: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/playgateway.pyi:12: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/playgateway.pyi:12: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/accounts.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/accounts.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/helpers/drive.pyi:3: error: Module "ghunt.parsers.drive" has no attribute "DriveComment"  [attr-defined]
+ghunt/helpers/drive.pyi:3: error: Module "ghunt.parsers.drive" has no attribute "DriveCommentList"  [attr-defined]
+ghunt/helpers/drive.pyi:3: error: Module "ghunt.parsers.drive" has no attribute "DriveCommentReply"  [attr-defined]
+ghunt/apis/vision.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/vision.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/playgames.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/playgames.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/playgames.pyi:14: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/playgames.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/playgames.pyi:17: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/playgames.pyi:17: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/peoplepa.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/peoplepa.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/peoplepa.pyi:14: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/peoplepa.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/geolocation.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/geolocation.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/drive.pyi:5: error: Module "ghunt.parsers.drive" has no attribute "DriveCommentList"  [attr-defined]
+ghunt/apis/drive.pyi:5: error: Module "ghunt.parsers.drive" has no attribute "DriveChildList"  [attr-defined]
+ghunt/apis/drive.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/drive.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/drive.pyi:14: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/drive.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/drive.pyi:17: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/drive.pyi:17: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/clientauthconfig.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/clientauthconfig.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/calendar.pyi:12: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/calendar.pyi:12: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/apis/calendar.pyi:15: error: Name "Any" is not defined  [name-defined]
+ghunt/apis/calendar.pyi:15: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/modules/geolocate.pyi:7: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/modules/geolocate.pyi:11: error: Name "Path" is not defined  [name-defined]
+ghunt/modules/drive.pyi:11: error: Cannot find implementation or library stub for module named "inflection"  [import]
+ghunt/modules/drive.pyi:12: error: Cannot find implementation or library stub for module named "humanize"  [import]
+ghunt/modules/drive.pyi:17: error: Name "Path" is not defined  [name-defined]
+ghunt/helpers/playgames.pyi:9: error: Cannot find implementation or library stub for module named "alive_progress"  [import]
+ghunt/helpers/playgames.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/helpers/playgames.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/helpers/playgames.pyi:14: error: Name "Any" is not defined  [name-defined]
+ghunt/helpers/playgames.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/helpers/ia.pyi:9: error: Name "Any" is not defined  [name-defined]
+ghunt/helpers/ia.pyi:9: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+ghunt/helpers/calendar.pyi:3: error: Cannot find implementation or library stub for module named "beautifultable"  [import]
+ghunt/helpers/calendar.pyi:3: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+ghunt/modules/gaia.pyi:13: error: Name "Path" is not defined  [name-defined]
+ghunt/modules/email.pyi:13: error: Name "Path" is not defined  [name-defined]
+Found 106 errors in 39 files (checked 64 source files)

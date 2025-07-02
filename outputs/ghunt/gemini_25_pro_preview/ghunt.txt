@@ -1,0 +1,11 @@
+ghunt/objects/base.pyi:4: error: Cannot find implementation or library stub for module named "autoslot"  [import]
+ghunt/lib/httpx.pyi:6: error: Signature of "_merge_cookies" incompatible with supertype "BaseClient"  [override]
+ghunt/lib/httpx.pyi:6: note:      Superclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None = ...) -> Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None
+ghunt/lib/httpx.pyi:6: note:      Subclass:
+ghunt/lib/httpx.pyi:6: note:          def _merge_cookies(self, cookies: Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None) -> Cookies | CookieJar | dict[str, str] | list[tuple[str, str]] | None
+ghunt/helpers/gmaps.pyi:3: error: Cannot find implementation or library stub for module named "geopy.geocoders"  [import]
+ghunt/helpers/gmaps.pyi:3: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+ghunt/parsers/playgateway.pyi:11: error: Name "Any" is not defined  [name-defined]
+ghunt/parsers/playgateway.pyi:11: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+Found 4 errors in 4 files (checked 64 source files)
