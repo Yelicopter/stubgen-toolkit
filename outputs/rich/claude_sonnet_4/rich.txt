@@ -1,0 +1,36 @@
+rich/repr.pyi:3: error: Name "Tuple" is not defined  [name-defined]
+rich/repr.pyi:3: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+rich/repr.pyi:5: error: Name "Tuple" is not defined  [name-defined]
+rich/repr.pyi:5: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+rich/repr.pyi:13: error: Name "Tuple" is not defined  [name-defined]
+rich/repr.pyi:13: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+rich/repr.pyi:14: error: Name "Tuple" is not defined  [name-defined]
+rich/repr.pyi:14: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+rich/cells.pyi:10: error: Name "List" is not defined  [name-defined]
+rich/cells.pyi:10: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+rich/segment.pyi:19: error: Module "rich.cells" has no attribute "_is_single_cell_widths"  [attr-defined]
+rich/segment.pyi:19: error: Module "rich.cells" has no attribute "cached_cell_len"  [attr-defined]
+rich/protocol.pyi:6: error: Name "ConsoleRenderable" is not defined  [name-defined]
+rich/measure.pyi:37: error: Name "Iterable" is not defined  [name-defined]
+rich/measure.pyi:37: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Iterable")
+rich/containers.pyi:6: error: Incompatible default for argument "lines" (default has type "None", argument has type "list[Text]")  [assignment]
+rich/containers.pyi:6: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+rich/containers.pyi:6: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+rich/containers.pyi:16: error: Name "Console" is not defined  [name-defined]
+rich/tree.pyi:24: error: Missing type parameters for generic type "dict"  [type-arg]
+rich/tree.pyi:24: error: Missing type parameters for generic type "list"  [type-arg]
+rich/json.pyi:35: error: Name "Console" is not defined  [name-defined]
+rich/json.pyi:35: error: Name "ConsoleOptions" is not defined  [name-defined]
+rich/json.pyi:35: error: Name "RenderResult" is not defined  [name-defined]
+rich/columns.pyi:17: error: Name "Tuple" is not defined  [name-defined]
+rich/columns.pyi:17: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+rich/progress.pyi:128: error: Argument 1 of "readinto" is incompatible with supertype "_RawIOBase"; supertype defines the argument type as "Buffer"  [override]
+rich/progress.pyi:128: note: This violates the Liskov substitution principle
+rich/progress.pyi:128: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+rich/progress.pyi:129: error: Argument 1 of "readline" is incompatible with supertype "_IOBase"; supertype defines the argument type as "Optional[int]"  [override]
+rich/progress.pyi:129: note: This violates the Liskov substitution principle
+rich/progress.pyi:129: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+rich/progress.pyi:210: error: An implementation for an overloaded function is not allowed in a stub file  [misc]
+rich/progress.pyi:474: error: An implementation for an overloaded function is not allowed in a stub file  [misc]
+Warning: unused section(s) in pyproject.toml: module = ['IPython.*', 'ipywidgets.*']
+Found 21 errors in 10 files (checked 78 source files)

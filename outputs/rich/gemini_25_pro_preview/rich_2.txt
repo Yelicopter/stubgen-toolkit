@@ -1,0 +1,14 @@
+rich/segment.pyi:33: error: Name "Any" is not defined  [name-defined]
+rich/segment.pyi:33: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+rich/color.pyi:42: error: Name "Any" is not defined  [name-defined]
+rich/color.pyi:42: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+rich/layout.pyi:16: error: Name "Any" is not defined  [name-defined]
+rich/layout.pyi:16: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+rich/_win32_console.pyi:24: error: Cannot override class variable (previously declared on base class "Structure") with instance variable  [misc]
+rich/_win32_console.pyi:24: error: Name "Tuple" is not defined  [name-defined]
+rich/_win32_console.pyi:24: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+rich/_win32_console.pyi:27: error: Cannot override class variable (previously declared on base class "Structure") with instance variable  [misc]
+rich/_win32_console.pyi:27: error: Name "Tuple" is not defined  [name-defined]
+rich/_win32_console.pyi:27: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+Warning: unused section(s) in pyproject.toml: module = ['IPython.*', 'ipywidgets.*']
+Found 7 errors in 4 files (checked 78 source files)

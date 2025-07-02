@@ -1,0 +1,21 @@
+rich/progress.pyi:471: error: invalid syntax  [syntax]
+Warning: unused section(s) in pyproject.toml: module = ['IPython.*', 'ipywidgets.*', 'pygments.*']
+Found 1 error in 1 file (errors prevented further checking)
+make: *** [Makefile:10: typecheck] Error 2
+yelicopter@LAPTOP-PGPP63BT:/mnt/c/Users/yeliz/Downloads/rich-14.0.0/rich-14.0.0$ make typecheck
+mypy -p rich --no-incremental
+rich/style.pyi:3: error: Module "rich.repr" has no attribute "rich_repr"  [attr-defined]
+rich/style.pyi:4: error: Module "rich.terminal_theme" has no attribute "TerminalTheme"  [attr-defined]
+rich/segment.pyi:50: error: Name "Any" is not defined  [name-defined]
+rich/segment.pyi:50: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Any")
+rich/syntax.pyi:24: error: Module "rich.console" has no attribute "JustifyMethod"  [attr-defined]
+rich/progress.pyi:29: error: Module "rich.console" has no attribute "JustifyMethod"  [attr-defined]
+rich/progress.pyi:34: error: Module "rich.spinner" has no attribute "Spinner"  [attr-defined]
+rich/progress.pyi:113: error: Argument 1 of "readinto" is incompatible with supertype "_RawIOBase"; supertype defines the argument type as "Buffer"  [override]
+rich/progress.pyi:113: note: This violates the Liskov substitution principle
+rich/progress.pyi:113: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+rich/progress.pyi:114: error: Argument 1 of "readline" is incompatible with supertype "_IOBase"; supertype defines the argument type as "Optional[int]"  [override]
+rich/progress.pyi:114: note: This violates the Liskov substitution principle
+rich/progress.pyi:114: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+Warning: unused section(s) in pyproject.toml: module = ['IPython.*', 'ipywidgets.*']
+Found 8 errors in 4 files (checked 78 source files)
