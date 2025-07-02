@@ -1,0 +1,27 @@
+backend/tests/test_prompts_additional.py:166: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatComple
+tionDeveloperMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts_additional.py:226: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatComple
+tionDeveloperMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts_additional.py:289: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatComple
+tionDeveloperMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:134: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:198: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:246: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:317: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:410: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:487: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:571: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:631: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_prompts.py:694: error: Incompatible types (expression has type "list[dict[str, Any]]", TypedDict item "messages" has type "list[ChatCompletionDevelop
+erMessageParam | ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam | ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam | ChatCompletionFunctionMessageParam]")  [typeddict-item]
+backend/tests/test_model_selection.py:3: error: Module "routes.generate_code" has no attribute "ModelSelectionStage"  [attr-defined]
+Found 13 errors in 3 files (checked 52 source files)
+

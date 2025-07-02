@@ -1,0 +1,42 @@
+backend/models/gemini.py:74: error: List item 1 has incompatible type "Part"; expected "PartDict"  [list-item]
+backend/models/gemini.py:83: error: Item "None" of "Content | None" has no attribute "parts"  [union-attr]
+backend/models/gemini.py:83: error: Item "None" of "list[Part] | Any | None" has no attribute "__iter__" (not iterable)  [union-attr]
+backend/image_generation/core.py:52: error: Value of type "list[Image] | None" is not indexable  [index]
+backend/prompts/__init__.py:10: error: Module "video.utils" has no attribute "assemble_claude_prompt_video"  [attr-defined]
+backend/models/claude.py:177: error: Item "ToolUseBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:177: error: Item "ServerToolUseBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:177: error: Item "WebSearchToolResultBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:177: error: Item "ThinkingBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:177: error: Item "RedactedThinkingBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:192: error: Item "ToolUseBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:192: error: Item "ServerToolUseBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:192: error: Item "WebSearchToolResultBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:192: error: Item "ThinkingBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/models/claude.py:192: error: Item "RedactedThinkingBlock" of "TextBlock | ToolUseBlock | ServerToolUseBlock | WebSearchToolResultBlock | ThinkingBlock | RedactedThinkingBlock" has no attribute "text"  [union-attr]
+backend/video_to_app.py:18: error: Module "video.utils" has no attribute "extract_tag_content"  [attr-defined]
+backend/video_to_app.py:18: error: Module "video.utils" has no attribute "assemble_claude_prompt_video"  [attr-defined]
+backend/routes/generate_code.py:120: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+backend/routes/generate_code.py:137: error: Incompatible types in assignment (expression has type "Callable[[PipelineContext], Awaitable[None]]", variable has type "Callable[[PipelineContext], Coroutine[Any, Any, Any]]")  [assignment]
+backend/routes/generate_code.py:279: error: Need type annotation for "history"  [var-annotated]
+backend/routes/generate_code.py:292: error: Argument "prompt" to "ExtractedParams" has incompatible type "str | dict[str, Sequence[str]]"; expected "PromptContent"  [arg-type]
+backend/routes/generate_code.py:293: error: Argument "history" to "ExtractedParams" has incompatible type "str | list[Any]"; expected "list[dict[str, Any]]"  [arg-type]
+backend/routes/generate_code.py:294: error: Argument "is_imported_from_code" to "ExtractedParams" has incompatible type "str | bool"; expected "bool"  [arg-type]
+backend/routes/generate_code.py:612: error: Cannot infer type of lambda  [misc]
+backend/routes/generate_code.py:631: error: Cannot infer type of lambda  [misc]
+backend/routes/generate_code.py:728: error: Argument "model" to "generate_images" has incompatible type "str"; expected "Literal['dalle3', 'flux']"  [arg-type]
+backend/routes/evals.py:34: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+backend/routes/evals.py:309: note: By default the bodies of untyped functions are not checked, consider using --check-untyped-defs  [annotation-unchecked]
+backend/main.py:14: error: Unexpected keyword argument "allow_origins" for "add_middleware" of "Starlette"  [call-arg]
+backend/main.py:14: error: Unexpected keyword argument "allow_credentials" for "add_middleware" of "Starlette"  [call-arg]
+backend/main.py:14: error: Unexpected keyword argument "allow_methods" for "add_middleware" of "Starlette"  [call-arg]
+backend/main.py:14: error: Unexpected keyword argument "allow_headers" for "add_middleware" of "Starlette"  [call-arg]
+backend/main.py:15: error: Argument 1 to "add_middleware" of "Starlette" has incompatible type "type[CORSMiddleware]"; expected "_MiddlewareFactory[[MutableMapping[str, Any], Callable[[], Awaitable[MutableMapping[str, Any]]], Callable[[MutableMapping[str, Any]], Awaitable[None]]]]"  [arg-type]
+backend/main.py:15: note: Following member(s) of "CORSMiddleware" have conflicts:
+backend/main.py:15: note:     Expected:
+backend/main.py:15: note:         def __call__(self, Callable[[MutableMapping[str, Any], Callable[[], Awaitable[MutableMapping[str, Any]]], Callable[[MutableMapping[str
+, Any]], Awaitable[None]]], Awaitable[None]], /, scope: MutableMapping[str, Any], receive: Callable[[], Awaitable[MutableMapping[str, Any]]], send: Callable[[MutableMap
+ping[str, Any]], Awaitable[None]]) -> Callable[[MutableMapping[str, Any], Callable[[], Awaitable[MutableMapping[str, Any]]], Callable[[MutableMapping[str, Any]], Awaitable[None]]], Awaitable[None]]
+backend/main.py:15: note:     Got:
+backend/main.py:15: note:         def CORSMiddleware(self, app: Callable[[MutableMapping[str, Any], Callable[[], Awaitable[MutableMapping[str, Any]]], Callable[[Mutable
+Mapping[str, Any]], Awaitable[None]]], Awaitable[None]], allow_origins: Sequence[str] = ..., allow_methods: Sequence[str] = ..., allow_headers: Sequence[str] = ..., allow_credentials: bool = ..., allow_origin_regex: str | None = ..., expose_headers: Sequence[str] = ..., max_age: int = ...) -> CORSMiddleware
+Found 30 errors in 7 files (checked 46 source files)

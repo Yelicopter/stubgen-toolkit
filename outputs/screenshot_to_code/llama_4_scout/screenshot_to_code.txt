@@ -1,0 +1,11 @@
+backend/evals/core.pyi:9: error: Cannot find implementation or library stub for module named "prompts.types"  [import]
+backend/evals/core.pyi:9: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+backend/evals/runner.pyi:7: error: Cannot find implementation or library stub for module named "prompts.types"  [import]
+backend/prompts/imported_code_prompts.py:1: error: Cannot find implementation or library stub for module named "prompts.types"  [import]
+backend/prompts/screenshot_system_prompts.py:1: error: Cannot find implementation or library stub for module named "prompts.types"  [import]
+backend/prompts/text_prompts.py:1: error: Cannot find implementation or library stub for module named "prompts.types"  [import]
+backend/routes/evals.py:10: error: Cannot find implementation or library stub for module named "prompts.types"  [import]
+backend/prompts/claude_prompts.py: error: Source file found twice under different module names: "claude_prompts" and "prompts.claude_prompts"
+backend/prompts/claude_prompts.py: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#mapping-file-paths-to-modules for more info
+backend/prompts/claude_prompts.py: note: Common resolutions include: a) adding `__init__.py` somewhere, b) using `--explicit-package-bases` or adjusting MYPYPATH
+Found 7 errors in 7 files (errors prevented further checking)

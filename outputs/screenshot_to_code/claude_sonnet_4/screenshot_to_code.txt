@@ -1,0 +1,3 @@
+backend/fs_logging/core.pyi:4: error: Name "List" is not defined  [name-defined]
+backend/fs_logging/core.pyi:4: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+Found 1 error in 1 file (checked 46 source files)

@@ -1,0 +1,10 @@
+backend/image_generation/core.pyi:22: error: Name "Tuple" is not defined  [name-defined]
+backend/image_generation/core.pyi:22: note: Did you forget to import it from "typing"? (Suggestion: "from typing import Tuple")
+backend/models/__init__.pyi:6: error: Name "List" is not defined  [name-defined]
+backend/models/__init__.pyi:6: note: Did you forget to import it from "typing"? (Suggestion: "from typing import List")
+backend/video_to_app.pyi:14: error: Module "models" does not explicitly export attribute "stream_claude_response_native"  [attr-defined]
+backend/routes/generate_code.pyi:27: error: Module "models" does not explicitly export attribute "stream_claude_response"  [attr-defined]
+backend/routes/generate_code.pyi:27: error: Module "models" does not explicitly export attribute "stream_claude_response_native"  [attr-defined]
+backend/routes/generate_code.pyi:27: error: Module "models" does not explicitly export attribute "stream_openai_response"  [attr-defined]
+backend/routes/generate_code.pyi:27: error: Module "models" does not explicitly export attribute "stream_gemini_response"  [attr-defined]
+Found 7 errors in 4 files (checked 46 source files)
