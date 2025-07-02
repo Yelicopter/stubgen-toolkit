@@ -1,0 +1,9 @@
+typer/core.pyi:40: error: Incompatible types in assignment (expression has type "None", variable has type Module)  [assignment]
+typer/core.pyi:41: error: Name "DEFAULT_MARKUP_MODE" already defined on line 38  [no-redef]
+typer/main.pyi:55: error: Incompatible types in assignment (expression has type "None", variable has type Module)  [assignment]
+typer/testing.pyi:9: error: Argument 1 of "invoke" is incompatible with supertype "CliRunner"; supertype defines the argument type as "Command"  [override]
+typer/testing.pyi:9: note: This violates the Liskov substitution principle
+typer/testing.pyi:9: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+typer/cli.pyi:16: error: Name "has_rich" already defined on line 13  [no-redef]
+typer/cli.pyi:17: error: Incompatible types in assignment (expression has type "None", variable has type Module)  [assignment]
+Found 6 errors in 4 files (checked 16 source files)

@@ -1,0 +1,17 @@
+typer/models.pyi:141: error: Missing type parameters for generic type "PathLike"  [type-arg]
+typer/models.pyi:181: error: Missing type parameters for generic type "PathLike"  [type-arg]
+typer/models.pyi:238: error: Missing type parameters for generic type "PathLike"  [type-arg]
+typer/models.pyi:280: error: Missing type parameters for generic type "PathLike"  [type-arg]
+typer/_types.pyi:10: error: Argument 1 of "normalize_choice" is incompatible with supertype "Choice"; supertype defines the argument type as "ParamTypeValue"  [override]
+typer/_types.pyi:10: note: This violates the Liskov substitution principle
+typer/_types.pyi:10: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+typer/_completion_classes.pyi:16: error: Cannot override class variable (previously declared on base class "BashComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:24: error: Cannot override class variable (previously declared on base class "ZshComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:32: error: Cannot override class variable (previously declared on base class "FishComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:40: error: Cannot override class variable (previously declared on base class "ShellComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:41: error: Cannot override class variable (previously declared on base class "ShellComplete") with instance variable  [misc]
+typer/testing.pyi:11: error: Argument 1 of "invoke" is incompatible with supertype "CliRunner"; supertype defines the argument type as "Command"  [override]
+typer/testing.pyi:11: note: This violates the Liskov substitution principle
+typer/testing.pyi:11: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+typer/cli.pyi:9: error: Module "typer" does not explicitly export attribute "Typer"  [attr-defined]
+Found 12 errors in 5 files (checked 16 source files)

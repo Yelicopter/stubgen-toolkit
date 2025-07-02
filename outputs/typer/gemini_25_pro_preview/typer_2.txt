@@ -1,0 +1,19 @@
+typer/_types.pyi:10: error: Argument 1 of "normalize_choice" is incompatible with supertype "Choice"; supertype defines the argument type as "str"  [override]
+typer/_types.pyi:10: note: This violates the Liskov substitution principle
+typer/_types.pyi:10: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+typer/models.pyi:43: error: Name "TyperCommand" is not defined  [name-defined]
+typer/models.pyi:59: error: Name "TyperCommand" is not defined  [name-defined]
+typer/models.pyi:76: error: Name "TyperGroup" is not defined  [name-defined]
+typer/models.pyi:97: error: Name "TyperGroup" is not defined  [name-defined]
+typer/testing.pyi:10: error: Signature of "invoke" incompatible with supertype "CliRunner"  [override]
+typer/testing.pyi:10: note:      Superclass:
+typer/testing.pyi:10: note:          def invoke(self, cli: Command, args: str | Sequence[str] | None = ..., input: str | bytes | IO[Any] | None = ..., env: Mapping[str, str | None] | None = ..., catch_exceptions: bool | None = ..., color: bool = ..., **extra: Any) -> Result
+typer/testing.pyi:10: note:      Subclass:
+typer/testing.pyi:10: note:          def invoke(self, app: Command, args: str | Sequence[str] | None = ..., input: bytes | str | IO[Any] | None = ..., env: Mapping[str, str | None] | None = ..., catch_exceptions: bool | None = ..., color: bool = ..., **extra: Any) -> Result
+typer/rich_utils.pyi:24: error: Variable "click.core.BaseCommand" is not valid as a type  [valid-type]
+typer/rich_utils.pyi:24: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+typer/rich_utils.pyi:52: error: Variable "click.core.BaseCommand" is not valid as a type  [valid-type]
+typer/rich_utils.pyi:52: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+typer/cli.pyi:44: error: Variable "click.core.BaseCommand" is not valid as a type  [valid-type]
+typer/cli.pyi:44: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+Found 9 errors in 5 files (checked 16 source files)

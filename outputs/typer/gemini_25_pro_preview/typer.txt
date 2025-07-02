@@ -1,0 +1,28 @@
+typer/_types.pyi:8: error: Missing type parameters for generic type "Choice"  [type-arg]
+typer/_completion_classes.pyi:8: error: Cannot override class variable (previously declared on base class "BashComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:9: error: Cannot override class variable (previously declared on base class "BashComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:16: error: Cannot override class variable (previously declared on base class "ZshComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:17: error: Cannot override class variable (previously declared on base class "ZshComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:24: error: Cannot override class variable (previously declared on base class "FishComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:25: error: Cannot override class variable (previously declared on base class "FishComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:32: error: Cannot override class variable (previously declared on base class "ShellComplete") with instance variable  [misc]
+typer/_completion_classes.pyi:33: error: Cannot override class variable (previously declared on base class "ShellComplete") with instance variable  [misc]
+typer/models.pyi:33: error: Name "Generic" is not defined  [name-defined]
+typer/models.pyi:33: error: Class cannot subclass value of type "Any"  [misc]
+typer/models.pyi:42: error: Name "TyperCommand" is not defined  [name-defined]
+typer/models.pyi:58: error: Name "TyperCommand" is not defined  [name-defined]
+typer/models.pyi:75: error: Name "TyperGroup" is not defined  [name-defined]
+typer/models.pyi:96: error: Name "TyperGroup" is not defined  [name-defined]
+typer/testing.pyi:11: error: Argument 1 of "invoke" is incompatible with supertype "CliRunner"; supertype defines the argument type as "Command"  [override]
+typer/testing.pyi:11: note: This violates the Liskov substitution principle
+typer/testing.pyi:11: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+typer/testing.pyi:15: error: Argument 5 of "invoke" is incompatible with supertype "CliRunner"; supertype defines the argument type as "bool | None"  [override]
+typer/testing.pyi:15: note: This violates the Liskov substitution principle
+typer/testing.pyi:15: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#incompatible-overrides
+typer/rich_utils.pyi:23: error: Variable "click.BaseCommand" is not valid as a type  [valid-type]
+typer/rich_utils.pyi:23: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+typer/rich_utils.pyi:51: error: Variable "click.BaseCommand" is not valid as a type  [valid-type]
+typer/rich_utils.pyi:51: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+typer/cli.pyi:43: error: Variable "click.BaseCommand" is not valid as a type  [valid-type]
+typer/cli.pyi:43: note: See https://mypy.readthedocs.io/en/stable/common_issues.html#variables-vs-type-aliases
+Found 20 errors in 6 files (checked 16 source files)

@@ -1,0 +1,14 @@
+typer/_completion_classes.pyi:11: error: Cannot override writeable attribute with read-only property  [override]
+typer/_completion_classes.pyi:13: error: Cannot override writeable attribute with read-only property  [override]
+typer/_completion_classes.pyi:21: error: Cannot override writeable attribute with read-only property  [override]
+typer/_completion_classes.pyi:23: error: Cannot override writeable attribute with read-only property  [override]
+typer/_completion_classes.pyi:31: error: Cannot override writeable attribute with read-only property  [override]
+typer/_completion_classes.pyi:33: error: Cannot override writeable attribute with read-only property  [override]
+typer/_completion_classes.pyi:41: error: Cannot override writeable attribute with read-only property  [override]
+typer/_completion_classes.pyi:43: error: Cannot override writeable attribute with read-only property  [override]
+typer/testing.pyi:8: error: Signature of "invoke" incompatible with supertype "CliRunner"  [override]
+typer/testing.pyi:8: note:      Superclass:
+typer/testing.pyi:8: note:          def invoke(self, cli: Command, args: str | Sequence[str] | None = ..., input: str | bytes | IO[Any] | None = ..., env: Mapping[str, str | None] | None = ..., catch_exceptions: bool | None = ..., color: bool = ..., **extra: Any) -> Result
+typer/testing.pyi:8: note:      Subclass:
+typer/testing.pyi:8: note:          def invoke(self, app: Any, args: Any = ..., input: Any = ..., env: Any = ..., catch_exceptions: bool | None = ..., color: bool = ..., **extra: Any) -> Result
+Found 9 errors in 2 files (checked 16 source files)

@@ -1,0 +1,236 @@
+typer/params.pyi:7: error: Name "Option" already defined (possibly by an import)  [no-redef]
+typer/params.pyi:7: error: Single overload definition, multiple required  [misc]
+typer/params.pyi:12: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/params.pyi:12: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:12: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:17: error: Incompatible default for argument "shell_complete" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/params.pyi:17: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:17: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:18: error: Incompatible default for argument "autocompletion" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/params.pyi:18: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:18: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:19: error: Incompatible default for argument "default_factory" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/params.pyi:19: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:19: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:27: error: Incompatible default for argument "is_flag" (default has type "None", argument has type "bool")  [assignment]
+typer/params.pyi:27: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:27: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:31: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/params.pyi:31: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:31: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:53: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/params.pyi:53: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:53: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:57: error: An implementation for an overloaded function is not allowed in a stub file  [misc]
+typer/params.pyi:106: error: Name "Argument" already defined (possibly by an import)  [no-redef]
+typer/params.pyi:106: error: Single overload definition, multiple required  [misc]
+typer/params.pyi:111: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/params.pyi:111: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:111: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:116: error: Incompatible default for argument "shell_complete" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/params.pyi:116: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:116: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:117: error: Incompatible default for argument "autocompletion" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/params.pyi:117: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:117: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:118: error: Incompatible default for argument "default_factory" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/params.pyi:118: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:118: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:124: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/params.pyi:124: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:124: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:144: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/params.pyi:144: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/params.pyi:144: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/params.pyi:148: error: An implementation for an overloaded function is not allowed in a stub file  [misc]
+typer/models.pyi:8: error: Name "Context" already defined (possibly by an import)  [no-redef]
+typer/models.pyi:40: error: Incompatible default for argument "name" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:40: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:40: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:44: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:44: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:44: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:45: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:45: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:45: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:46: error: Incompatible default for argument "epilog" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:46: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:46: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:47: error: Incompatible default for argument "short_help" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:47: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:47: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:53: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:53: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:53: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:62: error: Incompatible default for argument "name" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:62: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:62: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:64: error: Incompatible default for argument "invoke_without_command" (default has type "None", argument has type "bool")  [assignment]
+typer/models.pyi:64: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:64: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:65: error: Incompatible default for argument "no_args_is_help" (default has type "None", argument has type "bool")  [assignment]
+typer/models.pyi:65: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:65: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:66: error: Incompatible default for argument "subcommand_metavar" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:66: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:66: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:67: error: Incompatible default for argument "chain" (default has type "None", argument has type "bool")  [assignment]
+typer/models.pyi:67: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:67: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:68: error: Incompatible default for argument "result_callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:68: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:68: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:70: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:70: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:70: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:71: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:71: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:71: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:72: error: Incompatible default for argument "epilog" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:72: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:72: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:73: error: Incompatible default for argument "short_help" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:73: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:73: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:76: error: Incompatible default for argument "hidden" (default has type "None", argument has type "bool")  [assignment]
+typer/models.pyi:76: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:76: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:77: error: Incompatible default for argument "deprecated" (default has type "None", argument has type "bool")  [assignment]
+typer/models.pyi:77: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:77: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:78: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:78: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:78: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:88: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:88: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:88: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:93: error: Incompatible default for argument "shell_complete" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:93: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:93: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:94: error: Incompatible default for argument "autocompletion" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:94: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:94: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:95: error: Incompatible default for argument "default_factory" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:95: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:95: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:101: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:101: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:101: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:121: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:121: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:121: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:131: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:131: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:131: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:136: error: Incompatible default for argument "shell_complete" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:136: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:136: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:137: error: Incompatible default for argument "autocompletion" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:137: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:137: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:138: error: Incompatible default for argument "default_factory" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:138: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:138: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:146: error: Incompatible default for argument "is_flag" (default has type "None", argument has type "bool")  [assignment]
+typer/models.pyi:146: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:146: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:150: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:150: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:150: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:172: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:172: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:172: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:182: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:182: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:182: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:187: error: Incompatible default for argument "shell_complete" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:187: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:187: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:188: error: Incompatible default for argument "autocompletion" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:188: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:188: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:189: error: Incompatible default for argument "default_factory" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/models.pyi:189: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:189: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:195: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:195: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:195: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/models.pyi:215: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/models.pyi:215: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/models.pyi:215: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:10: error: Incompatible default for argument "required" (default has type "None", argument has type "bool")  [assignment]
+typer/core.pyi:10: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:10: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:12: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/core.pyi:12: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:12: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:18: error: Incompatible default for argument "shell_complete" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/core.pyi:18: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:18: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:19: error: Incompatible default for argument "autocompletion" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/core.pyi:19: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:19: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:23: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:23: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:23: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:25: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:25: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:25: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:35: error: Incompatible default for argument "required" (default has type "None", argument has type "bool")  [assignment]
+typer/core.pyi:35: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:35: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:37: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/core.pyi:37: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:37: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:43: error: Incompatible default for argument "shell_complete" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/core.pyi:43: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:43: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:44: error: Incompatible default for argument "autocompletion" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/core.pyi:44: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:44: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:50: error: Incompatible default for argument "is_flag" (default has type "None", argument has type "bool")  [assignment]
+typer/core.pyi:50: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:50: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:54: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:54: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:54: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:58: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:58: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:58: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:68: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/core.pyi:68: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:68: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:70: error: Incompatible default for argument "help" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:70: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:70: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:71: error: Incompatible default for argument "epilog" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:71: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:71: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:72: error: Incompatible default for argument "short_help" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:72: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:72: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:78: error: Incompatible default for argument "rich_markup_mode" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:78: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:78: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:79: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:79: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:79: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:87: error: Incompatible default for argument "name" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:87: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:87: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:89: error: Incompatible default for argument "rich_markup_mode" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:89: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:89: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/core.pyi:90: error: Incompatible default for argument "rich_help_panel" (default has type "None", argument has type "str")  [assignment]
+typer/core.pyi:90: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/core.pyi:90: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/_types.pyi:7: error: Missing type parameters for generic type "Choice"  [type-arg]
+typer/main.pyi:79: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/main.pyi:79: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/main.pyi:79: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/main.pyi:85: error: Incompatible default for argument "callback" (default has type "None", argument has type "Callable[..., Any]")  [assignment]
+typer/main.pyi:85: note: PEP 484 prohibits implicit Optional. Accordingly, mypy has changed its default to no_implicit_optional=True
+typer/main.pyi:85: note: Use https://github.com/hauntsaninja/no_implicit_optional to automatically upgrade your codebase
+typer/__main__.pyi:1: error: Module "typer.cli" has no attribute "main"  [attr-defined]
+typer/__main__.pyi:3: error: Name "main" already defined (possibly by an import)  [no-redef]
+Found 85 errors in 6 files (checked 16 source files)
