@@ -1,0 +1,41 @@
+from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
+
+from requests import Session
+
+from ._transcripts import FetchedTranscript, TranscriptList
+from .proxies import ProxyConfig
+
+class YouTubeTranscriptApi:
+    def __init__(
+        self,
+        proxy_config: Optional[ProxyConfig] = ...,
+        http_client: Optional[Session] = ...,
+    ) -> None: ...
+    def fetch(
+        self,
+        video_id: str,
+        languages: Iterable[str] = ...,
+        preserve_formatting: bool = ...,
+    ) -> FetchedTranscript: ...
+    def list(self, video_id: str) -> TranscriptList: ...
+    @classmethod
+    def list_transcripts(
+        cls, video_id: str, proxies: Optional[Union[Dict[str, str], ProxyConfig]] = ...
+    ) -> TranscriptList: ...
+    @classmethod
+    def get_transcripts(
+        cls,
+        video_ids: List[str],
+        languages: Iterable[str] = ...,
+        continue_after_error: bool = ...,
+        proxies: Optional[Union[Dict[str, str], ProxyConfig]] = ...,
+        preserve_formatting: bool = ...,
+    ) -> Tuple[Dict[str, List[Dict[str, Any]]], List[str]]: ...
+    @classmethod
+    def get_transcript(
+        cls,
+        video_id: str,
+        languages: Iterable[str] = ...,
+        proxies: Optional[Union[Dict[str, str], ProxyConfig]] = ...,
+        preserve_formatting: bool = ...,
+    ) -> List[Dict[str, Any]]: ...

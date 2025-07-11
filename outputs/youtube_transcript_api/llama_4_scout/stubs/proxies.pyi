@@ -1,0 +1,60 @@
+from abc import ABC, abstractmethod
+from typing import TypedDict, Optional
+
+class InvalidProxyConfig(Exception):
+    pass
+
+class RequestsProxyConfigDict(TypedDict):
+    http: Optional[str]
+    https: Optional[str]
+
+class ProxyConfig(ABC):
+    @abstractmethod
+    def to_requests_dict(self) -> RequestsProxyConfigDict:
+        ...
+
+    @property
+    def prevent_keeping_connections_alive(self) -> bool:
+        ...
+
+    @property
+    def retries_when_blocked(self) -> int:
+        ...
+
+class GenericProxyConfig(ProxyConfig):
+    def __init__(self, http_url: Optional[str] = None, https_url: Optional[str] = None) -> None:
+        ...
+
+    def to_requests_dict(self) -> RequestsProxyConfigDict:
+        ...
+
+class WebshareProxyConfig(GenericProxyConfig):
+    def __init__(
+        self,
+        proxy_username: str,
+        proxy_password: str,
+        retries_when_blocked: int = 10,
+        domain_name: str = "p.webshare.io",
+        proxy_port: int = 80,
+    ) -> None:
+        ...
+
+    @property
+    def url(self) -> str:
+        ...
+
+    @property
+    def http_url(self) -> str:
+        ...
+
+    @property
+    def https_url(self) -> str:
+        ...
+
+    @property
+    def prevent_keeping_connections_alive(self) -> bool:
+        ...
+
+    @property
+    def retries_when_blocked(self) -> int:
+        ...
