@@ -5,7 +5,6 @@ from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
 
-# === SETTINGS ===
 OUTPUT_DIR = Path("genstubs-NAME YOUR MODEL HERE")
 
 load_dotenv()
@@ -17,7 +16,6 @@ client = OpenAI(
 )
 
 
-# === UTILITIES ===
 def collect_all_code():
     all_code = ""
     stripped_dir = Path("stripped")
@@ -26,7 +24,6 @@ def collect_all_code():
         print(f"Stripped directory not found: {stripped_dir}")
         sys.exit(1)
 
-    print("Collecting all code...")
     for src in sorted(stripped_dir.rglob("*.py")):
         rel = src.relative_to(stripped_dir)
         all_code += f"# FILE: {rel}\n"
@@ -61,7 +58,7 @@ def get_prompt(code):
 
 
 def send_to_llm(prompt):
-    print(f"Prompt length: {len(prompt)} characters")
+    print(f"Prompt length: {len(prompt)} char")
     print(f"Sending prompt to LLM...")
 
     try:
@@ -73,14 +70,8 @@ def send_to_llm(prompt):
         ],
         temperature=0,
         )
-        if resp is None:
-            print("No response from OpenRouter.")
-            sys.exit(1)
 
-        # print(f"Raw response: {resp}") # Uncomment if you want
-        if not hasattr(resp, "choices") or not resp.choices:
-            print(f"LLM response invalid or empty: {resp}")
-            sys.exit(1)
+        # print({resp})
 
     except Exception as e:
         print(f"LLM request failed: {e}")
@@ -98,7 +89,7 @@ def create_stubs(response):
         out_path = OUTPUT_DIR / file_name
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(file_content.strip(), encoding="utf-8")
-        print(f"✅ Saved {out_path}")
+        print(f"Saved {out_path}")
 
     print("All stubs generated.")
 

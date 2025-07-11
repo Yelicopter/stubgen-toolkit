@@ -66,7 +66,7 @@ def send_to_llm(prompt):
             print("No response from OpenRouter.")
             sys.exit(1)
 
-        print(f"🪪 Raw response: {resp}")
+        print(resp)
         if not hasattr(resp, "choices") or not resp.choices:
             print(f"LLM response invalid or empty: {resp}")
             sys.exit(1)
@@ -106,7 +106,7 @@ def create_stubs(response_text):
         out_path = OUTPUT_DIR / filename
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(content.strip(), encoding="utf-8")
-        print(f"✅ Saved {out_path}")
+        print(f"Saved {out_path}")
 
     print("All stubs generated.")
 

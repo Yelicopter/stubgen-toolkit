@@ -1,0 +1,141 @@
+VARIANT_DIRS_LIST = [
+    # fastapi
+    [Path(p) for p in [
+        "../stubs_out/outputs/fastapi/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/fastapi/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/fastapi/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/fastapi/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/fastapi/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/fastapi/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/fastapi/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/fastapi/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/fastapi/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/fastapi/llama_4_scout__stubs_2/stubs_2",
+    ]],
+
+    # rich
+    [Path(p) for p in [
+        "../stubs_out/outputs/rich/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/rich/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/rich/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/rich/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/rich/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/rich/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/rich/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/rich/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/rich/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/rich/llama_4_scout__stubs_2/stubs_2",
+    ]],
+
+    # ghunt
+    [Path(p) for p in [
+        "../stubs_out/outputs/ghunt/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/ghunt/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/ghunt/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/ghunt/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/ghunt/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/ghunt/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/ghunt/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/ghunt/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/ghunt/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/ghunt/llama_4_scout__stubs_2/stubs_2",
+    ]],
+
+    # pandasai
+    [Path(p) for p in [
+        "../stubs_out/outputs/pandasai/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/pandasai/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/pandasai/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/pandasai/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/pandasai/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/pandasai/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/pandasai/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/pandasai/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/pandasai/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/pandasai/llama_4_scout__stubs_2/stubs_2",
+    ]],
+
+    # typer
+    [Path(p) for p in [
+        "../stubs_out/outputs/typer/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/typer/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/typer/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/typer/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/typer/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/typer/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/typer/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/typer/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/typer/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/typer/llama_4_scout__stubs_2/stubs_2",
+    ]],
+
+    # private_gpt
+    [Path(p) for p in [
+        "../stubs_out/outputs/private_gpt/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/private_gpt/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/private_gpt/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/private_gpt/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/private_gpt/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/private_gpt/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/private_gpt/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/private_gpt/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/private_gpt/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/private_gpt/llama_4_scout__stubs_2/stubs_2",
+    ]],
+
+    # flake8
+    [Path(p) for p in [
+        "../stubs_out/outputs/flake8/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/flake8/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/flake8/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/flake8/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/flake8/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/flake8/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/flake8/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/flake8/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/flake8/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/flake8/llama_4_scout__stubs_2/stubs_2",
+    ]],
+
+    # screenshot_to_code
+    [Path(p) for p in [
+        "../stubs_out/outputs/screenshot_to_code/claude_37_sonnet__stubs",
+        "../stubs_out/outputs/screenshot_to_code/claude_37_sonnet__stubs_2",
+        "../stubs_out/outputs/screenshot_to_code/claude_sonnet_4__stubs",
+        "../stubs_out/outputs/screenshot_to_code/claude_sonnet_4__stubs_2",
+        "../stubs_out/outputs/screenshot_to_code/gemini_25_pro_preview__stubs",
+        "../stubs_out/outputs/screenshot_to_code/gemini_25_pro_preview__stubs_2",
+        "../stubs_out/outputs/screenshot_to_code/gpt_41__stubs",
+        "../stubs_out/outputs/screenshot_to_code/gpt_41__stubs_2",
+        "../stubs_out/outputs/screenshot_to_code/llama_4_scout__stubs",
+        "../stubs_out/outputs/screenshot_to_code/llama_4_scout__stubs_2",
+    ]],
+
+    # youtube_transcript_api
+    [Path(p) for p in [
+        "../stubs_out/outputs/youtube_transcript_api/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/youtube_transcript_api/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/youtube_transcript_api/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/youtube_transcript_api/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/youtube_transcript_api/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/youtube_transcript_api/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/youtube_transcript_api/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/youtube_transcript_api/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/youtube_transcript_api/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/youtube_transcript_api/llama_4_scout__stubs_2/stubs_2",
+    ]],
+
+    # pre_commit_hooks
+    [Path(p) for p in [
+        "../stubs_out/outputs/pre_commit_hooks/claude_37_sonnet__stubs/stubs",
+        "../stubs_out/outputs/pre_commit_hooks/claude_37_sonnet__stubs_2/stubs_2",
+        "../stubs_out/outputs/pre_commit_hooks/claude_sonnet_4__stubs/stubs",
+        "../stubs_out/outputs/pre_commit_hooks/claude_sonnet_4__stubs_2/stubs_2",
+        "../stubs_out/outputs/pre_commit_hooks/gemini_25_pro_preview__stubs/stubs",
+        "../stubs_out/outputs/pre_commit_hooks/gemini_25_pro_preview__stubs_2/stubs_2",
+        "../stubs_out/outputs/pre_commit_hooks/gpt_41__stubs/stubs",
+        "../stubs_out/outputs/pre_commit_hooks/gpt_41__stubs_2/stubs_2",
+        "../stubs_out/outputs/pre_commit_hooks/llama_4_scout__stubs/stubs",
+        "../stubs_out/outputs/pre_commit_hooks/llama_4_scout__stubs_2/stubs_2",
+    ]],
+]
