@@ -1,0 +1,6 @@
+from llama_index.core.embeddings import BaseEmbedding as BaseEmbedding, MockEmbedding as MockEmbedding
+from private_gpt.settings.settings import Settings as Settings
+
+class EmbeddingComponent:
+    def __init__(self, settings: Settings) -> None: ...
+    def get_embedding_model(self) -> BaseEmbedding: ...

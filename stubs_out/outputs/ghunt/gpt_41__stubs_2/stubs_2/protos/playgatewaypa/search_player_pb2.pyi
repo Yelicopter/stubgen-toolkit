@@ -1,0 +1,3 @@
+class PlayerSearchProto:
+    class SearchForm:
+        class Query: ...

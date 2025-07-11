@@ -1,0 +1,3 @@
+from typing import Any, Callable, Dict
+
+def get_params_from_function(func: Callable) -> Dict[str, Any]: ...

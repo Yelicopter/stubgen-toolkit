@@ -1,0 +1,16 @@
+import logging
+from . import get_console as get_console
+from ._log_render import FormatTimeCallable as FormatTimeCallable
+from .console import Console as Console, ConsoleRenderable as ConsoleRenderable
+from .highlighter import Highlighter as Highlighter, ReprHighlighter as ReprHighlighter
+from .text import Text as Text, TextType as TextType
+from .traceback import Traceback as Traceback
+from datetime import datetime as datetime
+from typing import Iterable, List, Optional, Union
+
+class RichHandler(logging.Handler):
+    def __init__(self, level: Union[int, str] = ..., console: Optional[Console] = ..., *, show_time: bool = ..., omit_repeated_times: bool = ..., show_level: bool = ..., show_path: bool = ..., enable_link_path: bool = ..., highlighter: Optional[Highlighter] = ..., markup: bool = ..., rich_tracebacks: bool = ..., tracebacks_width: Optional[int] = ..., tracebacks_extra_lines: int = ..., tracebacks_theme: Optional[str] = ..., tracebacks_word_wrap: bool = ..., tracebacks_show_locals: bool = ..., tracebacks_suppress: Iterable[Union[str, object]] = ..., locals_max_length: int = ..., locals_max_string: int = ..., log_time_format: Union[str, FormatTimeCallable] = ..., keywords: Optional[List[str]] = ...) -> None: ...
+    def get_level_text(self, record: logging.LogRecord) -> Text: ...
+    def emit(self, record: logging.LogRecord) -> None: ...
+    def render_message(self, record: logging.LogRecord, message: str) -> ConsoleRenderable: ...
+    def render(self, *, record: logging.LogRecord, traceback: Optional[Traceback], message_renderable: ConsoleRenderable) -> ConsoleRenderable: ...

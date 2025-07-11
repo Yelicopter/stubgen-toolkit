@@ -1,0 +1,6 @@
+from typing import Any
+
+class CodeCleaner:
+    context: Any
+    def __init__(self, context: Any) -> None: ...
+    def clean_code(self, code: str) -> str: ...

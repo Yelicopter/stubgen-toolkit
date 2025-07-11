@@ -1,0 +1,6 @@
+from inspect import isclass as isclass
+from rich.console import RenderableType as RenderableType
+from typing import Any
+
+def is_renderable(check_object: Any) -> bool: ...
+def rich_cast(renderable: Any) -> RenderableType: ...

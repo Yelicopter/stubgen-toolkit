@@ -1,0 +1,9 @@
+from typing import Any, List
+
+class SQLTransformationManager:
+    @staticmethod
+    def apply_transformations(expr: str, transformations: List[Any]) -> str: ...
+    @staticmethod
+    def get_column_transformations(column_name: str, schema_transformations: List[Any]) -> List[Any]: ...
+    @staticmethod
+    def apply_column_transformations(expr: str, column_name: str, schema_transformations: List[Any]) -> str: ...

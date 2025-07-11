@@ -1,0 +1,29 @@
+from typing import Any, Dict, Optional
+
+class LLM: ...
+class FileManager: ...
+
+class Config:
+    save_logs: bool
+    verbose: bool
+    max_retries: int
+    llm: Optional[LLM]
+    file_manager: FileManager
+    @classmethod
+    def from_dict(cls, config: Dict[str, Any]) -> Config: ...
+
+class ConfigManager:
+    @classmethod
+    def set(cls, config_dict: Dict[str, Any]) -> None: ...
+    @classmethod
+    def get(cls) -> Config: ...
+    @classmethod
+    def update(cls, config_dict: Dict[str, Any]) -> None: ...
+    @classmethod
+    def validate_llm(cls) -> None: ...
+
+class APIKeyManager:
+    @classmethod
+    def set(cls, api_key: str) -> None: ...
+    @classmethod
+    def get(cls) -> str: ...

@@ -1,0 +1,20 @@
+from fastapi import APIRouter as APIRouter, Depends as Depends, Request as Request
+from private_gpt.open_ai.extensions.context_filter import ContextFilter as ContextFilter
+from private_gpt.open_ai.openai_models import OpenAICompletion as OpenAICompletion, OpenAIMessage as OpenAIMessage
+from private_gpt.server.chat.chat_router import ChatBody as ChatBody, chat_completion as chat_completion
+from private_gpt.server.utils.auth import authenticated as authenticated
+from pydantic import BaseModel
+from starlette.responses import StreamingResponse as StreamingResponse
+from typing import Optional, Union
+
+completions_router: APIRouter
+
+class CompletionsBody(BaseModel):
+    prompt: str
+    system_prompt: Optional[str]
+    use_context: bool
+    context_filter: Optional[ContextFilter]
+    include_sources: bool
+    stream: bool
+
+def prompt_completion(request: Request, body: CompletionsBody) -> Union[OpenAICompletion, StreamingResponse]: ...

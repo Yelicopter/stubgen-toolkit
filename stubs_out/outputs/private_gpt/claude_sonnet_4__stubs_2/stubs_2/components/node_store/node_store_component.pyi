@@ -1,0 +1,13 @@
+import logging
+from llama_index.core.storage.docstore import BaseDocumentStore as BaseDocumentStore, SimpleDocumentStore as SimpleDocumentStore
+from llama_index.core.storage.index_store import SimpleIndexStore as SimpleIndexStore
+from llama_index.core.storage.index_store.types import BaseIndexStore as BaseIndexStore
+from private_gpt.paths import local_data_path as local_data_path
+from private_gpt.settings.settings import Settings as Settings
+
+logger: logging.Logger
+
+class NodeStoreComponent:
+    index_store: BaseIndexStore
+    doc_store: BaseDocumentStore
+    def __init__(self, settings: Settings) -> None: ...

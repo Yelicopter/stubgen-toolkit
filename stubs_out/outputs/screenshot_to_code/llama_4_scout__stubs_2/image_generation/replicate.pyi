@@ -1,0 +1,3 @@
+from typing import Any
+
+async def call_replicate(input: dict[str, Any], api_token: str) -> str: ...

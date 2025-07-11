@@ -1,0 +1,94 @@
+from _typeshed import Incomplete
+from ghunt.helpers.utils import get_datetime_utc as get_datetime_utc
+from ghunt.objects.apis import Parser
+
+class DriveFile(Parser):
+    kind: str
+    id: str
+    thumbnail_version: str
+    title: str
+    mime_type: str
+    labels: Incomplete
+    created_date: Incomplete
+    modified_date: Incomplete
+    last_viewed_by_me_date: Incomplete
+    marked_viewed_by_me_date: Incomplete
+    shared_with_me_date: Incomplete
+    recency: Incomplete
+    recency_reason: str
+    version: str
+    parents: Incomplete
+    user_permission: Incomplete
+    file_extension: str
+    file_size: str
+    quota_bytes_used: str
+    owners: Incomplete
+    last_modifying_user: Incomplete
+    capabilities: Incomplete
+    copyable: bool
+    shared: bool
+    explicitly_trashed: bool
+    authorized_app_ids: Incomplete
+    primary_sync_parent_id: str
+    subscribed: bool
+    passively_subscribed: bool
+    flagged_for_abuse: bool
+    abuse_is_appealable: bool
+    source_app_id: str
+    spaces: Incomplete
+    has_thumbnail: bool
+    contains_unsubscribed_children: bool
+    alternate_link: str
+    icon_link: str
+    copy_requires_writer_permission: bool
+    permissions: Incomplete
+    head_revision_id: str
+    video_media_metadata: Incomplete
+    has_legacy_blob_comments: bool
+    label_info: Incomplete
+    web_content_link: str
+    thumbnail_link: str
+    description: str
+    original_filename: str
+    permissions_summary: Incomplete
+    full_file_extension: str
+    md5_checksum: str
+    owned_by_me: bool
+    writers_can_share: bool
+    image_media_metadata: Incomplete
+    is_app_authorized: bool
+    link_share_metadata: Incomplete
+    etag: str
+    self_link: str
+    embed_link: str
+    open_with_links: Incomplete
+    default_open_with_link: str
+    has_child_folders: bool
+    owner_names: Incomplete
+    last_modifying_user_name: str
+    editable: bool
+    app_data_contents: bool
+    drive_source: Incomplete
+    source: Incomplete
+    descendant_of_root: bool
+    folder_color: str
+    folder_properties: Incomplete
+    resource_key: str
+    has_augmented_permissions: bool
+    ancestor_has_augmented_permissions: bool
+    has_visitor_permissions: bool
+    primary_domain_name: str
+    organization_display_name: str
+    customer_id: str
+    team_drive_id: str
+    folder_color_rgb: str
+    def __init__(self) -> None: ...
+
+class DriveLabels(Parser):
+    starred: bool
+    trashed: bool
+    restricted: bool
+    viewed: bool
+    hidden: bool
+    modified: bool
+    def __init__(self) -> None: ...

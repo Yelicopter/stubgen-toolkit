@@ -1,0 +1,33 @@
+class GetPlayerResponseProto:
+    class field1_type:
+        class Results:
+            class Player:
+                class field1_type: ...
+                class Avatar: ...
+            class Section:
+                class Counter: ...
+                class field3_type: ...
+                class PlayedGames:
+                    class field1_type:
+                        class field1_type:
+                            class field203130867_type: ...
+                        class Game:
+                            class Icon: ...
+                            class field6_type:
+                                class field1_type:
+                                    class Details:
+                                        class field1_type: ...
+                        class field234686954_type:
+                            class field1_type:
+                                class field2_type: ...
+                class Achievements:
+                    class field1_type:
+                        class field3_type:
+                            class field1_type:
+                                class Achievement:
+                                    class field7_type:
+                                        class field1_type:
+                                            class Details: ...
+                            class field2_type:
+                                class field1_type:
+                                    class Page: ...

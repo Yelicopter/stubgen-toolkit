@@ -1,0 +1,6 @@
+import pandas as pd
+from typing import Any
+
+class VirtualDataFrame(pd.DataFrame):
+    def __init__(self, *args: Any, **kwargs: Any) -> None: ...
+    def head(self, n: int = ...) -> VirtualDataFrame: ...

@@ -1,0 +1,3 @@
+from typing import Any, Callable
+
+def retry(exceptions: Exception = ..., *, is_async: bool = ..., tries: int = ..., delay: float = ..., max_delay: float | None = ..., backoff: float = ..., jitter: float | tuple[float, float] = ..., logger: logging.Logger = ...) -> Callable[[Callable[..., Any]], Callable[..., Any]]: ...

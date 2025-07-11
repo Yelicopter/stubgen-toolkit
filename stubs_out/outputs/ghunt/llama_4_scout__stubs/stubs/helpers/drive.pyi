@@ -1,0 +1,6 @@
+from ghunt.objects.base import DriveExtractedUser as DriveExtractedUser
+from ghunt.parsers.drive import DriveComment as DriveComment, DriveCommentList as DriveCommentList, DriveCommentReply as DriveCommentReply, DriveFile as DriveFile
+from typing import Any
+
+def get_users_from_file(file: DriveFile) -> list[DriveExtractedUser]: ...
+def get_comments_from_file(comments: DriveCommentList) -> list[Any]: ...

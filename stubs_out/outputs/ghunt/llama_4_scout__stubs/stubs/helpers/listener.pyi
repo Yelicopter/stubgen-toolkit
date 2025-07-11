@@ -1,0 +1,9 @@
+from http.server import BaseHTTPRequestHandler
+from typing import Any
+
+class DataBridge:
+    def __init__(self) -> None: ...
+
+class Server(BaseHTTPRequestHandler): ...
+
+def run(server_class: Any = ..., handler_class: Any = ..., port: int = ...) -> Any: ...

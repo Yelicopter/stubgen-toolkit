@@ -1,0 +1,3 @@
+from click.exceptions import Abort as Abort, BadParameter as BadParameter, Exit as Exit
+
+def get_terminal_size() -> tuple: ...

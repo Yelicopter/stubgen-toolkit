@@ -1,0 +1,3 @@
+from .console import Console
+
+def get_console() -> Console: ...

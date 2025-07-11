@@ -1,0 +1,9 @@
+from .base import LLM as LLM
+from pandasai.agent.state import AgentState as AgentState
+from pandasai.core.prompts.base import BasePrompt as BasePrompt
+
+class FakeLLM(LLM):
+    def __init__(self, output: str | None = ..., type: str = ...) -> None: ...
+    def call(self, instruction: BasePrompt, context: AgentState | None = ...) -> str: ...
+    @property
+    def type(self) -> str: ...

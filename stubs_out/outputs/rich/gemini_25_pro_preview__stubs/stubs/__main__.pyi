@@ -1,0 +1,13 @@
+from rich.console import Console as Console, ConsoleOptions as ConsoleOptions, RenderResult as RenderResult
+from rich.measure import Measurement as Measurement
+from rich.protocol import RenderableType as RenderableType
+from rich.segment import Segment as Segment
+from rich.table import Table as Table
+from typing import Iterator
+
+class ColorBox:
+    def __rich_console__(self, console: Console, options: ConsoleOptions) -> Iterator[Segment]: ...
+    def __rich_measure__(self, console: Console, options: ConsoleOptions) -> Measurement: ...
+
+def make_test_card() -> Table: ...
+def comparison(renderable1: RenderableType, renderable2: RenderableType) -> Table: ...

@@ -1,0 +1,9 @@
+from typing import NamedTuple, Tuple
+
+class ColorTriplet(NamedTuple):
+    @property
+    def hex(self) -> str: ...
+    @property
+    def rgb(self) -> str: ...
+    @property
+    def normalized(self) -> Tuple[float, float, float]: ...

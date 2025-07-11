@@ -1,0 +1,3 @@
+from typing import Any
+
+async def check_and_login(as_client: Any, clean: bool = ...) -> None: ...

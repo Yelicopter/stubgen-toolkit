@@ -1,0 +1,3 @@
+from evals.runner import run_image_evals as run_image_evals
+
+async def main() -> None: ...

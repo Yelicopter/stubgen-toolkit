@@ -1,0 +1,16 @@
+from typing import *
+from ghunt.objects.base import SmartObj
+from http.server import BaseHTTPRequestHandler
+from typing import Any
+
+class DataBridge(SmartObj):
+    def __init__(self) -> None: ...
+    data: Optional[str]
+
+class Server(BaseHTTPRequestHandler):
+    data_bridge: DataBridge
+    def do_GET(self) -> None: ...
+    def do_POST(self) -> None: ...
+    def log_message(self, format: str, *args: Any) -> None: ...
+
+def run(server_class: type = ..., handler_class: type = ..., port: int = ...) -> Optional[str]: ...

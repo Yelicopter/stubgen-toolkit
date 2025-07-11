@@ -1,0 +1,3 @@
+class GetPlayerProto:
+    class Form:
+        class Query: ...

@@ -1,0 +1,3 @@
+from typing import Tuple
+
+def get_terminal_size() -> Tuple[int, int]: ...

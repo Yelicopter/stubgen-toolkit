@@ -1,0 +1,3 @@
+from ._cli import YouTubeTranscriptCli as YouTubeTranscriptCli
+
+def main() -> None: ...

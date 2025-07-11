@@ -1,0 +1,11 @@
+from .console import Console as Console, ConsoleOptions as ConsoleOptions, RenderResult as RenderResult, RenderableType as RenderableType
+from .jupyter import JupyterMixin as JupyterMixin
+from .measure import Measurement as Measurement
+from typing import Optional
+
+class Constrain(JupyterMixin):
+    renderable: RenderableType
+    width: Optional[int]
+    def __init__(self, renderable: RenderableType, width: Optional[int] = ...) -> None: ...
+    def __rich_console__(self, console: Console, options: ConsoleOptions) -> RenderResult: ...
+    def __rich_measure__(self, console: Console, options: ConsoleOptions) -> Measurement: ...

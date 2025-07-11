@@ -1,0 +1,3 @@
+from typing import Any, Optional
+
+async def hunt(as_client: Any, email_address: str, json_file: Optional[Any] = ...) -> None: ...

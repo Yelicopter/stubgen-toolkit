@@ -1,0 +1,3 @@
+from typing import Optional
+
+def pick_bool(*values: Optional[bool]) -> bool: ...

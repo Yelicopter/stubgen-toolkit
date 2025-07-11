@@ -1,0 +1,13 @@
+from . import get_console as get_console
+from .segment import Segment as Segment
+from .terminal_theme import DEFAULT_TERMINAL_THEME as DEFAULT_TERMINAL_THEME
+from rich.console import ConsoleRenderable as ConsoleRenderable
+from typing import Any, Iterable
+
+class JupyterRenderable:
+    def __init__(self, html: str, text: str) -> None: ...
+
+class JupyterMixin: ...
+
+def display(segments: Iterable[Segment], text: str) -> None: ...
+def print(*args: Any, **kwargs: Any) -> None: ...

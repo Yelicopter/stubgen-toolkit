@@ -1,0 +1,14 @@
+import ast
+from ...exceptions import MaliciousQueryError as MaliciousQueryError
+from pandasai.agent.state import AgentState as AgentState
+from pandasai.constants import DEFAULT_CHART_DIRECTORY as DEFAULT_CHART_DIRECTORY
+from pandasai.core.code_execution.code_executor import CodeExecutor as CodeExecutor
+from pandasai.query_builders.sql_parser import SQLParser as SQLParser
+from pathlib import Path as Path
+from typing import Any, List, Tuple
+
+class CodeCleaner:
+    def __init__(self, context: AgentState) -> None: ...
+    def get_target_names(self, targets) -> Tuple[List[str], bool, Any]: ...
+    def check_is_df_declaration(self, node: ast.AST) -> bool: ...
+    def clean_code(self, code: str) -> str: ...

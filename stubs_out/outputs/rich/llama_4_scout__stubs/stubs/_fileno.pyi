@@ -1,0 +1,3 @@
+from typing import Any, IO
+
+def get_fileno(file_like: IO[Any]) -> int | None: ...

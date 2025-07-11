@@ -1,0 +1,3 @@
+from typing import Generator
+
+def timer(subject: str = ...) -> Generator[None, None, None]: ...

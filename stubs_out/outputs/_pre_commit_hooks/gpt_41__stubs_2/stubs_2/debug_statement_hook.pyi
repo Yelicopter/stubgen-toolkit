@@ -1,0 +1,19 @@
+from typing import Any, List, NamedTuple, Optional, Sequence
+
+DEBUG_STATEMENTS: set[str]
+
+class Debug(NamedTuple):
+    line: int
+    col: int
+    name: str
+    reason: str
+
+class DebugStatementParser:
+    breakpoints: List[Debug]
+    def __init__(self) -> None: ...
+    def visit_Import(self, node: Any) -> None: ...
+    def visit_ImportFrom(self, node: Any) -> None: ...
+    def visit_Call(self, node: Any) -> None: ...
+
+def check_file(filename: str) -> int: ...
+def main(argv: Optional[Sequence[str]] = ...) -> int: ...

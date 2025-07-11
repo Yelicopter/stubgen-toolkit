@@ -1,0 +1,6 @@
+from ._transcripts import FetchedTranscript as FetchedTranscript, TranscriptList as TranscriptList
+from typing import List
+
+class YouTubeTranscriptCli:
+    def __init__(self, args: List[str]) -> None: ...
+    def run(self) -> str: ...

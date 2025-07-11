@@ -1,0 +1,6 @@
+from json import JSONEncoder
+
+def convert_numpy_types(obj: any) -> any: ...
+
+class CustomJsonEncoder(JSONEncoder):
+    def default(self, obj: any) -> any: ...

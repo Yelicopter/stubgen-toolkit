@@ -1,0 +1,11 @@
+from .console import Console as Console, ConsoleOptions as ConsoleOptions, RenderResult as RenderResult, RenderableType as RenderableType
+from .measure import Measurement as Measurement
+from .segment import Segment as Segment
+from .style import StyleType as StyleType
+
+class Styled:
+    def __init__(self, renderable: RenderableType, style: StyleType) -> None: ...
+    renderable: RenderableType
+    style: StyleType
+    def __rich_console__(self, console: Console, options: ConsoleOptions) -> RenderResult: ...
+    def __rich_measure__(self, console: Console, options: ConsoleOptions) -> Measurement: ...

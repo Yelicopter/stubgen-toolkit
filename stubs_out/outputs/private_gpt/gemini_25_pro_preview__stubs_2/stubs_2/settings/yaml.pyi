@@ -1,0 +1,3 @@
+from typing import Any, TextIO
+
+def load_yaml_with_envvars(stream: TextIO, environ: dict[str, str] = ...) -> Any: ...

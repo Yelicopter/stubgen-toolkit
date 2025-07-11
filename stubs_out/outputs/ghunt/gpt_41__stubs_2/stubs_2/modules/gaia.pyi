@@ -1,0 +1,3 @@
+from typing import Any, Optional
+
+async def hunt(as_client: Any, gaia_id: str, json_file: Optional[Any] = ...) -> None: ...

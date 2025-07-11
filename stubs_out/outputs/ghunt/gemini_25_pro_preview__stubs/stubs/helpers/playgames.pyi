@@ -1,0 +1,9 @@
+import httpx
+from ghunt.objects.base import GHuntCreds as GHuntCreds
+from ghunt.parsers.playgames import Player as Player
+from ghunt.parsers.playgateway import PlayerSearchResult as PlayerSearchResult
+from typing import List, Tuple
+
+async def get_player(ghunt_creds: GHuntCreds, as_client: httpx.AsyncClient, player_id: str) -> Tuple[bool, Player]: ...
+async def search_player(ghunt_creds: GHuntCreds, as_client: httpx.AsyncClient, query: str) -> List[PlayerSearchResult]: ...
+def output(player: Player) -> None: ...

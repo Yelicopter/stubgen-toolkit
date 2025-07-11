@@ -1,0 +1,6 @@
+from llama_index.core.llms import LLM as LLM, MockLLM as MockLLM
+from private_gpt.settings.settings import Settings as Settings
+
+class LLMComponent:
+    def __init__(self, settings: Settings) -> None: ...
+    def get_llm(self) -> LLM: ...

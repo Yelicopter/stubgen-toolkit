@@ -1,0 +1,6 @@
+from collections.abc import Sequence
+from pre_commit_hooks.check_executables_have_shebangs import EXECUTABLE_VALUES as EXECUTABLE_VALUES, git_ls_files as git_ls_files, has_shebang as has_shebang
+from typing import List, Optional
+
+def check_shebangs(paths: List[str]) -> int: ...
+def main(argv: Optional[Sequence[str]] = ...) -> int: ...

@@ -1,0 +1,9 @@
+from pandasai.core.prompts.base import BasePrompt as BasePrompt
+from pandasai.helpers.session import Session as Session
+from pandasai.llm.base import LLM
+
+class BambooLLM(LLM):
+    def __init__(self, endpoint_url: str | None = ..., api_key: str | None = ...) -> None: ...
+    def call(self, instruction: BasePrompt, _context: None = ...) -> str: ...
+    @property
+    def type(self) -> str: ...

@@ -1,0 +1,9 @@
+from .code_cleaning import CodeCleaner as CodeCleaner
+from .code_validation import CodeRequirementValidator as CodeRequirementValidator
+from pandasai.agent.state import AgentState as AgentState
+from pandasai.core.prompts.base import BasePrompt as BasePrompt
+
+class CodeGenerator:
+    def __init__(self, context: AgentState) -> None: ...
+    def generate_code(self, prompt: BasePrompt) -> str: ...
+    def validate_and_clean_code(self, code: str) -> str: ...

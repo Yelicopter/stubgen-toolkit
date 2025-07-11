@@ -1,0 +1,3 @@
+import httpx
+
+class AsyncClient(httpx.AsyncClient): ...

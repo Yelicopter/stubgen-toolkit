@@ -1,0 +1,26 @@
+from typing import Any, Dict, Optional
+
+class HTTPException(Exception):
+    def __init__(self, status_code: int, detail: Any = ..., headers: Optional[Dict[str, Any]] = ...) -> None: ...
+
+class WebSocketException(Exception):
+    def __init__(self, code: int, reason: Optional[str] = ...) -> None: ...
+
+RequestErrorModel: Any
+WebSocketErrorModel: Any
+
+class FastAPIError(RuntimeError): ...
+
+class ValidationException(Exception):
+    def __init__(self, errors: Any) -> None: ...
+    def errors(self) -> Any: ...
+
+class RequestValidationError(ValidationException):
+    body: Any
+    def __init__(self, errors: Any, *, body: Any = ...) -> None: ...
+
+class WebSocketRequestValidationError(ValidationException): ...
+
+class ResponseValidationError(ValidationException):
+    body: Any
+    def __init__(self, errors: Any, *, body: Any = ...) -> None: ...

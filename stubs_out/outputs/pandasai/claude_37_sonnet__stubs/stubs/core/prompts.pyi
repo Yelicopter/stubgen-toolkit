@@ -1,0 +1,9 @@
+from .base import BasePrompt as BasePrompt
+from .generate_python_code_with_sql import GeneratePythonCodeWithSQLPrompt as GeneratePythonCodeWithSQLPrompt
+from pandasai.agent.state import AgentState as AgentState
+from pandasai.core.prompts.correct_execute_sql_query_usage_error_prompt import CorrectExecuteSQLQueryUsageErrorPrompt as CorrectExecuteSQLQueryUsageErrorPrompt
+from pandasai.core.prompts.correct_output_type_error_prompt import CorrectOutputTypeErrorPrompt as CorrectOutputTypeErrorPrompt
+
+def get_chat_prompt_for_sql(context: AgentState) -> BasePrompt: ...
+def get_correct_error_prompt_for_sql(context: AgentState, code: str, traceback_error: str) -> BasePrompt: ...
+def get_correct_output_type_error_prompt(context: AgentState, code: str, traceback_error: str) -> BasePrompt: ...

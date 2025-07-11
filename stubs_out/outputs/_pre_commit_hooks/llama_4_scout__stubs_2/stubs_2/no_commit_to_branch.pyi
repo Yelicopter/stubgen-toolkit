@@ -1,0 +1,6 @@
+from collections.abc import Sequence
+from pre_commit_hooks.util import CalledProcessError as CalledProcessError, cmd_output as cmd_output
+from typing import AbstractSet
+
+def is_on_branch(protected: AbstractSet[str], patterns: AbstractSet[str] = ...) -> bool: ...
+def main(argv: Sequence[str] | None = ...) -> int: ...
