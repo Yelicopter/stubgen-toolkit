@@ -1,0 +1,6 @@
+from typing import Any, Iterable, Union, cast
+
+from .console import Console
+
+def is_renderable(check_object: Any) -> bool: ...
+def rich_cast(renderable: Union[str, "ConsoleRenderable"]) -> Union[str, "ConsoleRenderable"]: ...

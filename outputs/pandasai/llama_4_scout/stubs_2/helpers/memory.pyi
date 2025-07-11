@@ -1,0 +1,52 @@
+from typing import Union
+
+
+class Memory:
+    _messages: list
+    _memory_size: int
+    agent_description: str
+
+    def __init__(
+        self, memory_size: int = 1, agent_description: str | None = None
+    ) -> None:
+        ...
+
+    def add(self, message: str, is_user: bool) -> None:
+        ...
+
+    def count(self) -> int:
+        ...
+
+    def all(self) -> list:
+        ...
+
+    def last(self) -> dict:
+        ...
+
+    def _truncate(self, message: str, max_length: int = 100) -> str:
+        ...
+
+    def get_messages(self, limit: int | None = None) -> list:
+        ...
+
+    def get_conversation(self, limit: int | None = None) -> str:
+        ...
+
+    def get_previous_conversation(self) -> str:
+        ...
+
+    def get_last_message(self) -> str:
+        ...
+
+    def to_json(self) -> list:
+        ...
+
+    def to_openai_messages(self) -> list:
+        ...
+
+    def clear(self) -> None:
+        ...
+
+    @property
+    def size(self) -> int:
+        ...

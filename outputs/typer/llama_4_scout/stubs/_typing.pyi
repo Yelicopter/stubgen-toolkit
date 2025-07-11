@@ -1,0 +1,17 @@
+from typing import Any, Callable, Optional, Tuple, Type, Union
+
+if sys.version_info >= (3, 9):
+    from typing import Annotated, Literal, get_args, get_origin, get_type_hints
+else:
+    from typing_extensions import Annotated, Literal, get_args, get_origin, get_type_hints
+
+def is_union(tp: Type) -> bool:
+    ...
+def is_none_type(type_: Type) -> bool:
+    ...
+def is_callable_type(type_: Type) -> bool:
+    ...
+def is_literal_type(type_: Type) -> bool:
+    ...
+def all_literal_values(type_: Type) -> Tuple[Any, ...]:
+    ...

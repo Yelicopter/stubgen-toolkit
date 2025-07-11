@@ -1,0 +1,30 @@
+import os
+import re
+
+
+def find_project_root(filename: str | None = None) -> str:
+    ...
+
+
+def find_closest(filename: str) -> str:
+    ...
+
+
+def validate_name_format(value: str) -> bool:
+    ...
+
+
+def validate_underscore_name_format(value: str) -> bool:
+    ...
+
+
+def transform_dash_to_underscore(value: str) -> str:
+    ...
+
+
+def transform_underscore_to_dash(value: str) -> str:
+    ...
+
+
+def get_validated_dataset_path(path: str) -> tuple:
+    ...

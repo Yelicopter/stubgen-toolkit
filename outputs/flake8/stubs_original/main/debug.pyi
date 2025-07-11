@@ -1,0 +1,3 @@
+from typing import Any, Dict
+
+def information(version: str, plugins: Any) -> Dict[str, Any]: ...

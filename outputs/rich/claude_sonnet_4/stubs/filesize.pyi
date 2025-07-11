@@ -1,0 +1,9 @@
+from typing import List, Tuple
+
+def decimal(size: int) -> str: ...
+def binary(size: int) -> str: ...
+def pick_unit_and_suffix(
+    size: int,
+    suffixes: List[str],
+    base: int
+) -> Tuple[int, str]: ...

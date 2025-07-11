@@ -1,0 +1,9 @@
+from argparse import ArgumentParser
+from typing import Any
+
+def stage1_arg_parser() -> ArgumentParser: ...
+
+class JobsArgument:
+    def __init__(self, arg: str) -> None: ...
+
+def register_default_options(option_manager: Any) -> None: ...

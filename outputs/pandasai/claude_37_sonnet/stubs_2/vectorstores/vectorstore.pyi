@@ -1,0 +1,59 @@
+from abc import ABC, abstractmethod
+from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
+
+class VectorStore(ABC):
+    @abstractmethod
+    def add_question_answer(
+        self,
+        queries: Union[str, List[str]],
+        codes: Union[str, List[str]],
+        ids: Optional[Iterable[str]] = None,
+        metadatas: Optional[List[Dict[str, Any]]] = None,
+    ) -> List[str]: ...
+    
+    @abstractmethod
+    def add_docs(
+        self,
+        docs: Union[str, List[str]],
+        ids: Optional[Iterable[str]] = None,
+        metadatas: Optional[List[Dict[str, Any]]] = None,
+    ) -> List[str]: ...
+    
+    def update_question_answer(
+        self,
+        ids: Union[str, List[str]],
+        queries: Union[str, List[str]],
+        codes: Union[str, List[str]],
+        metadatas: Optional[List[Dict[str, Any]]] = None,
+    ) -> List[str]: ...
+    
+    def update_docs(
+        self,
+        ids: Union[str, List[str]],
+        docs: Union[str, List[str]],
+        metadatas: Optional[List[Dict[str, Any]]] = None,
+    ) -> List[str]: ...
+    
+    def delete_question_and_answers(
+        self, ids: Optional[List[str]] = None
+    ) -> Optional[bool]: ...
+    
+    def delete_docs(self, ids: Optional[List[str]] = None) -> Optional[bool]: ...
+    
+    def delete_collection(self, collection_name: str) -> Optional[bool]: ...
+    
+    def get_relevant_question_answers(self, question: str, k: int = 1) -> List[Dict]: ...
+    
+    def get_relevant_docs(self, question: str, k: int = 1) -> List[Dict]: ...
+    
+    def get_relevant_question_answers_by_id(self, ids: Union[str, List[str]]) -> List[Dict]: ...
+    
+    def get_relevant_docs_by_id(self, ids: Union[str, List[str]]) -> List[Dict]: ...
+    
+    @abstractmethod
+    def get_relevant_qa_documents(self, question: str, k: int = 1) -> List[str]: ...
+    
+    @abstractmethod
+    def get_relevant_docs_documents(self, question: str, k: int = 1) -> List[str]: ...
+    
+    def _format_qa(self, query: str, code: str) -> str: ...

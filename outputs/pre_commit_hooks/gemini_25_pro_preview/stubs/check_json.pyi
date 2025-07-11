@@ -1,0 +1,7 @@
+from __future__ import annotations
+
+from collections.abc import Sequence
+from typing import Any
+
+def raise_duplicate_keys(ordered_pairs: list[tuple[Any, Any]]) -> dict[Any, Any]: ...
+def main(argv: Sequence[str] | None = None) -> int: ...

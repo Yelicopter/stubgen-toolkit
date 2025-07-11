@@ -1,0 +1,6 @@
+from typing import Sequence, Optional, Any
+
+def raise_duplicate_keys(
+    ordered_pairs: Sequence[tuple[Any, Any]],
+) -> dict[Any, Any]: ...
+def main(argv: Optional[Sequence[str]] = ...) -> int: ...

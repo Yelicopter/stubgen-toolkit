@@ -1,0 +1,3 @@
+METHODS_WITH_BODY: set[str]
+REF_PREFIX: str
+REF_TEMPLATE: str

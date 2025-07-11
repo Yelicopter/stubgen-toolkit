@@ -1,0 +1,3 @@
+from .theme import Theme
+
+DEFAULT: Theme = ...

@@ -1,0 +1,3 @@
+from typing import Any, List, Tuple
+
+def parse_args(argv: List[str]) -> Tuple[Any, Any]: ...

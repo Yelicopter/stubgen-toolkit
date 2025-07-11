@@ -1,0 +1,9 @@
+from typing import Any, Optional
+
+def get_version(module: Any) -> str: ...
+def get_environment() -> dict: ...
+def import_dependency(
+    name: str,
+    extra: str = ...,
+    errors: str = ...,
+) -> Optional[Any]: ...

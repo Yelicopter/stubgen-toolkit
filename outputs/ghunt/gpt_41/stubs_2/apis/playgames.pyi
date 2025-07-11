@@ -1,0 +1,20 @@
+from typing import Any, Dict, Optional, Tuple
+from ghunt.objects.base import GHuntCreds
+from ghunt.objects.apis import GAPI
+from ghunt.parsers.playgames import PlayedGames, PlayerAchievements, PlayerProfile
+
+class PlayGames(GAPI):
+    def __init__(self, creds: GHuntCreds, headers: Optional[Dict[str, Any]] = ...) -> None: ...
+    async def get_profile(self, as_client: Any, player_id: str) -> Tuple[bool, PlayerProfile]: ...
+    async def get_played_games(
+        self,
+        as_client: Any,
+        player_id: str,
+        page_token: str = ...,
+    ) -> Tuple[bool, str, PlayedGames]: ...
+    async def get_achievements(
+        self,
+        as_client: Any,
+        player_id: str,
+        page_token: str = ...,
+    ) -> Tuple[bool, str, PlayerAchievements]: ...

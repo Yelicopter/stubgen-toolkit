@@ -1,0 +1,14 @@
+from _typeshed import Incomplete
+from prompts.types import SystemPrompts as SystemPrompts
+
+GENERAL_INSTRUCTIONS: str
+LIBRARY_INSTRUCTIONS: str
+FORMAT_INSTRUCTIONS: str
+HTML_TAILWIND_SYSTEM_PROMPT: Incomplete
+HTML_CSS_SYSTEM_PROMPT: Incomplete
+REACT_TAILWIND_SYSTEM_PROMPT: Incomplete
+BOOTSTRAP_SYSTEM_PROMPT: Incomplete
+IONIC_TAILWIND_SYSTEM_PROMPT: Incomplete
+VUE_TAILWIND_SYSTEM_PROMPT: Incomplete
+SVG_SYSTEM_PROMPT: Incomplete
+SYSTEM_PROMPTS: Incomplete

@@ -1,0 +1,231 @@
+from enum import IntEnum
+from functools import lru_cache
+from itertools import filterfalse
+from logging import getLogger
+from operator import attrgetter
+from typing import (
+    TYPE_CHECKING,
+    Dict,
+    Iterable,
+    List,
+    NamedTuple,
+    Optional,
+    Sequence,
+    Tuple,
+    Type,
+    Union,
+)
+
+from .cells import (
+    _is_single_cell_widths,
+    cached_cell_len,
+    cell_len,
+    get_character_cell_size,
+    set_cell_size,
+)
+from .repr import Result, rich_repr
+from .style import Style
+
+if TYPE_CHECKING:
+    from .console import Console, ConsoleOptions, RenderResult
+
+log = getLogger("rich")
+
+
+class ControlType(IntEnum):
+    """Non-printable control codes which typically translate to ANSI codes."""
+
+    BELL = 1
+    CARRIAGE_RETURN = 2
+    HOME = 3
+    CLEAR = 4
+    SHOW_CURSOR = 5
+    HIDE_CURSOR = 6
+    ENABLE_ALT_SCREEN = 7
+    DISABLE_ALT_SCREEN = 8
+    CURSOR_UP = 9
+    CURSOR_DOWN = 10
+    CURSOR_FORWARD = 11
+    CURSOR_BACKWARD = 12
+    CURSOR_MOVE_TO_COLUMN = 13
+    CURSOR_MOVE_TO = 14
+    ERASE_IN_LINE = 15
+    SET_WINDOW_TITLE = 16
+
+
+ControlCode = Union[
+    Tuple[ControlType],
+    Tuple[ControlType, Union[int, str]],
+    Tuple[ControlType, int, int],
+]
+
+
+@rich_repr()
+class Segment(NamedTuple):
+    """A piece of text with associated style. Segments are produced by the Console render process and
+    are ultimately converted in to strings to be written to the terminal.
+
+    Args:
+        text (str): A piece of text.
+        style (:class:`~rich.style.Style`, optional): An optional style to apply to the text.
+        control (Tuple[ControlCode], optional): Optional sequence of control codes.
+
+    Attributes:
+        cell_length (int): The cell length of this Segment.
+    """
+
+    text: str
+    style: Optional[Style] = None
+    control: Optional[Tuple[ControlType]] = None
+
+    @property
+    def cell_length(self) -> int:
+        ...
+
+    def __rich_repr__(self) -> Result:
+        ...
+
+    def __bool__(self) -> bool:
+        ...
+
+    @classmethod
+    @lru_cache(1024 * 16)
+    def _split_cells(
+        cls, segment: "Segment", cut: int
+    ) -> Tuple["Segment", "Segment"]:
+        ...
+
+    def split_cells(self, cut: int) -> Tuple["Segment", "Segment"]:
+        ...
+
+    @classmethod
+    def line(cls) -> "Segment":
+        ...
+
+    @classmethod
+    def apply_style(
+        cls,
+        segments: Iterable["Segment"],
+        style: Optional[Style] = None,
+        post_style: Optional[Style] = None,
+    ) -> Iterable["Segment"]:
+        ...
+
+    @classmethod
+    def filter_control(
+        cls,
+        segments: Iterable["Segment"],
+        is_control: bool = False,
+    ) -> Iterable["Segment"]:
+        ...
+
+    @classmethod
+    def split_lines(
+        cls, segments: Iterable["Segment"]
+    ) -> Iterable[List["Segment"]]:
+        ...
+
+    @classmethod
+    def split_and_crop_lines(
+        cls,
+        segments: Iterable["Segment"],
+        length: int,
+        style: Optional[Style] = None,
+        pad: bool = True,
+        include_new_lines: bool = True,
+    ) -> Iterable[List["Segment"]]:
+        ...
+
+    @classmethod
+    def adjust_line_length(
+        cls,
+        line: List["Segment"],
+        length: int,
+        style: Optional[Style] = None,
+        pad: bool = True,
+    ) -> List["Segment"]:
+        ...
+
+    @classmethod
+    def get_line_length(cls, line: List["Segment"]) -> int:
+        ...
+
+    @classmethod
+    def get_shape(cls, lines: List[List["Segment"]]) -> Tuple[int, int]:
+        ...
+
+    @classmethod
+    def set_shape(
+        cls,
+        lines: List[List["Segment"]],
+        width: int,
+        height: Optional[int] = None,
+        style: Optional[Style] = None,
+        new_lines: bool = False,
+    ) -> List[List["Segment"]]:
+        ...
+
+    @classmethod
+    def align_top(
+        cls,
+        lines: List[List["Segment"]],
+        width: int,
+        height: Optional[int],
+        style: Style,
+        new_lines: bool = False,
+    ) -> List[List["Segment"]]:
+        ...
+
+    @classmethod
+    def align_bottom(
+        cls,
+        lines: List[List["Segment"]],
+        width: int,
+        height: Optional[int],
+        style: Style,
+        new_lines: bool = False,
+    ) -> List[List["Segment"]]:
+        ...
+
+    @classmethod
+    def align_middle(
+        cls,
+        lines: List[List["Segment"]],
+        width: int,
+        height: Optional[int],
+        style: Style,
+        new_lines: bool = False,
+    ) -> List[List["Segment"]]:
+        ...
+
+    @classmethod
+    def simplify(
+        cls, segments: Iterable["Segment"]
+    ) -> Iterable["Segment"]:
+        ...
+
+    @classmethod
+    def strip_links(
+        cls, segments: Iterable["Segment"]
+    ) -> Iterable["Segment"]:
+        ...
+
+    @classmethod
+    def strip_styles(
+        cls, segments: Iterable["Segment"]
+    ) -> Iterable["Segment"]:
+        ...
+
+    @classmethod
+    def remove_color(
+        cls, segments: Iterable["Segment"]
+    ) -> Iterable["Segment"]:
+        ...
+
+    @classmethod
+    def divide(
+        cls,
+        segments: Iterable["Segment"],
+        cuts: Iterable[int],
+    ) -> Iterable[Iterable[List["Segment"]]]:
+        ...

@@ -1,0 +1,9 @@
+from typing import Any
+from ghunt.objects.base import GHuntCreds
+from ghunt.objects.apis import GAPI
+from ghunt.parsers.playgateway import PlayerSearchResults, PlayerProfile
+
+class PlayGatewayPaGrpc(GAPI):
+    def __init__(self, creds: GHuntCreds, headers: Any = ...) -> None: ...
+    async def search_player(self, as_client: Any, query: str) -> PlayerSearchResults: ...
+    async def get_player_stats(self, as_client: Any, player_id: str) -> PlayerProfile: ...

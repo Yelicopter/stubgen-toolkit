@@ -1,0 +1,3 @@
+from .base_query_builder import BaseQueryBuilder as BaseQueryBuilder
+
+class SqlQueryBuilder(BaseQueryBuilder): ...

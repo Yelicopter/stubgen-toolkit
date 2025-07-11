@@ -1,0 +1,75 @@
+import abc
+import logging
+from collections.abc import Sequence
+from typing import Any, Literal, Optional, Union
+from llama_index.core.llms import ChatMessage, MessageRole
+
+logger: logging.Logger
+
+class AbstractPromptStyle(abc.ABC):
+    def __init__(self, *args: Any, **kwargs: Any) -> None: ...
+    
+    @abc.abstractmethod
+    def _messages_to_prompt(self, messages: Sequence[ChatMessage]) -> str: ...
+    
+    @abc.abstractmethod
+    def _completion_to_prompt(self, completion: str) -> str: ...
+    
+    def messages_to_prompt(self, messages: Sequence[ChatMessage]) -> str: ...
+    def completion_to_prompt(self, prompt: str) -> str: ...
+
+class DefaultPromptStyle(AbstractPromptStyle):
+    def __init__(self, *args: Any, **kwargs: Any) -> None: ...
+    def _messages_to_prompt(self, messages: Sequence[ChatMessage]) -> str: ...
+    def _completion_to_prompt(self, completion: str) -> str: ...
+
+class Llama2PromptStyle(AbstractPromptStyle):
+    BOS: str
+    EOS: str
+    B_INST: str
+    E_INST: str
+    B_SYS: str
+    E_SYS: str
+    DEFAULT_SYSTEM_PROMPT: str
+    
+    def _messages_to_prompt(self, messages: Sequence[ChatMessage]) -> str: ...
+    def _completion_to_prompt(self, completion: str) -> str: ...
+
+class Llama3PromptStyle(AbstractPromptStyle):
+    BOS: str
+    EOS: str
+    B_INST: str
+    E_INST: str
+    EOT: str
+    B_SYS: str
+    E_SYS: str
+    ASSISTANT_INST: str
+    DEFAULT_SYSTEM_PROMPT: str
+    
+    def _messages_to_prompt(self, messages: Sequence[ChatMessage]) -> str: ...
+    def _completion_to_prompt(self, completion: str) -> str: ...
+
+class TagPromptStyle(AbstractPromptStyle):
+    def _messages_to_prompt(self, messages: Sequence[ChatMessage]) -> str: ...
+    def _completion_to_prompt(self, completion: str) -> str: ...
+
+class MistralPromptStyle(AbstractPromptStyle):
+    def _messages_to_prompt(self, messages: Sequence[ChatMessage]) -> str: ...
+    def _completion_to_prompt(self, completion: str) -> str: ...
+
+class ChatMLPromptStyle(AbstractPromptStyle):
+    def _messages_to_prompt(self, messages: Sequence[ChatMessage]) -> str: ...
+    def _completion_to_prompt(self, completion: str) -> str: ...
+
+def get_prompt_style(
+    prompt_style: Optional[
+        Union[
+            Literal["default"],
+            Literal["llama2"],
+            Literal["llama3"],
+            Literal["tag"],
+            Literal["mistral"],
+            Literal["chatml"],
+        ]
+    ]
+) -> AbstractPromptStyle: ...

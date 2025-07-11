@@ -1,0 +1,42 @@
+from __future__ import annotations
+
+import argparse
+import logging
+from typing import Any
+from typing import Iterable
+from typing import Type
+
+from flake8 import checker
+from flake8.formatting import base as formatter
+from flake8.main import application as app
+from flake8.statistics import Statistics
+from flake8.style_guide import StyleGuideManager
+
+LOG: logging.Logger
+__all__: tuple[str, ...]
+
+class Report:
+    _application: app.Application
+    _style_guide: StyleGuideManager
+    _stats: Statistics
+    def __init__(self, application: app.Application) -> None: ...
+    @property
+    def total_errors(self) -> int: ...
+    def get_statistics(self, violation: str) -> list[str]: ...
+
+class StyleGuide:
+    _application: app.Application
+    _file_checker_manager: checker.Manager
+    def __init__(self, application: app.Application) -> None: ...
+    @property
+    def options(self) -> argparse.Namespace: ...
+    @property
+    def paths(self) -> list[str]: ...
+    def check_files(self, paths: list[str] | None = None) -> Report: ...
+    def excluded(self, filename: str, parent: str | None = None) -> bool: ...
+    def init_report(self, reporter: Type[formatter.BaseFormatter] | None = None) -> None: ...
+    def input_file(
+        self, filename: str, lines: list[str] | None = None, expected: Any | None = None, line_offset: int = 0
+    ) -> Report: ...
+
+def get_style_guide(**kwargs: Any) -> StyleGuide: ...

@@ -1,0 +1,43 @@
+from typing import Any, List, Optional
+
+import duckdb
+import pandas as pd
+
+from pandasai.dataframe.virtual_dataframe import VirtualDataFrame
+from pandasai.query_builders import ViewQueryBuilder
+
+from .. import LOCAL_SOURCE_TYPES
+from ..exceptions import MaliciousQueryError
+from ..helpers.sql_sanitizer import is_sql_query_safe
+from ..query_builders.base_query_builder import BaseQueryBuilder
+from ..query_builders.sql_parser import SQLParser
+from .duck_db_connection_manager import DuckDBConnectionManager
+from .loader import DatasetLoader
+from .local_loader import LocalDatasetLoader
+from .semantic_layer_schema import SemanticLayerSchema, Source
+from .sql_loader import SQLDatasetLoader
+
+class ViewDatasetLoader(SQLDatasetLoader):
+    def __init__(self, schema: SemanticLayerSchema, dataset_path: str) -> None:
+        ...
+
+    @property
+    def query_builder(self) -> ViewQueryBuilder:
+        ...
+
+    def _get_dependencies_datasets(self) -> Set[str]:
+        ...
+
+    def _get_dependencies_schemas(self) -> Dict[str, DatasetLoader]:
+        ...
+
+    def load(self) -> VirtualDataFrame:
+        ...
+
+    def execute_local_query(
+        self, query: str, params: Optional[Dict[str, Any]] = None
+    ) -> pd.DataFrame:
+        ...
+
+    def execute_query(self, query: str, params: Optional[Dict[str, Any]] = None) -> pd.DataFrame:
+        ...

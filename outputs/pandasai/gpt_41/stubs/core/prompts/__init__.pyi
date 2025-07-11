@@ -1,0 +1,9 @@
+from typing import Any
+from .base import BasePrompt
+from .generate_python_code_with_sql import GeneratePythonCodeWithSQLPrompt
+
+def get_chat_prompt_for_sql(context: Any) -> GeneratePythonCodeWithSQLPrompt: ...
+def get_correct_error_prompt_for_sql(context: Any, code: str, traceback_error: str) -> Any: ...
+def get_correct_output_type_error_prompt(context: Any, code: str, traceback_error: str) -> Any: ...
+
+__all__: list

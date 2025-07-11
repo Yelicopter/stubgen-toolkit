@@ -1,0 +1,19 @@
+import pandas as pd
+from ..constants import SUPPORTED_SOURCE_CONNECTORS as SUPPORTED_SOURCE_CONNECTORS
+from ..query_builders.sql_parser import SQLParser as SQLParser
+from .loader import DatasetLoader as DatasetLoader
+from .semantic_layer_schema import SemanticLayerSchema as SemanticLayerSchema
+from pandasai.dataframe.virtual_dataframe import VirtualDataFrame as VirtualDataFrame
+from pandasai.exceptions import InvalidDataSourceType as InvalidDataSourceType, MaliciousQueryError as MaliciousQueryError
+from pandasai.helpers.sql_sanitizer import is_sql_query_safe as is_sql_query_safe
+from pandasai.query_builders import SqlQueryBuilder as SqlQueryBuilder
+from typing import Optional
+
+class SQLDatasetLoader(DatasetLoader):
+    def __init__(self, schema: SemanticLayerSchema, dataset_path: str) -> None: ...
+    @property
+    def query_builder(self) -> SqlQueryBuilder: ...
+    def load(self) -> VirtualDataFrame: ...
+    def execute_query(self, query: str, params: Optional[list] = ...) -> pd.DataFrame: ...
+    def load_head(self) -> pd.DataFrame: ...
+    def get_row_count(self) -> int: ...

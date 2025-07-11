@@ -1,0 +1,35 @@
+from __future__ import annotations
+
+from collections.abc import Generator
+from typing import Any, Tuple
+
+def pycodestyle_logical(
+    blank_before: int,
+    blank_lines: int,
+    checker_state: Any,
+    hang_closing: bool,
+    indent_char: str,
+    indent_level: int,
+    indent_size: int,
+    line_number: int,
+    lines: list[str],
+    logical_line: str,
+    max_doc_length: int,
+    noqa: bool,
+    previous_indent_level: int,
+    previous_logical: str,
+    previous_unindented_logical_line: str,
+    tokens: list[Any],
+    verbose: int,
+) -> Generator[Tuple[int, str], None, None]: ...
+
+def pycodestyle_physical(
+    indent_char: str,
+    line_number: int,
+    lines: list[str],
+    max_line_length: int,
+    multiline: bool,
+    noqa: bool,
+    physical_line: str,
+    total_lines: int,
+) -> Generator[Tuple[int, str], None, None]: ...

@@ -1,0 +1,3 @@
+from fastapi.cli import main as cli_main
+
+def main() -> None: ...

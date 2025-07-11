@@ -1,0 +1,91 @@
+from __future__ import annotations
+
+from enum import IntEnum
+from logging import Logger
+from typing import Dict, Iterable, List, NamedTuple, Optional, Sequence, Tuple, Type, Union
+
+from rich.console import Console, ConsoleOptions, RenderResult
+from rich.repr import Result
+from rich.style import Style
+
+log: Logger
+
+class ControlType(IntEnum):
+    BELL: int
+    CARRIAGE_RETURN: int
+    HOME: int
+    CLEAR: int
+    SHOW_CURSOR: int
+    HIDE_CURSOR: int
+    ENABLE_ALT_SCREEN: int
+    DISABLE_ALT_SCREEN: int
+    CURSOR_UP: int
+    CURSOR_DOWN: int
+    CURSOR_FORWARD: int
+    CURSOR_BACKWARD: int
+    CURSOR_MOVE_TO_COLUMN: int
+    CURSOR_MOVE_TO: int
+    ERASE_IN_LINE: int
+    SET_WINDOW_TITLE: int
+
+ControlCode = Union[Tuple[ControlType], Tuple[ControlType, Union[int, str]], Tuple[ControlType, int, int]]
+
+class Segment(NamedTuple):
+    text: str
+    style: Optional[Style]
+    control: Optional[Sequence[ControlCode]]
+    @property
+    def cell_length(self) -> int: ...
+    def __rich_repr__(self) -> Result: ...
+    def __bool__(self) -> bool: ...
+    @property
+    def is_control(self) -> bool: ...
+    @classmethod
+    def _split_cells(cls, segment: Segment, cut: int) -> Tuple[Segment, Segment]: ...
+    def split_cells(self, cut: int) -> Tuple[Segment, Segment]: ...
+    @classmethod
+    def line(cls) -> Segment: ...
+    @classmethod
+    def apply_style(cls, segments: Iterable[Segment], style: Optional[Style] = None, post_style: Optional[Style] = None) -> Iterable[Segment]: ...
+    @classmethod
+    def filter_control(cls, segments: Iterable[Segment], is_control: bool = False) -> Iterable[Segment]: ...
+    @classmethod
+    def split_lines(cls, segments: Iterable[Segment]) -> Iterable[List[Segment]]: ...
+    @classmethod
+    def split_and_crop_lines(cls, segments: Iterable[Segment], length: int, style: Optional[Style] = None, pad: bool = True, include_new_lines: bool = True) -> Iterable[List[Segment]]: ...
+    @classmethod
+    def adjust_line_length(cls, line: List[Segment], length: int, style: Optional[Style] = None, pad: bool = True) -> List[Segment]: ...
+    @classmethod
+    def get_line_length(cls, line: List[Segment]) -> int: ...
+    @classmethod
+    def get_shape(cls, lines: List[List[Segment]]) -> Tuple[int, int]: ...
+    @classmethod
+    def set_shape(cls, lines: List[List[Segment]], width: int, height: Optional[int] = None, style: Optional[Style] = None, new_lines: bool = False) -> List[List[Segment]]: ...
+    @classmethod
+    def align_top(cls: Type[Segment], lines: List[List[Segment]], width: int, height: int, style: Style, new_lines: bool = False) -> List[List[Segment]]: ...
+    @classmethod
+    def align_bottom(cls: Type[Segment], lines: List[List[Segment]], width: int, height: int, style: Style, new_lines: bool = False) -> List[List[Segment]]: ...
+    @classmethod
+    def align_middle(cls: Type[Segment], lines: List[List[Segment]], width: int, height: int, style: Style, new_lines: bool = False) -> List[List[Segment]]: ...
+    @classmethod
+    def simplify(cls, segments: Iterable[Segment]) -> Iterable[Segment]: ...
+    @classmethod
+    def strip_links(cls, segments: Iterable[Segment]) -> Iterable[Segment]: ...
+    @classmethod
+    def strip_styles(cls, segments: Iterable[Segment]) -> Iterable[Segment]: ...
+    @classmethod
+    def remove_color(cls, segments: Iterable[Segment]) -> Iterable[Segment]: ...
+    @classmethod
+    def divide(cls, segments: Iterable[Segment], cuts: Iterable[int]) -> Iterable[List[Segment]]: ...
+
+class Segments:
+    segments: List[Segment]
+    new_lines: bool
+    def __init__(self, segments: Iterable[Segment], new_lines: bool = False) -> None: ...
+    def __rich_console__(self, console: Console, options: ConsoleOptions) -> RenderResult: ...
+
+class SegmentLines:
+    lines: List[List[Segment]]
+    new_lines: bool
+    def __init__(self, lines: Iterable[List[Segment]], new_lines: bool = False) -> None: ...
+    def __rich_console__(self, console: Console, options: ConsoleOptions) -> RenderResult: ...

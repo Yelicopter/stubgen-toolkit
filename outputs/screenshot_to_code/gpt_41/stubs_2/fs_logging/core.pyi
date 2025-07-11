@@ -1,0 +1,3 @@
+from typing import Any
+
+def write_logs(prompt_messages: Any, completion: Any) -> None: ...

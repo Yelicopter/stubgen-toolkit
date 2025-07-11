@@ -1,0 +1,125 @@
+import abc
+from _typeshed import Incomplete
+from abc import ABC, abstractmethod
+from custom_types import InputMode
+from fastapi import WebSocket as WebSocket
+from llm import Completion as Completion, Llm
+from openai.types.chat import ChatCompletionMessageParam as ChatCompletionMessageParam
+from prompts.types import PromptContent as PromptContent, Stack
+from typing import Any, Awaitable, Callable, Coroutine, Dict, List, Literal
+
+MessageType: Incomplete
+router: Incomplete
+
+class VariantErrorAlreadySent(Exception):
+    original_error: Incomplete
+    def __init__(self, original_error: Exception) -> None: ...
+
+class PipelineContext:
+    websocket: WebSocket
+    ws_comm: WebSocketCommunicator | None
+    params: Dict[str, str]
+    extracted_params: ExtractedParams | None
+    prompt_messages: List[ChatCompletionMessageParam]
+    image_cache: Dict[str, str]
+    variant_models: List[Llm]
+    completions: List[str]
+    variant_completions: Dict[int, str]
+    metadata: Dict[str, Any]
+    @property
+    def send_message(self): ...
+    @property
+    def throw_error(self): ...
+    def __init__(self, websocket, ws_comm, params, extracted_params, prompt_messages, image_cache, variant_models, completions, variant_completions, metadata) -> None: ...
+
+class Middleware(ABC, metaclass=abc.ABCMeta):
+    @abstractmethod
+    async def process(self, context: PipelineContext, next_func: Callable[[], Awaitable[None]]) -> None: ...
+
+class Pipeline:
+    middlewares: Incomplete
+    def __init__(self) -> None: ...
+    def use(self, middleware: Middleware) -> Pipeline: ...
+    async def execute(self, websocket: WebSocket) -> None: ...
+
+class WebSocketCommunicator:
+    websocket: Incomplete
+    is_closed: bool
+    def __init__(self, websocket: WebSocket) -> None: ...
+    async def accept(self) -> None: ...
+    async def send_message(self, type: MessageType, value: str, variantIndex: int) -> None: ...
+    async def throw_error(self, message: str) -> None: ...
+    async def receive_params(self) -> Dict[str, str]: ...
+    async def close(self) -> None: ...
+
+class ExtractedParams:
+    stack: Stack
+    input_mode: InputMode
+    should_generate_images: bool
+    openai_api_key: str | None
+    anthropic_api_key: str | None
+    openai_base_url: str | None
+    generation_type: Literal['create', 'update']
+    prompt: PromptContent
+    history: List[Dict[str, Any]]
+    is_imported_from_code: bool
+    def __init__(self, stack, input_mode, should_generate_images, openai_api_key, anthropic_api_key, openai_base_url, generation_type, prompt, history, is_imported_from_code) -> None: ...
+
+class ParameterExtractionStage:
+    throw_error: Incomplete
+    def __init__(self, throw_error: Callable[[str], Coroutine[Any, Any, None]]) -> None: ...
+    async def extract_and_validate(self, params: Dict[str, str]) -> ExtractedParams: ...
+
+class ModelSelectionStage:
+    throw_error: Incomplete
+    def __init__(self, throw_error: Callable[[str], Coroutine[Any, Any, None]]) -> None: ...
+    async def select_models(self, generation_type: Literal['create', 'update'], input_mode: InputMode, openai_api_key: str | None, anthropic_api_key: str | None, gemini_api_key: str | None = ...) -> List[Llm]: ...
+
+class PromptCreationStage:
+    throw_error: Incomplete
+    def __init__(self, throw_error: Callable[[str], Coroutine[Any, Any, None]]) -> None: ...
+    async def create_prompt(self, extracted_params: ExtractedParams) -> tuple[List[ChatCompletionMessageParam], Dict[str, str]]: ...
+
+class MockResponseStage:
+    send_message: Incomplete
+    def __init__(self, send_message: Callable[[MessageType, str, int], Coroutine[Any, Any, None]]) -> None: ...
+    async def generate_mock_response(self, input_mode: InputMode) -> List[str]: ...
+
+class VideoGenerationStage:
+    send_message: Incomplete
+    throw_error: Incomplete
+    def __init__(self, send_message: Callable[[MessageType, str, int], Coroutine[Any, Any, None]], throw_error: Callable[[str], Coroutine[Any, Any, None]]) -> None: ...
+    async def generate_video_code(self, prompt_messages: List[ChatCompletionMessageParam], anthropic_api_key: str | None) -> List[str]: ...
+
+class PostProcessingStage:
+    def __init__(self) -> None: ...
+    async def process_completions(self, completions: List[str], prompt_messages: List[ChatCompletionMessageParam], websocket: WebSocket) -> None: ...
+
+class ParallelGenerationStage:
+    send_message: Incomplete
+    openai_api_key: Incomplete
+    openai_base_url: Incomplete
+    anthropic_api_key: Incomplete
+    should_generate_images: Incomplete
+    def __init__(self, send_message: Callable[[MessageType, str, int], Coroutine[Any, Any, None]], openai_api_key: str | None, openai_base_url: str | None, anthropic_api_key: str | None, should_generate_images: bool) -> None: ...
+    async def process_variants(self, variant_models: List[Llm], prompt_messages: List[ChatCompletionMessageParam], image_cache: Dict[str, str], params: Dict[str, str]) -> Dict[int, str]: ...
+
+class WebSocketSetupMiddleware(Middleware):
+    async def process(self, context: PipelineContext, next_func: Callable[[], Awaitable[None]]) -> None: ...
+
+class ParameterExtractionMiddleware(Middleware):
+    async def process(self, context: PipelineContext, next_func: Callable[[], Awaitable[None]]) -> None: ...
+
+class StatusBroadcastMiddleware(Middleware):
+    async def process(self, context: PipelineContext, next_func: Callable[[], Awaitable[None]]) -> None: ...
+
+class PromptCreationMiddleware(Middleware):
+    async def process(self, context: PipelineContext, next_func: Callable[[], Awaitable[None]]) -> None: ...
+
+class CodeGenerationMiddleware(Middleware):
+    async def process(self, context: PipelineContext, next_func: Callable[[], Awaitable[None]]) -> None: ...
+
+class PostProcessingMiddleware(Middleware):
+    async def process(self, context: PipelineContext, next_func: Callable[[], Awaitable[None]]) -> None: ...
+
+async def stream_code(websocket: WebSocket): ...

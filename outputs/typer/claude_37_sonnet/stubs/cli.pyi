@@ -1,0 +1,66 @@
+import importlib.util
+import re
+import sys
+from pathlib import Path
+from typing import Any, List, Optional
+
+import click
+import typer
+import typer.core
+from click import Command, Group, Option
+
+from . import __version__
+
+default_app_names: Tuple[str, str, str]
+default_func_names: Tuple[str, str, str]
+
+app: typer.Typer
+utils_app: typer.Typer
+
+class State:
+    app: Optional[str]
+    func: Optional[str]
+    file: Optional[Path]
+    module: Optional[str]
+
+    def __init__(self) -> None: ...
+
+state: State
+
+def maybe_update_state(ctx: click.Context) -> None: ...
+
+class TyperCLIGroup(typer.core.TyperGroup):
+    def list_commands(self, ctx: click.Context) -> List[str]: ...
+    def get_command(self, ctx: click.Context, name: str) -> Optional[click.Command]: ...
+    def invoke(self, ctx: click.Context) -> Any: ...
+    def maybe_add_run(self, ctx: click.Context) -> None: ...
+
+def get_typer_from_module(module: Any) -> Optional[typer.Typer]: ...
+def get_typer_from_state() -> Optional[typer.Typer]: ...
+def maybe_add_run_to_cli(cli: click.Group) -> None: ...
+def print_version(ctx: click.Context, param: click.Parameter, value: bool) -> None: ...
+def callback(
+    ctx: click.Context,
+    *,
+    path_or_module: str = ...,
+    app: str = ...,
+    func: str = ...,
+    version: bool = ...,
+) -> None: ...
+def get_docs_for_click(
+    *,
+    obj: Union[click.Command, click.Group],
+    ctx: click.Context,
+    indent: int = 0,
+    name: str = "",
+    call_prefix: str = "",
+    title: Optional[str] = None,
+) -> str: ...
+def _parse_html(input_text: str) -> str: ...
+def docs(
+    ctx: click.Context,
+    name: str = ...,
+    output: Optional[Path] = ...,
+    title: Optional[str] = ...,
+) -> None: ...
+def main() -> Any: ...

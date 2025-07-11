@@ -1,0 +1,4 @@
+import re
+
+def extract_html_content(text: str) -> str:
+    ...

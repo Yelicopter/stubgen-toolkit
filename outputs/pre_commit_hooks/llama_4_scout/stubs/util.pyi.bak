@@ -1,0 +1,17 @@
+from __future__ import annotations
+
+import subprocess
+from typing import Any
+
+class CalledProcessError(RuntimeError):
+    ...
+
+def added_files() -> set[str]:
+    ...
+
+def cmd_output(*cmd: Any, retcode: int | None = None, **kwargs: Any) -> str:
+    ...
+
+def zsplit(s: str) -> list[str]:
+    ...
+```

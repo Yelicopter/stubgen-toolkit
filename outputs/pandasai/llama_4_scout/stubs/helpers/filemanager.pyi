@@ -1,0 +1,60 @@
+import os
+from abc import ABC, abstractmethod
+
+from pandasai.helpers.path import find_project_root
+
+
+class FileManager(ABC):
+    @abstractmethod
+    def load(self, file_path: str) -> str:
+        ...
+
+    @abstractmethod
+    def load_binary(self, file_path: str) -> bytes:
+        ...
+
+    @abstractmethod
+    def write(self, file_path: str, content: str) -> None:
+        ...
+
+    @abstractmethod
+    def write_binary(self, file_path: str, content: bytes) -> None:
+        ...
+
+    @abstractmethod
+    def exists(self, file_path: str) -> bool:
+        ...
+
+    @abstractmethod
+    def mkdir(self, dir_path: str) -> None:
+        ...
+
+    @abstractmethod
+    def abs_path(self, file_path: str) -> str:
+        ...
+
+
+class DefaultFileManager(FileManager):
+    def __init__(self) -> None:
+        ...
+
+    def load(self, file_path: str) -> str:
+        ...
+
+    def load_binary(self, file_path: str) -> bytes:
+        ...
+
+    def write(self, file_path: str, content: str) -> None:
+        ...
+
+    def write_binary(self, file_path: str, content: bytes) -> None:
+        ...
+
+    def exists(self, file_path: str) -> bool:
+        ...
+
+    def mkdir(self, dir_path: str) -> None:
+        ...
+
+    def abs_path(self, file_path: str) -> str:
+        ...

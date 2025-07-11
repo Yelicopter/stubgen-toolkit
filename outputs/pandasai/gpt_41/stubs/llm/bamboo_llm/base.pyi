@@ -1,0 +1,13 @@
+from typing import Optional, Any
+from pandasai.helpers.session import Session
+from pandasai.llm.base import LLM
+
+class BambooLLM(LLM):
+    _session: Session
+
+    def __init__(
+        self, endpoint_url: Optional[str] = ..., api_key: Optional[str] = ...
+    ): ...
+    def call(self, instruction: Any, _context: Any = ...) -> str: ...
+    @property
+    def type(self) -> str: ...

@@ -1,0 +1,4 @@
+import re
+from typing import Any
+
+def extract_html_content(text: str) -> str: ...

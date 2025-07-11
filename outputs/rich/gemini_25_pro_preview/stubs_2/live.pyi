@@ -1,0 +1,57 @@
+from __future__ import annotations
+
+import sys
+from threading import Event, RLock, Thread
+from types import TracebackType
+from typing import IO, Any, Callable, List, Optional, TextIO, Type
+
+from rich.console import Console, ConsoleRenderable, RenderHook, RenderableType
+from rich.jupyter import JupyterMixin
+
+class LiveRender:
+    def __init__(self) -> None: ...
+
+VerticalOverflowMethod = str
+
+class _RefreshThread(Thread):
+    live: Live
+    refresh_per_second: float
+    done: Event
+    def __init__(self, live: Live, refresh_per_second: float) -> None: ...
+    def stop(self) -> None: ...
+    def run(self) -> None: ...
+
+class Live(JupyterMixin, RenderHook):
+    _renderable: Optional[RenderableType]
+    console: Console
+    _screen: bool
+    _alt_screen: bool
+    _redirect_stdout: bool
+    _redirect_stderr: bool
+    _restore_stdout: Optional[TextIO]
+    _restore_stderr: Optional[TextIO]
+    _lock: RLock
+    ipy_widget: Any
+    auto_refresh: bool
+    _started: bool
+    transient: bool
+    _refresh_thread: Optional[_RefreshThread]
+    refresh_per_second: float
+    vertical_overflow: VerticalOverflowMethod
+    _get_renderable: Optional[Callable[[], RenderableType]]
+    _live_render: LiveRender
+    def __init__(self, renderable: Optional[RenderableType] = None, *, console: Optional[Console] = None, screen: bool = False, auto_refresh: bool = True, refresh_per_second: float = 4, transient: bool = False, redirect_stdout: bool = True, redirect_stderr: bool = True, vertical_overflow: VerticalOverflowMethod = "ellipsis", get_renderable: Optional[Callable[[], RenderableType]] = None) -> None: ...
+    @property
+    def is_started(self) -> bool: ...
+    def get_renderable(self) -> RenderableType: ...
+    def start(self, refresh: bool = False) -> None: ...
+    def stop(self) -> None: ...
+    def __enter__(self) -> Live: ...
+    def __exit__(self, exc_type: Optional[Type[BaseException]], exc_val: Optional[BaseException], exc_tb: Optional[TracebackType]) -> None: ...
+    def _enable_redirect_io(self) -> None: ...
+    def _disable_redirect_io(self) -> None: ...
+    @property
+    def renderable(self) -> RenderableType: ...
+    def update(self, renderable: RenderableType, *, refresh: bool = False) -> None: ...
+    def refresh(self) -> None: ...
+    def process_renderables(self, renderables: List[RenderableType]) -> List[RenderableType]: ...

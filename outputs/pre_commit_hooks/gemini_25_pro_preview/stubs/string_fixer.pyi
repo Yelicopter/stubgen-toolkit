@@ -1,0 +1,14 @@
+from __future__ import annotations
+
+import re
+from collections.abc import Sequence
+from typing import Final
+
+FSTRING_START: Final[int]
+FSTRING_END: Final[int]
+START_QUOTE_RE: Final[re.Pattern[str]]
+
+def handle_match(token_text: str) -> str: ...
+def get_line_offsets_by_line_no(src: str) -> list[int]: ...
+def fix_strings(filename: str) -> int: ...
+def main(argv: Sequence[str] | None = None) -> int: ...

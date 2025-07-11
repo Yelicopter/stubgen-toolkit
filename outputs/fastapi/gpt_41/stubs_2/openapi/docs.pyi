@@ -1,0 +1,23 @@
+from typing import Any, Dict, Optional
+from starlette.responses import HTMLResponse
+
+def get_swagger_ui_html(
+    *,
+    openapi_url: str,
+    title: str,
+    swagger_js_url: str = ...,
+    swagger_css_url: str = ...,
+    swagger_favicon_url: str = ...,
+    oauth2_redirect_url: Optional[str] = ...,
+    init_oauth: Optional[Dict[str, Any]] = ...,
+    swagger_ui_parameters: Optional[Dict[str, Any]] = ...,
+) -> HTMLResponse: ...
+def get_redoc_html(
+    *,
+    openapi_url: str,
+    title: str,
+    redoc_js_url: str = ...,
+    redoc_favicon_url: str = ...,
+    with_google_fonts: bool = ...,
+) -> HTMLResponse: ...
+def get_swagger_ui_oauth2_redirect_html() -> HTMLResponse: ...

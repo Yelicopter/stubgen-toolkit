@@ -1,0 +1,15 @@
+from fastapi.exceptions import RequestValidationError, WebSocketRequestValidationError
+from fastapi.websockets import WebSocket
+from starlette.exceptions import HTTPException
+from starlette.requests import Request
+from starlette.responses import JSONResponse, Response
+
+async def http_exception_handler(
+    request: Request, exc: HTTPException
+) -> Response: ...
+async def request_validation_exception_handler(
+    request: Request, exc: RequestValidationError
+) -> JSONResponse: ...
+async def websocket_request_validation_exception_handler(
+    websocket: WebSocket, exc: WebSocketRequestValidationError
+) -> None: ...

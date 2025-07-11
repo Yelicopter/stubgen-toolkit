@@ -1,0 +1,3 @@
+from ghunt import globals as gb
+
+def init_globals() -> None: ...

@@ -1,0 +1,59 @@
+from abc import ABC, abstractmethod
+from typing import Iterable, List, Optional
+
+class VectorStore(ABC):
+    @abstractmethod
+    def add_question_answer(
+        self,
+        queries: Iterable[str],
+        codes: Iterable[str],
+        ids: Optional[Iterable[str]] = None,
+        metadatas: Optional[List[dict]] = None,
+    ) -> List[str]: ...
+    
+    @abstractmethod
+    def add_docs(
+        self,
+        docs: Iterable[str],
+        ids: Optional[Iterable[str]] = None,
+        metadatas: Optional[List[dict]] = None,
+    ) -> List[str]: ...
+    
+    def update_question_answer(
+        self,
+        ids: Iterable[str],
+        queries: Iterable[str],
+        codes: Iterable[str],
+        metadatas: Optional[List[dict]] = None,
+    ) -> List[str]: ...
+    
+    def update_docs(
+        self,
+        ids: Iterable[str],
+        docs: Iterable[str],
+        metadatas: Optional[List[dict]] = None,
+    ) -> List[str]: ...
+    
+    def delete_question_and_answers(
+        self, ids: Optional[List[str]] = None
+    ) -> Optional[bool]: ...
+    
+    def delete_docs(self, ids: Optional[List[str]] = None) -> Optional[bool]: ...
+    
+    def delete_collection(self, collection_name: str) -> Optional[bool]: ...
+    
+    def get_relevant_question_answers(self, question: str, k: int = 1) -> List[str]: ...
+    
+    def get_relevant_docs(self, question: str, k: int = 1) -> List[str]: ...
+    
+    def get_relevant_question_answers_by_id(self, ids: Iterable[str]) -> List[str]: ...
+    
+    def get_relevant_docs_by_id(self, ids: Iterable[str]) -> List[str]: ...
+    
+    @abstractmethod
+    def get_relevant_qa_documents(self, question: str, k: int = 1) -> List[dict]: ...
+    
+    @abstractmethod
+    def get_relevant_docs_documents(self, question: str, k: int = 1) -> List[dict]: ...
+    
+    def _format_qa(self, query: str, code: str) -> str: ...

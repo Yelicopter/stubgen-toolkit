@@ -1,0 +1,13 @@
+from typing import Any, Iterator, Optional
+
+class ColorBox:
+    def __rich_console__(self, console: Any, options: Any) -> Iterator[Any]:
+        ...
+    def __rich_measure__(self, console: Any, options: Any) -> Any:
+        ...
+
+def make_test_card() -> Any:
+    ...
+
+def comparison(renderable1: Any, renderable2: Any) -> Any:
+    ...

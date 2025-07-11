@@ -1,0 +1,29 @@
+from __future__ import annotations
+
+import argparse
+import configparser
+import os
+from collections.abc import Sequence
+from typing import NamedTuple
+
+class BadFile(NamedTuple):
+    filename: str
+    key: str
+
+def get_aws_cred_files_from_env() -> set[str]:
+    ...
+
+def get_aws_secrets_from_env() -> set[str]:
+    ...
+
+def get_aws_secrets_from_file(credentials_file: str) -> set[str]:
+    ...
+
+def check_file_for_aws_keys(
+    filenames: Sequence[str],
+    keys: set[bytes],
+) -> list[BadFile]:
+    ...
+
+def main(argv: Sequence[str] | None = None) -> int:
+    ...

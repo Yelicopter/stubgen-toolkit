@@ -1,0 +1,19 @@
+import abc
+from _typeshed import Incomplete
+from abc import ABC, abstractmethod
+from typing import Optional
+
+class BasePrompt:
+    template: Optional[str]
+    template_path: Optional[str]
+    props: Incomplete
+    prompt: Incomplete
+    def __init__(self, **kwargs) -> None: ...
+    def render(self): ...
+    def to_string(self): ...
+    def validate(self, output: str) -> bool: ...
+    def to_json(self): ...
+
+class AbstractPrompt(ABC, metaclass=abc.ABCMeta):
+    @abstractmethod
+    def get_prompt(self): ...

@@ -1,0 +1,1 @@
+user_types: Dict[str, str] = {}

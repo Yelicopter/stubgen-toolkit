@@ -1,0 +1,6 @@
+from typing import Any
+
+class CodeRequirementValidator:
+    context: Any
+    def __init__(self, context: Any) -> None: ...
+    def validate(self, code: str) -> bool: ...

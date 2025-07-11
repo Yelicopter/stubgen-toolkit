@@ -1,0 +1,12 @@
+import httpx
+from typing import Any, Dict, Optional, Union
+from http.cookiejar import CookieJar
+from httpx._types import CookieTypes
+
+class AsyncClient(httpx.AsyncClient):
+    def __init__(self, *args: Any, **kwargs: Any) -> None: ...
+    def _merge_cookies(
+        self,
+        cookies: Optional[CookieTypes] = ...,
+    ) -> Dict[str, str]: ...
+```

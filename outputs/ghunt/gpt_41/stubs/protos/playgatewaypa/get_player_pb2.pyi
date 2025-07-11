@@ -1,0 +1,9 @@
+# Stubs for generated protobuf code
+from typing import Any
+
+class GetPlayerProto:
+    class Form:
+        class Query:
+            ...
+        ...
+    ...

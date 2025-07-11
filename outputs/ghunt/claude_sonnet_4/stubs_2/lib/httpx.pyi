@@ -1,0 +1,6 @@
+import httpx
+from typing import Any
+
+class AsyncClient(httpx.AsyncClient):
+    def __init__(self, *args: Any, **kwargs: Any) -> None: ...
+    def _merge_cookies(self, cookies: Any) -> httpx._types.CookieTypes: ...

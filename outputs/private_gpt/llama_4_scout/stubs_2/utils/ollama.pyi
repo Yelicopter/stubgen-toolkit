@@ -1,0 +1,11 @@
+import logging
+from typing import Any
+
+def check_connection(client: Any) -> bool:
+    ...
+
+def process_streaming(generator: Any) -> None:
+    ...
+
+def pull_model(client: Any, model_name: str, raise_error: bool = True) -> None:
+    ...

@@ -1,0 +1,32 @@
+from typing import Any, List, Optional, Union
+
+import sqlglot
+from sqlglot import select
+from sqlglot.optimizer.normalize_identifiers import normalize_identifiers
+from sqlglot.optimizer.qualify_columns import quote_identifiers
+
+from pandasai.data_loader.semantic_layer_schema import SemanticLayerSchema, Source
+from pandasai.query_builders.sql_transformation_manager import SQLTransformationManager
+
+class BaseQueryBuilder:
+    schema: SemanticLayerSchema
+    transformation_manager: SQLTransformationManager
+    
+    def __init__(self, schema: SemanticLayerSchema) -> None: ...
+    
+    def validate_query_builder(self) -> None: ...
+    
+    def build_query(self) -> str: ...
+    
+    def get_head_query(self, n=5) -> str: ...
+    
+    def get_row_count(self) -> str: ...
+    
+    def _get_columns(self) -> List[str]: ...
+    
+    def _get_table_expression(self) -> str: ...
+    
+    def _check_distinct(self) -> bool: ...
+    
+    @staticmethod
+    def check_compatible_sources(sources: List[Source]) -> bool: ...

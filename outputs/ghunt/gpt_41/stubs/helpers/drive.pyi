@@ -1,0 +1,6 @@
+from typing import Any, List, Dict
+
+from ghunt.parsers.drive import DriveFile, DriveCommentList
+
+def get_users_from_file(file: DriveFile) -> List[Any]: ...
+def get_comments_from_file(comments: DriveCommentList) -> List[Any]: ...

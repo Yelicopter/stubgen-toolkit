@@ -1,0 +1,43 @@
+from typing import TYPE_CHECKING, Callable, Iterable, List, Optional, Union
+
+from .segment import ControlCode, Segment
+
+if TYPE_CHECKING:
+    from .console import Console, ConsoleOptions, RenderResult
+
+class Control:
+    def __init__(self, *codes: ControlCode) -> None: ...
+    
+    @property
+    def segment(self) -> Segment: ...
+    
+    def __rich_console__(self, console: "Console", options: "ConsoleOptions") -> "RenderResult": ...
+    
+    @classmethod
+    def bell(cls) -> "Control": ...
+    
+    @classmethod
+    def home(cls) -> "Control": ...
+    
+    @classmethod
+    def move_to_column(cls, column: int, relative: bool = False) -> "Control": ...
+    
+    @classmethod
+    def move_to(cls, x: int, y: int) -> "Control": ...
+    
+    @classmethod
+    def move(cls, x: int = 0, y: int = 0) -> "Control": ...
+    
+    @classmethod
+    def clear(cls) -> "Control": ...
+    
+    @classmethod
+    def show_cursor(cls, show: bool) -> "Control": ...
+    
+    @classmethod
+    def alt_screen(cls, enable: bool) -> "Control": ...
+    
+    @classmethod
+    def title(cls, title: str) -> "Control": ...
+
+def strip_control_codes(text: str) -> str: ...

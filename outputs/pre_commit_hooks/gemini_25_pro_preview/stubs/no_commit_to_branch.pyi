@@ -1,0 +1,10 @@
+from __future__ import annotations
+
+from collections.abc import Sequence
+from typing import AbstractSet
+
+def is_on_branch(
+    protected: AbstractSet[str],
+    patterns: AbstractSet[str] = ...,
+) -> bool: ...
+def main(argv: Sequence[str] | None = None) -> int: ...

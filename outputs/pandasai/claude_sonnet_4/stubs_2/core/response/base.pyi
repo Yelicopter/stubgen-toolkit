@@ -1,0 +1,16 @@
+import json
+from typing import Any, Optional
+from pandasai.helpers.json_encoder import CustomJsonEncoder
+
+class BaseResponse:
+    def __init__(
+        self,
+        value: Any = None,
+        type: Optional[str] = None,
+        last_code_executed: Optional[str] = None,
+        error: Optional[str] = None,
+    ): ...
+    def __str__(self) -> str: ...
+    def __repr__(self) -> str: ...
+    def to_dict(self) -> dict: ...
+    def to_json(self) -> str: ...

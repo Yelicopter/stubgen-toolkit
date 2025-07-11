@@ -1,0 +1,9 @@
+from typing import Any, Awaitable, Callable, List
+
+async def stream_openai_response(
+    messages: List[Any],
+    api_key: str,
+    base_url: str,
+    callback: Callable[[str], Awaitable[None]],
+    model_name: str,
+) -> dict: ...

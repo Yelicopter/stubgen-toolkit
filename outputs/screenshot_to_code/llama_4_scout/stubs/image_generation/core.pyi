@@ -1,0 +1,40 @@
+import asyncio
+import re
+from typing import Dict, List, Literal, Union
+from openai import AsyncOpenAI
+from bs4 import BeautifulSoup
+
+from image_generation.replicate import call_replicate
+
+async def process_tasks(
+    prompts: list[str],
+    api_key: str,
+    base_url: Optional[str],
+    model: Literal["dalle3"],
+) -> list[Union[str, None]]:
+    ...
+
+async def generate_image_dalle(
+    prompt: str, api_key: str, base_url: Optional[str]
+) -> str:
+    ...
+
+async def generate_image_replicate(
+    prompt: str, api_key: str
+) -> str:
+    ...
+
+def extract_dimensions(url: str) -> tuple[int, int]:
+    ...
+
+def create_alt_url_mapping(code: str) -> dict[str, str]:
+    ...
+
+async def generate_images(
+    code: str,
+    api_key: str,
+    base_url: Optional[str],
+    image_cache: dict[str, str],
+    model: Literal["dalle3"] = "dalle3",
+) -> str:
+    ...

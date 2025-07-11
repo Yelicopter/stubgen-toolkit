@@ -1,0 +1,3 @@
+from typing import Sequence, Optional
+
+def main(argv: Optional[Sequence[str]] = ...) -> int: ...

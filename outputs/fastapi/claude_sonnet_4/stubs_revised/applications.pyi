@@ -1,0 +1,452 @@
+from enum import Enum
+from typing import (
+    Any,
+    Awaitable,
+    Callable,
+    Coroutine,
+    Dict,
+    List,
+    Optional,
+    Sequence,
+    Type,
+    TypeVar,
+    Union,
+)
+
+from fastapi import routing
+from fastapi.datastructures import Default, DefaultPlaceholder
+from fastapi.exception_handlers import (
+    http_exception_handler,
+    request_validation_exception_handler,
+    websocket_request_validation_exception_handler,
+)
+from fastapi.exceptions import RequestValidationError, WebSocketRequestValidationError
+from fastapi.logger import logger
+from fastapi.openapi.docs import (
+    get_redoc_html,
+    get_swagger_ui_html,
+    get_swagger_ui_oauth2_redirect_html,
+)
+from fastapi.openapi.utils import get_openapi
+from fastapi.params import Depends
+from fastapi.types import DecoratedCallable, IncEx
+from fastapi.utils import generate_unique_id
+from starlette.applications import Starlette
+from starlette.datastructures import State
+from starlette.exceptions import HTTPException
+from starlette.middleware import Middleware
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.requests import Request
+from starlette.responses import HTMLResponse, JSONResponse, Response
+from starlette.routing import BaseRoute
+from starlette.types import ASGIApp, Lifespan, Receive, Scope, Send
+from typing_extensions import Annotated, Doc, deprecated
+
+AppType = TypeVar("AppType", bound="FastAPI")
+
+class FastAPI(Starlette):
+    def __init__(
+        self,
+        *,
+        debug: bool = ...,
+        routes: Optional[List[BaseRoute]] = ...,
+        title: str = ...,
+        summary: Optional[str] = ...,
+        description: str = ...,
+        version: str = ...,
+        openapi_url: Optional[str] = ...,
+        openapi_tags: Optional[List[Dict[str, Any]]] = ...,
+        servers: Optional[List[Dict[str, Union[str, Any]]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        default_response_class: Type[Response] = ...,
+        redirect_slashes: bool = ...,
+        docs_url: Optional[str] = ...,
+        redoc_url: Optional[str] = ...,
+        swagger_ui_oauth2_redirect_url: Optional[str] = ...,
+        swagger_ui_init_oauth: Optional[Dict[str, Any]] = ...,
+        middleware: Optional[Sequence[Middleware]] = ...,
+        exception_handlers: Optional[
+            Dict[
+                Union[int, Type[Exception]],
+                Callable[[Request, Any], Coroutine[Any, Any, Response]],
+            ]
+        ] = ...,
+        on_startup: Optional[Sequence[Callable[[], Any]]] = ...,
+        on_shutdown: Optional[Sequence[Callable[[], Any]]] = ...,
+        lifespan: Optional[Lifespan[Any]] = ...,
+        terms_of_service: Optional[str] = ...,
+        contact: Optional[Dict[str, Union[str, Any]]] = ...,
+        license_info: Optional[Dict[str, Union[str, Any]]] = ...,
+        openapi_prefix: str = ...,
+        root_path: str = ...,
+        root_path_in_servers: bool = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        webhooks: Optional[routing.APIRouter] = ...,
+        deprecated: Optional[bool] = ...,
+        include_in_schema: bool = ...,
+        swagger_ui_parameters: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+        separate_input_output_schemas: bool = ...,
+        **extra: Any,
+    ) -> None:
+        ...
+
+    def openapi(self) -> Dict[str, Any]:
+        ...
+
+    def setup(self) -> None:
+        ...
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
+        ...
+
+    def add_api_route(
+        self,
+        path: str,
+        endpoint: Callable[..., Any],
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        methods: Optional[Union[Set[str], List[str]]] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Union[Type[Response], DefaultPlaceholder] = ...,
+        name: Optional[str] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> None:
+        ...
+
+    def api_route(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        methods: Optional[List[str]] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def add_api_websocket_route(
+        self,
+        path: str,
+        endpoint: Callable[..., Any],
+        name: Optional[str] = ...,
+        *,
+        dependencies: Optional[Sequence[Depends]] = ...,
+    ) -> None:
+        ...
+
+    def websocket(
+        self,
+        path: str,
+        name: Optional[str] = ...,
+        *,
+        dependencies: Optional[Sequence[Depends]] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def include_router(
+        self,
+        router: routing.APIRouter,
+        *,
+        prefix: str = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        include_in_schema: bool = ...,
+        default_response_class: Type[Response] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> None:
+        ...
+
+    def get(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def put(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def post(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def delete(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def options(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def head(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def patch(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def trace(
+        self,
+        path: str,
+        *,
+        response_model: Any = ...,
+        status_code: Optional[int] = ...,
+        tags: Optional[List[Union[str, Enum]]] = ...,
+        dependencies: Optional[Sequence[Depends]] = ...,
+        summary: Optional[str] = ...,
+        description: Optional[str] = ...,
+        response_description: str = ...,
+        responses: Optional[Dict[Union[int, str], Dict[str, Any]]] = ...,
+        deprecated: Optional[bool] = ...,
+        operation_id: Optional[str] = ...,
+        response_model_include: Optional[IncEx] = ...,
+        response_model_exclude: Optional[IncEx] = ...,
+        response_model_by_alias: bool = ...,
+        response_model_exclude_unset: bool = ...,
+        response_model_exclude_defaults: bool = ...,
+        response_model_exclude_none: bool = ...,
+        include_in_schema: bool = ...,
+        response_class: Type[Response] = ...,
+        name: Optional[str] = ...,
+        callbacks: Optional[List[BaseRoute]] = ...,
+        openapi_extra: Optional[Dict[str, Any]] = ...,
+        generate_unique_id_function: Callable[[routing.APIRoute], str] = ...,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def websocket_route(
+        self, path: str, name: Optional[str] = ...
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    @deprecated
+    def on_event(
+        self,
+        event_type: str,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def middleware(
+        self,
+        middleware_type: str,
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...
+
+    def exception_handler(
+        self,
+        exc_class_or_status_code: Union[int, Type[Exception]],
+    ) -> Callable[[DecoratedCallable], DecoratedCallable]:
+        ...

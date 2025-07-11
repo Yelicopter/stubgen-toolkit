@@ -1,0 +1,3 @@
+import httpx
+
+async def is_email_registered(as_client: httpx.AsyncClient, email: str) -> bool: ...

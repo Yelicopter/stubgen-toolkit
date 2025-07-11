@@ -1,0 +1,3 @@
+from typing import Any, Dict
+
+def load_ipython_extension(ip: Any) -> None: ...

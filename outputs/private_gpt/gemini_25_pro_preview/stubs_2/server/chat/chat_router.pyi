@@ -1,0 +1,25 @@
+from typing import Any, ClassVar
+
+from fastapi import APIRouter, Request
+from pydantic import BaseModel, ConfigDict
+from starlette.responses import StreamingResponse
+
+from private_gpt.open_ai.extensions.context_filter import ContextFilter
+from private_gpt.open_ai.openai_models import (
+    OpenAICompletion,
+    OpenAIMessage,
+)
+
+chat_router: APIRouter
+
+class ChatBody(BaseModel):
+    messages: list[OpenAIMessage]
+    use_context: bool = False
+    context_filter: ContextFilter | None
+    include_sources: bool = True
+    stream: bool = False
+    model_config: ClassVar[ConfigDict] = ...
+
+def chat_completion(
+    request: Request, body: ChatBody
+) -> OpenAICompletion | StreamingResponse: ...

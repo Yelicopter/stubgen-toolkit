@@ -1,0 +1,3 @@
+from typing import Any, Iterable
+
+def legacy_windows_render(buffer: Iterable[Any], term: Any) -> None: ...

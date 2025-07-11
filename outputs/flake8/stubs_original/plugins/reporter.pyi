@@ -1,0 +1,3 @@
+from typing import Any, Dict
+
+def make(reporters: Dict[str, Any], options: Any) -> Any: ...

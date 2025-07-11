@@ -1,0 +1,157 @@
+from __future__ import annotations
+
+import argparse
+import contextlib
+import errno
+import logging
+import multiprocessing.pool
+import operator
+import signal
+import tokenize
+from collections.abc import Generator
+from collections.abc import Sequence
+from typing import Any
+from typing import Optional
+
+from flake8 import defaults
+from flake8 import exceptions
+from flake8 import processor
+from flake8 import utils
+from flake8._compat import FSTRING_START
+from flake8._compat import TSTRING_START
+from flake8.discover_files import expand_paths
+from flake8.options.parse_args import parse_args
+from flake8.plugins.finder import Checkers
+from flake8.plugins.finder import LoadedPlugin
+from flake8.style_guide import StyleGuideManager
+
+Results = list[tuple[str, int, int, str, Optional[str]]]
+
+LOG = logging.getLogger(__name__)
+
+SERIAL_RETRY_ERRNOS = {
+    errno.ENOSPC,  
+}
+
+_mp = None
+
+
+@contextlib.contextmanager
+def _mp_prefork(
+    plugins: Any, options: Any
+) -> Generator:
+    ...
+
+
+def _mp_init(argv: list[str]) -> None:
+    ...
+
+
+def _mp_run(filename: str) -> Any:
+    ...
+
+
+class Manager:
+    def __init__(
+        self,
+        style_guide: StyleGuideManager,
+        plugins: Any,
+        argv: list[str],
+    ) -> None:
+        ...
+
+    def _process_statistics(self) -> None:
+        ...
+
+    def _job_count(self) -> int:
+        ...
+
+    def _handle_results(self, filename: str, results: Any) -> int:
+        ...
+
+    def report(self) -> tuple[int, int]:
+        ...
+
+    def run_parallel(self) -> None:
+        ...
+
+    def run_serial(self) -> None:
+        ...
+
+    def run(self) -> None:
+        ...
+
+    def start(self) -> None:
+        ...
+
+    def stop(self) -> None:
+        ...
+
+
+class FileChecker:
+    def __init__(
+        self,
+        *,
+        filename: str,
+        plugins: Any,
+        options: Any,
+    ) -> None:
+        ...
+
+    def __repr__(self) -> str:
+        ...
+
+    def _make_processor(self) -> Any:
+        ...
+
+    def report(
+        self,
+        error_code: str,
+        line_number: int,
+        column: int,
+        text: str,
+    ) -> str:
+        ...
+
+    def run_check(self, plugin: Any, **arguments: Any) -> Any:
+        ...
+
+    @staticmethod
+    def _extract_syntax_information(exception: Any) -> Any:
+        ...
+
+    def run_ast_checks(self) -> None:
+        ...
+
+    def run_logical_checks(self) -> None:
+        ...
+
+    def run_physical_checks(self, physical_line: str) -> None:
+        ...
+
+    def process_tokens(self) -> None:
+        ...
+
+    def run_checks(self) -> Any:
+        ...
+
+    def handle_newline(self, token_type: int) -> None:
+        ...
+
+    def check_physical_eol(
+        self, token: Any, prev_physical: Optional[str]
+    ) -> None:
+        ...
+
+
+def _try_initialize_processpool(
+    job_count: int,
+    argv: list[str],
+) -> Optional[multiprocessing.Pool]:
+    ...
+
+
+def find_offset(
+    offset: int, mapping: Any
+) -> Any:
+    ...
